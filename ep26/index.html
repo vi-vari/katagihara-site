@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第26回 ここまでの振り返り。見方が変わると、体が変わる｜からだの使い方講座</title>
+<style>
+:root{
+  --bg:#fff7e6; --surface:#ffffff; --ink:#2a2e38; --sub:#5f6672; --line:#ecd9b0;
+  --move:#0b8f6b; --hold:#2878cc; --load:#e04e1b; --soft:#fff0c2;
+  --blk:#ffe3a3; --bone:#ffe0a0; --amber:#e8950f;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.95;font-size:16px;-webkit-text-size-adjust:100%}
+main{max-width:640px;margin:0 auto;padding:40px 20px 64px}
+h1{font-size:clamp(26px,7vw,36px);line-height:1.4;margin:0 0 12px;font-weight:800;letter-spacing:.02em}
+.lead{color:var(--sub);margin:0 0 28px}
+h2{font-size:20px;line-height:1.5;margin:48px 0 12px;font-weight:700;border-left:4px solid var(--move);padding-left:12px}
+p{margin:0 0 16px}
+.key{background:#fff;border:2px dashed var(--line);border-radius:10px;padding:8px 12px;font-size:14px;font-weight:700;line-height:1.7;margin:0 0 10px}
+.fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;margin:0 0 8px}
+.fig svg{display:block;width:100%;height:auto;max-height:330px}
+.seg{display:flex;gap:8px;margin:0 0 10px}
+.seg button{flex:1;font:inherit;font-size:14px;font-weight:700;line-height:1.4;padding:10px 6px;border-radius:10px;border:2px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.seg button[aria-pressed="true"]{border-color:var(--move);background:var(--soft)}
+button:focus-visible{outline:3px solid var(--move);outline-offset:2px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--sub);margin:6px 0 0}
+.legend i{display:inline-block;width:.9em;height:.9em;border-radius:50%;vertical-align:-1px;margin-right:4px}
+.read{font-size:15px;line-height:1.8;min-height:8.6em;background:var(--soft);border-radius:10px;padding:12px 14px;margin:12px 0 0}
+.read b{display:block;margin-bottom:2px}.read u{display:block;text-decoration:none;font-weight:800;color:var(--sub);font-size:13px;margin-top:6px}
+.cap{font-size:13px;color:var(--sub);margin:10px 4px 0;line-height:1.7}
+.three{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:8px}
+.three li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:15px;line-height:1.7}
+.three li b.n{display:inline-block;background:var(--move);color:#fff;border-radius:50%;width:1.7em;height:1.7em;text-align:center;line-height:1.7em;margin-right:8px;font-size:14px}
+.three li small{display:block;color:var(--sub);font-size:13px;margin-top:2px}
+.steps{margin:0 0 16px;padding-left:1.4em}
+.steps li{margin-bottom:6px}
+.sum{background:var(--soft);border-radius:12px;padding:16px 18px;margin:20px 0}
+.sum p:last-child{margin:0}
+.warn{background:#fff3ec;border:2px solid #ffb48a;border-radius:12px;padding:14px 16px;margin:12px 0 16px;font-size:15px;line-height:1.85}
+.warn ul{margin:6px 0 0;padding-left:1.3em}
+.note{font-size:13px;color:var(--sub);border-top:1px solid var(--line);margin-top:40px;padding-top:16px;line-height:1.8}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* ---- 明るいテーマ ---- */
+:root{--bg:#fff6ee;--line:#f7d9bc;--soft:#ffeedb;--blk:#ffe2c4;--bone:#ffe2c4}
+body{background:var(--bg);font-size:16.5px;line-height:2}
+main{padding-top:24px}
+h1{background:linear-gradient(135deg,#ffb36b 0%,#ff7f6e 100%);color:#4a1500;padding:22px 20px 20px;border-radius:20px;margin:0 0 16px;box-shadow:0 5px 0 rgba(240,90,40,.30);font-size:clamp(22px,6.3vw,34px)}
+.lead{font-size:17px;font-weight:700;color:#8a2f08;margin:0 0 30px;padding-left:14px;border-left:5px solid #ff8a4c}
+h2{display:block;background:#ffd9b8;color:#4a1500;border-left:8px solid #ff6b35;border-radius:12px;padding:10px 14px;font-size:20px;margin:52px 0 14px}
+p strong,.sum strong{background:linear-gradient(transparent 62%,#ffd9b8 62%);font-weight:800}
+.fig{border:2px solid #ffcfa6;border-radius:18px;box-shadow:0 4px 0 #ffe8d2}
+.seg button,.tabs button,.presets button,.modes button{border-color:#ffcfa6;background:#fff;border-radius:12px;color:var(--ink)}
+.seg button[aria-pressed="true"],.tabs button[aria-pressed="true"],.presets button[aria-pressed="true"],.modes button[aria-pressed="true"]{border-color:var(--move);background:#d3f9e8}
+.read{background:#fff1e4;border-left:6px solid #ff8a4c;border-radius:12px}
+.sum{background:#e4f8ef;border:2px solid #9be3c4;border-radius:16px}
+.track{background:#ffe8d2}
+.note{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:48px}
+h1,h2,.lead{word-break:auto-phrase;text-wrap:balance}
+
+h1,h2{text-wrap:balance;word-break:auto-phrase}
+.ph{display:inline-block}
+</style>
+<body>
+<main>
+<h1>ここまでの振り返り。<br><span class="ph">見方が変わると、</span><span class="ph">体が変わる</span></h1>
+<p class="lead">ここまで、いろいろなテーマを見てきました。</p>
+<p>痛い場所のこと、動く役と支える役、骨盤、呼吸、日常の使い方。一つひとつは違って見えても、<strong>根っこの考え方は、いつも同じ</strong>でした。</p>
+<p>今回は、その流れを、あらためて振り返ります。</p>
+
+<h2>① ここまでの道のり</h2>
+<p class="key">見てほしいところ：ボタンを押すと、4つの時期の内容が出ます</p>
+<div class="fig" id="f1">
+  <div class="seg" role="group" aria-label="4つの時期">
+    <button type="button" data-m="0" aria-pressed="true">第1期</button>
+    <button type="button" data-m="1" aria-pressed="false">第2期</button>
+    <button type="button" data-m="2" aria-pressed="false">第3期</button>
+    <button type="button" data-m="3" aria-pressed="false">第4期</button>
+  </div>
+  <svg viewBox="0 0 320 110" role="img" aria-labelledby="t1 d1">
+    <title id="t1">ここまでの道のり</title>
+    <desc id="d1">4つの時期が、道に並んでいる。選んだ時期が大きく光る。</desc>
+    <g id="g1"></g>
+  </svg>
+  <div class="read" id="r1" aria-live="polite" style="min-height:8.6em"></div>
+  <p class="cap">1つひとつの回は、いつでも読み返せます。</p>
+</div>
+
+<h2>② 体の土台は、3つのインフラ</h2>
+<p class="key">見てほしいところ：どれも、意識しなくても働いている状態が理想です</p>
+<div class="fig" id="f2">
+  <div class="seg" role="group" aria-label="体のインフラ">
+    <button type="button" data-m="0" aria-pressed="true">電気：呼吸</button>
+    <button type="button" data-m="1" aria-pressed="false">ガス：姿勢</button>
+    <button type="button" data-m="2" aria-pressed="false">水道：歩行</button>
+  </div>
+  <svg viewBox="0 0 320 130" role="img" aria-labelledby="t2 d2">
+    <title id="t2">体のインフラ</title>
+    <desc id="d2">家に電気、ガス、水道が通っているように、体には、呼吸、姿勢、歩行という土台がある。</desc>
+    <g id="g2"></g>
+  </svg>
+  <div class="read" id="r2" aria-live="polite"></div>
+  <p class="cap">電気・ガス・水道は、たとえ話です。</p>
+</div>
+
+<h2>全体を貫く、3つの考え方</h2>
+<ul class="three">
+  <li><b class="n">1</b><strong>痛い場所だけを見ない</strong><small>原因は、動かない関節や、使い方にあるかもしれません</small></li>
+  <li><b class="n">2</b><strong>負担とキャパで考える</strong><small>負担を減らし、キャパを育てます</small></li>
+  <li><b class="n">3</b><strong>治療と日常は、セット</strong><small>通院の外の体の使い方が、からだをつくります</small></li>
+</ul>
+
+<div class="sum">
+<p><strong>当院の考え方</strong></p>
+<p>動かない関節を動く状態にして（改善期）、ご自身の筋肉の使い方を練習し（安定期）、意識しなくても整っている体を目指す（定着期）。この流れは、ここまで一貫して、変わりませんでした。<strong>治療の目的は、痛みをとることだけでなく、からだの使い方を、一緒に整えていくこと</strong>です。</p>
+</div>
+
+<h2>今日からできる、小さな一歩</h2>
+<ol class="steps">
+  <li><strong>気になった回を、読み返す</strong>：ここまでで、いちばん「そうか」と思った回を、もう一度、読んでみましょう。</li>
+  <li><strong>1つだけ、続ける</strong>：その中から、続けられそうな習慣を1つだけ決めましょう。</li>
+</ol>
+<p>強い痛みやしびれがあるときは、無理をせず、ご相談ください。</p>
+<p>次回は、ひとまずのまとめとして、これからのことをお話しします。</p>
+
+<p class="note">この内容は、からだの動きについての一般的な説明です。個別の診断ではありません。強い痛み、しびれ、安静にしていても続く痛みがあるときは、無理をせず、先に医療機関を受診するか、LINEでご相談ください。<br>かたぎはら鍼灸整骨院</p>
+</main>
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function lerp(a,b,k){return a+(b-a)*k}
+  function ringS(x,y,k,p,r){return k>0.02?'<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="'+((r||19)+3*p).toFixed(1)+'" fill="none" stroke="var(--load)" stroke-width="3.5" stroke-opacity="'+(Math.min(1,k)*(0.55+0.45*p)).toFixed(2)+'"/>':""}
+  function lab(x,y,n,a,b,k){k=Math.min(1,k);return '<text x="'+x+'" y="'+y+'" font-size="13" font-weight="800" fill="var(--ink)">'+n+'</text><text x="'+x+'" y="'+(y+16)+'" font-size="12" font-weight="800" fill="'+a[1]+'" opacity="'+(1-k).toFixed(2)+'">'+a[0]+'</text><text x="'+x+'" y="'+(y+16)+'" font-size="12" font-weight="800" fill="'+b[1]+'" opacity="'+k.toFixed(2)+'">'+b[0]+'</text>'}
+  function qpt(t,p0,pc,p1){var q=1-t;return [q*q*p0[0]+2*q*t*pc[0]+t*t*p1[0],q*q*p0[1]+2*q*t*pc[1]+t*t*p1[1]]}
+  function setup(fid,rid,T,keys,draw){
+    var st={},bs=document.querySelectorAll("#"+fid+" .seg button"),tw=0,j;
+    for(j=0;j<keys.length;j++)st[keys[j]]=T[0][keys[j]];
+    $(rid).innerHTML=T[0].t;
+    function go(m){
+      $(rid).innerHTML=T[m].t;
+      for(var q=0;q<bs.length;q++)bs[q].setAttribute("aria-pressed",q===m?"true":"false");
+      cancelAnimationFrame(tw);var f={},s0=null,i;for(i=0;i<keys.length;i++)f[keys[i]]=st[keys[i]];
+      if(reduce){for(i=0;i<keys.length;i++)st[keys[i]]=T[m][keys[i]];draw(st,0.5);return}
+      (function step(ts){if(s0===null)s0=ts;var k=Math.min(1,(ts-s0)/650);k=1-Math.pow(1-k,3);
+        for(var n=0;n<keys.length;n++)st[keys[n]]=lerp(f[keys[n]],T[m][keys[n]],k);
+        if(k<1)tw=requestAnimationFrame(step)})(performance.now());
+    }
+    for(var q=0;q<bs.length;q++)bs[q].onclick=function(){go(+this.getAttribute("data-m"))};
+    draw(st,0.5);
+    if(!reduce){var vis=true;
+      if("IntersectionObserver" in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting},{threshold:.1}).observe($(fid));
+      (function loop(t){if(vis)draw(st,0.5+0.5*Math.sin(t*0.005));requestAnimationFrame(loop)})(0);}
+  }
+  var T1=[{a:0,t:"<b>第1期：見方を変える</b>痛い場所と原因は違う／揉む・ほぐすは、道具の一つ／関節の動く役と支える役／痛みは、頑張りすぎの合図／骨盤を立てる／頭は、骨盤の真上近く"},
+          {a:1,t:"<b>第2期：体の使い方</b>立つ・座る・歩く・かがむ／呼吸（3回）／足元／腰痛の見方／首・肩こりの見方"},
+          {a:2,t:"<b>第3期：日常と治療をつなぐ</b>治療と日常はセット／デスクワークの骨盤／家事・育児／運動の始め方／膝・股関節の見方／セルフチェック"},
+          {a:3,t:"<b>第4期：長く付き合う</b>再発／通院の意味／季節と年齢／ここまでの振り返り（今回）"}];
+  function d1(s,p){
+    var g='<line x1="30" y1="55" x2="290" y2="55" stroke="var(--line)" stroke-width="6" stroke-linecap="round"/>',names=["見方","使い方","日常","長く"];
+    for(var i=0;i<4;i++){
+      var x=40+i*80,act=Math.max(0,1-Math.abs(s.a-i)),r=14+10*act;
+      g+='<circle cx="'+x+'" cy="55" r="'+r.toFixed(1)+'" fill="var(--move)" fill-opacity="'+(0.2+0.8*act).toFixed(2)+'" stroke="var(--move)" stroke-width="3"/>';
+      g+='<text x="'+x+'" y="'+(60)+'" text-anchor="middle" font-size="'+(13+2*act).toFixed(1)+'" font-weight="800" fill="'+(act>0.5?"#fff":"var(--ink)")+'">'+(i+1)+'</text>';
+      g+='<text x="'+x+'" y="102" text-anchor="middle" font-size="12" font-weight="800" fill="var(--ink)">'+names[i]+'</text>';
+    }
+    $("g1").innerHTML=g;
+  }
+  setup("f1","r1",T1,["a"],d1);
+  var T2=[{a:0,t:"<b>電気：呼吸</b>意識しなくても、1日中続いている、からだの電気です。深く、楽に入ることが、からだ全体の調子を支えます。"},
+          {a:1,t:"<b>ガス：姿勢</b>骨盤が立ち、頭が骨盤の真上近くにあると、力まなくても、楽に体を支えられます。無理に作る姿勢ではなく、自然に整う姿勢です。"},
+          {a:2,t:"<b>水道：歩行</b>毎日たくさん使う、からだの水道です。股関節と、背中のひねりが使われると、楽に、長く歩けます。"}];
+  function d2(s,p){
+    var g='<path d="M40 60 L160 14 L280 60 Z" fill="var(--soft)" stroke="var(--line)" stroke-width="3" stroke-linejoin="round"/>',nm=["電気","ガス","水道"],ic=["⚡","🔥","💧"];
+    for(var i=0;i<3;i++){
+      var x=70+i*90,act=Math.max(0,1-Math.abs(s.a-i));
+      g+='<rect x="'+(x-38)+'" y="68" width="76" height="52" rx="12" fill="var(--move)" fill-opacity="'+(0.15+0.85*act).toFixed(2)+'" stroke="var(--move)" stroke-width="2.5"/>';
+      g+='<text x="'+x+'" y="92" text-anchor="middle" font-size="20">'+ic[i]+'</text>';
+      g+='<text x="'+x+'" y="112" text-anchor="middle" font-size="13" font-weight="800" fill="'+(act>0.5?"#fff":"var(--ink)")+'">'+nm[i]+'</text>';
+    }
+    $("g2").innerHTML=g;
+  }
+  setup("f2","r2",T2,["a"],d2);
+})();
+</script>
+</body>
+</html>

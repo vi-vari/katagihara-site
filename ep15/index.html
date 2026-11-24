@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第15回 腰痛の見方。腰の上と下を見る｜からだの使い方講座</title>
+<style>
+:root{
+  --bg:#fff7e6; --surface:#ffffff; --ink:#2a2e38; --sub:#5f6672; --line:#ecd9b0;
+  --move:#0b8f6b; --hold:#2878cc; --load:#e04e1b; --soft:#fff0c2;
+  --blk:#ffe3a3; --bone:#ffe0a0; --amber:#e8950f;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.95;font-size:16px;-webkit-text-size-adjust:100%}
+main{max-width:640px;margin:0 auto;padding:40px 20px 64px}
+h1{font-size:clamp(26px,7vw,36px);line-height:1.4;margin:0 0 12px;font-weight:800;letter-spacing:.02em}
+.lead{color:var(--sub);margin:0 0 28px}
+h2{font-size:20px;line-height:1.5;margin:48px 0 12px;font-weight:700;border-left:4px solid var(--move);padding-left:12px}
+p{margin:0 0 16px}
+.key{background:#fff;border:2px dashed var(--line);border-radius:10px;padding:8px 12px;font-size:14px;font-weight:700;line-height:1.7;margin:0 0 10px}
+.fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;margin:0 0 8px}
+.fig svg{display:block;width:100%;height:auto;max-height:330px}
+.seg{display:flex;gap:8px;margin:0 0 10px}
+.seg button{flex:1;font:inherit;font-size:14px;font-weight:700;line-height:1.4;padding:10px 6px;border-radius:10px;border:2px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.seg button[aria-pressed="true"]{border-color:var(--move);background:var(--soft)}
+button:focus-visible{outline:3px solid var(--move);outline-offset:2px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--sub);margin:6px 0 0}
+.legend i{display:inline-block;width:.9em;height:.9em;border-radius:50%;vertical-align:-1px;margin-right:4px}
+.read{font-size:15px;line-height:1.8;min-height:8.6em;background:var(--soft);border-radius:10px;padding:12px 14px;margin:12px 0 0}
+.read b{display:block;margin-bottom:2px}
+.cap{font-size:13px;color:var(--sub);margin:10px 4px 0;line-height:1.7}
+.three{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:8px}
+.three li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:15px;line-height:1.7}
+.three li b.n{display:inline-block;background:var(--move);color:#fff;border-radius:50%;width:1.7em;height:1.7em;text-align:center;line-height:1.7em;margin-right:8px;font-size:14px}
+.three li small{display:block;color:var(--sub);font-size:13px;margin-top:2px}
+.steps{margin:0 0 16px;padding-left:1.4em}
+.steps li{margin-bottom:6px}
+.sum{background:var(--soft);border-radius:12px;padding:16px 18px;margin:20px 0}
+.sum p:last-child{margin:0}
+.warn{background:#fff3ec;border:2px solid #ffb48a;border-radius:12px;padding:14px 16px;margin:12px 0 16px;font-size:15px;line-height:1.85}
+.warn ul{margin:6px 0 0;padding-left:1.3em}
+.note{font-size:13px;color:var(--sub);border-top:1px solid var(--line);margin-top:40px;padding-top:16px;line-height:1.8}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* ---- 明るいテーマ ---- */
+:root{--bg:#f5fbea;--line:#d0e8aa;--soft:#ecf9d0;--blk:#def3b6;--bone:#def3b6}
+body{background:var(--bg);font-size:16.5px;line-height:2}
+main{padding-top:24px}
+h1{background:linear-gradient(135deg,#b2e24f 0%,#4fd18b 100%);color:#10320f;padding:22px 20px 20px;border-radius:20px;margin:0 0 16px;box-shadow:0 5px 0 rgba(47,158,68,.30);font-size:clamp(22px,6.3vw,34px)}
+.lead{font-size:17px;font-weight:700;color:#2a5a12;margin:0 0 30px;padding-left:14px;border-left:5px solid #74c043}
+h2{display:block;background:#d9f5a5;color:#1b3a0a;border-left:8px solid #5fa31f;border-radius:12px;padding:10px 14px;font-size:20px;margin:52px 0 14px}
+p strong,.sum strong{background:linear-gradient(transparent 62%,#d9f5a5 62%);font-weight:800}
+.fig{border:2px solid #c2eb78;border-radius:18px;box-shadow:0 4px 0 #e8fac9}
+.seg button,.tabs button,.presets button,.modes button{border-color:#c2eb78;background:#fff;border-radius:12px;color:var(--ink)}
+.seg button[aria-pressed="true"],.tabs button[aria-pressed="true"],.presets button[aria-pressed="true"],.modes button[aria-pressed="true"]{border-color:var(--move);background:#d3f9e8}
+.read{background:#f0fbd8;border-left:6px solid #74c043;border-radius:12px}
+.sum{background:#fff2e2;border:2px solid #ffc994;border-radius:16px}
+.track{background:#e3f7c2}
+.note{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:48px}
+h1,h2,.lead{word-break:auto-phrase;text-wrap:balance}
+
+h1,h2{text-wrap:balance;word-break:auto-phrase}
+.ph{display:inline-block}
+</style>
+</head>
+<body>
+<main>
+<h1>腰痛の見方。<br>腰の上と下を見る</h1>
+<p class="lead">腰が痛いとき、見るのは「腰」だけではありません。</p>
+
+<p>腰痛は、とても多いお悩みです。ここまでの講座で、<strong>痛い場所と、原因の場所は違う</strong>こと、関節には<strong>動く役</strong>と<strong>支える役</strong>があることをお話ししてきました。</p>
+<p>今回は、その考え方を「腰痛の見方」としてまとめます。</p>
+
+<h2>腰は「支える役」の関節</h2>
+<p class="key">見てほしいところ：腰（支える役）の上と下の「動く役」が固まると、腰が頑張りすぎること</p>
+<div class="fig" id="fg">
+  <div class="seg" role="group" aria-label="腰痛のタイプ">
+    <button type="button" data-m="0" aria-pressed="true">ふつうの腰</button>
+    <button type="button" data-m="1" aria-pressed="false">反りタイプ</button>
+    <button type="button" data-m="2" aria-pressed="false">丸まりタイプ</button>
+  </div>
+  <svg viewBox="0 0 320 280" role="img" aria-labelledby="ft fd">
+    <title id="ft">腰痛のタイプの図解（横から）</title>
+    <desc id="fd">横から見た立ち姿。腰は支える役、背中の上部と股関節は動く役。背中の上部が硬く骨盤が前に倒れると腰が反って頑張る（反りタイプ）。股関節が硬く骨盤が後ろに倒れると腰が丸まって頑張る（丸まりタイプ）。</desc>
+    <line x1="30" y1="268" x2="300" y2="268" stroke="var(--line)" stroke-width="3" stroke-linecap="round"/>
+    <text x="296" y="30" text-anchor="end" font-size="12" fill="var(--sub)">前 ▶</text>
+    <g id="gb"></g>
+  </svg>
+  <div class="legend"><span><i style="background:var(--move)"></i>動く役</span><span><i style="background:var(--sub)"></i>硬い（動かない）</span><span><i style="border:2.5px solid var(--load);background:transparent"></i>腰（頑張りすぎ）</span></div>
+  <div class="read" id="rd" aria-live="polite"></div>
+  <p class="cap">ボタンで切り替えてみてください。図は分かりやすくするための模式図です。</p>
+</div>
+<p>どちらのタイプでも、<strong>痛くなる腰は、頑張りすぎている腰</strong>です。腰が悪いというより、腰の上や下の「動く役」が動かない分を、腰が代わりに引き受けている、という見方をします。</p>
+
+<h2>腰痛の見方は、3つ</h2>
+<ul class="three">
+  <li><b class="n">1</b><strong>腰の上</strong>：背中の上部が、動くか<small>体を後ろに反らすとき、背中の上のほうが反ってくるか</small></li>
+  <li><b class="n">2</b><strong>腰の下</strong>：股関節が、動くか<small>前かがみのとき、お尻を後ろに引いて、足の付け根から曲がれるか</small></li>
+  <li><b class="n">3</b><strong>骨盤の向き</strong>：前にも後ろにも、倒れすぎていないか<small>骨盤の前と後ろの出っ張りを触って確認します</small></li>
+</ul>
+<p>この3つを見て、<strong>どこが動かなくて、腰が頑張っているのか</strong>を探します。腰の痛みを和らげることも、もちろん大切にしながら、その原因を探していきます。</p>
+
+<div class="sum">
+<p><strong>当院の考え方</strong></p>
+<p>腰だけを施術しても、上や下が動かないままでは、また戻りやすくなります。まず、動かない関節を動く状態にします（改善期）。次に、自分の筋肉で、腰が頑張らずに済む動き方を練習します（安定期）。最後に、意識しなくても、自然にその動きができる体を目指します（定着期）。</p>
+</div>
+
+<h2>こんなときは、先に医療機関へ</h2>
+<div class="warn">
+<p style="margin:0">腰痛には、整骨院で対応できるものと、先に医療機関での検査が必要なものがあります。次のようなときは、無理をせず、先に医療機関を受診してください。</p>
+<ul>
+  <li>足にしびれや、力の入りにくさがある</li>
+  <li>排尿や排便の感覚がおかしい</li>
+  <li>発熱をともなう</li>
+  <li>転倒や事故など、強い外傷のあとの痛み</li>
+  <li>じっとしていても強く痛む、夜に痛みで目が覚める</li>
+</ul>
+</div>
+
+<h2>今日からできる、小さな一歩</h2>
+<ol class="steps">
+  <li><strong>腰の下のチェック</strong>：立って、お尻を後ろに引きながら、お辞儀をします。足の付け根から曲がっている感じがあるか、横から動画を撮って見てみましょう。</li>
+  <li><strong>腰の上のチェック</strong>：両手を頭の後ろで組み、痛みの出ない範囲で、胸を天井に向けます。背中の真ん中あたりが反ってくるか、感じてみましょう。</li>
+</ol>
+<p>痛みが出るときは、すぐに中止してください。</p>
+<p>次回は、同じ考え方で、首・肩こりの見方（胸郭と肩甲骨）に進みます。</p>
+
+<p class="note">この内容は、からだの動きについての一般的な説明です。個別の診断ではありません。強い痛み、しびれ、安静にしていても続く痛みがあるときは、無理をせず、先に医療機関を受診するか、LINEでご相談ください。<br>かたぎはら鍼灸整骨院</p>
+</main>
+
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function lerp(a,b,k){return a+(b-a)*k}
+  function cl(v,a,b){return Math.max(a,Math.min(b,v))}
+  var M=[
+    {lo:1,kh:1,hd:0.2,pt:0,x1:0,x2:0,ring:0,t:"<b>ふつうの腰</b>動く役の「背中の上部」と「股関節」がしっかり動き、骨盤が真ん中にあるので、支える役の腰は、安定させる仕事に集中できます。"},
+    {lo:2.4,kh:0.2,hd:0,pt:14,x1:1,x2:0,ring:1,t:"<b>反りタイプの腰痛</b>骨盤が前に倒れ、背中の上部が硬いと、後ろに反らす動きを、腰が代わりに引き受けます。腰が反りすぎて詰まり、腰の後ろ側に痛みが出やすくなります。"},
+    {lo:-0.5,kh:1.8,hd:1.5,pt:-14,x1:0,x2:1,ring:1,t:"<b>丸まりタイプの腰痛</b>骨盤が後ろに倒れ、股関節が硬いと、前かがみの動きを、腰が代わりに引き受けます。腰が丸まって引っ張られ、腰の筋肉が頑張り続けて、痛みが出やすくなります。"}
+  ];
+  var st={lo:1,kh:1,hd:0.2,pt:0,x1:0,x2:0,ring:0},keys=["lo","kh","hd","pt","x1","x2","ring"];
+  var R=Math.PI/180;
+  function draw(t){
+    var pulse=0.5+0.5*Math.sin(t*0.005),g="";
+    var pt=st.pt*R,sx=150+14*Math.sin(pt),sy=196-14*Math.cos(pt),top=62;
+    function pos(u){
+      var x=sx+st.lo*14*Math.sin(Math.PI*cl(u/0.45,0,1))-st.kh*14*Math.sin(Math.PI*cl((u-0.35)/0.6,0,1))+st.hd*14*Math.pow(u,3);
+      return [x,sy-(sy-top)*u];
+    }
+    var pts=[],i;for(i=0;i<=16;i++)pts.push(pos(i/16));
+    // 脚
+    g+='<polyline fill="none" stroke="var(--ink)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" points="150,208 150,266 176,266"/>';
+    // 骨盤
+    g+='<g transform="rotate('+st.pt.toFixed(1)+' 150 196)"><rect x="128" y="180" width="44" height="34" rx="12" fill="var(--blk)" stroke="var(--ink)" stroke-width="3"/><text x="150" y="203" text-anchor="middle" font-size="14" font-weight="700" fill="var(--ink)">骨盤</text></g>';
+    // 背骨
+    g+='<polyline fill="none" stroke="var(--ink)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" points="'+pts.map(function(p){return p[0].toFixed(1)+","+p[1].toFixed(1)}).join(" ")+'"/>';
+    var e=pts[16];g+='<circle cx="'+e[0].toFixed(1)+'" cy="'+(e[1]-20).toFixed(1)+'" r="15" fill="var(--ink)"/>';
+    // 関節の印
+    var T=pos(0.62),L=pos(0.22),H=[150,208];
+    g+='<circle cx="'+T[0].toFixed(1)+'" cy="'+T[1].toFixed(1)+'" r="8" fill="var(--move)"/>';
+    g+='<circle cx="'+H[0]+'" cy="'+H[1]+'" r="8" fill="var(--move)"/>';
+    if(st.x1>0.02)g+='<g opacity="'+st.x1.toFixed(2)+'"><circle cx="'+T[0].toFixed(1)+'" cy="'+T[1].toFixed(1)+'" r="11" fill="var(--sub)"/><text x="'+T[0].toFixed(1)+'" y="'+(T[1]+5).toFixed(1)+'" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">×</text></g>';
+    if(st.x2>0.02)g+='<g opacity="'+st.x2.toFixed(2)+'"><circle cx="'+H[0]+'" cy="'+H[1]+'" r="11" fill="var(--sub)"/><text x="'+H[0]+'" y="'+(H[1]+5)+'" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">×</text></g>';
+    g+='<circle cx="'+L[0].toFixed(1)+'" cy="'+L[1].toFixed(1)+'" r="7" fill="var(--hold)"/>';
+    if(st.ring>0.02)g+='<circle cx="'+L[0].toFixed(1)+'" cy="'+L[1].toFixed(1)+'" r="'+(19+3*pulse).toFixed(1)+'" fill="none" stroke="var(--load)" stroke-width="3.5" stroke-opacity="'+(st.ring*(0.55+0.45*pulse)).toFixed(2)+'"/>';
+    // ラベル（左）
+    function lab(y,n,a,b,ak,bk){
+      g+='<text x="6" y="'+y+'" font-size="13" font-weight="800" fill="var(--ink)">'+n+'</text>';
+      g+='<text x="6" y="'+(y+16)+'" font-size="12" font-weight="800" fill="'+a[1]+'" opacity="'+(1-ak).toFixed(2)+'">'+a[0]+'</text>';
+      g+='<text x="6" y="'+(y+16)+'" font-size="12" font-weight="800" fill="'+b[1]+'" opacity="'+ak.toFixed(2)+'">'+b[0]+'</text>';
+    }
+    lab(104,"背中の上部",["動く役","var(--move)"],["硬い","var(--sub)"],st.x1);
+    lab(152,"腰",["支える役","var(--hold)"],["頑張りすぎ","var(--load)"],st.ring);
+    lab(204,"股関節",["動く役","var(--move)"],["硬い","var(--sub)"],st.x2);
+    $("gb").innerHTML=g;
+  }
+  var bs=document.querySelectorAll(".seg button"),tw=0;
+  function go(m){
+    $("rd").innerHTML=M[m].t;
+    for(var q=0;q<bs.length;q++)bs[q].setAttribute("aria-pressed",q===m?"true":"false");
+    cancelAnimationFrame(tw);
+    var to=M[m],f={},s0=null,n;
+    for(n=0;n<keys.length;n++)f[keys[n]]=st[keys[n]];
+    if(reduce){for(n=0;n<keys.length;n++)st[keys[n]]=to[keys[n]];draw(0);return}
+    (function step(ts){
+      if(s0===null)s0=ts;var k=Math.min(1,(ts-s0)/650);k=1-Math.pow(1-k,3);
+      for(var j=0;j<keys.length;j++)st[keys[j]]=lerp(f[keys[j]],to[keys[j]],k);
+      if(k<1)tw=requestAnimationFrame(step);
+    })(performance.now());
+  }
+  for(var q=0;q<bs.length;q++)bs[q].onclick=function(){go(+this.getAttribute("data-m"))};
+  $("rd").innerHTML=M[0].t;draw(0);
+  if(!reduce){
+    var vis=true;
+    if("IntersectionObserver" in window){new IntersectionObserver(function(e){vis=e[0].isIntersecting},{threshold:.1}).observe($("fg"))}
+    (function loop(t){if(vis)draw(t);requestAnimationFrame(loop)})(0);
+  }
+})();
+</script>
+</body>
+</html>

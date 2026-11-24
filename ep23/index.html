@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第23回 再発。痛みが戻る理由と、早めの合図｜からだの使い方講座</title>
+<style>
+:root{
+  --bg:#fff7e6; --surface:#ffffff; --ink:#2a2e38; --sub:#5f6672; --line:#ecd9b0;
+  --move:#0b8f6b; --hold:#2878cc; --load:#e04e1b; --soft:#fff0c2;
+  --blk:#ffe3a3; --bone:#ffe0a0; --amber:#e8950f;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.95;font-size:16px;-webkit-text-size-adjust:100%}
+main{max-width:640px;margin:0 auto;padding:40px 20px 64px}
+h1{font-size:clamp(26px,7vw,36px);line-height:1.4;margin:0 0 12px;font-weight:800;letter-spacing:.02em}
+.lead{color:var(--sub);margin:0 0 28px}
+h2{font-size:20px;line-height:1.5;margin:48px 0 12px;font-weight:700;border-left:4px solid var(--move);padding-left:12px}
+p{margin:0 0 16px}
+.key{background:#fff;border:2px dashed var(--line);border-radius:10px;padding:8px 12px;font-size:14px;font-weight:700;line-height:1.7;margin:0 0 10px}
+.fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;margin:0 0 8px}
+.fig svg{display:block;width:100%;height:auto;max-height:330px}
+.seg{display:flex;gap:8px;margin:0 0 10px}
+.seg button{flex:1;font:inherit;font-size:14px;font-weight:700;line-height:1.4;padding:10px 6px;border-radius:10px;border:2px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.seg button[aria-pressed="true"]{border-color:var(--move);background:var(--soft)}
+button:focus-visible{outline:3px solid var(--move);outline-offset:2px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--sub);margin:6px 0 0}
+.legend i{display:inline-block;width:.9em;height:.9em;border-radius:50%;vertical-align:-1px;margin-right:4px}
+.read{font-size:15px;line-height:1.8;min-height:8.6em;background:var(--soft);border-radius:10px;padding:12px 14px;margin:12px 0 0}
+.read b{display:block;margin-bottom:2px}.read u{display:block;text-decoration:none;font-weight:800;color:var(--sub);font-size:13px;margin-top:6px}
+.cap{font-size:13px;color:var(--sub);margin:10px 4px 0;line-height:1.7}
+.three{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:8px}
+.three li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:15px;line-height:1.7}
+.three li b.n{display:inline-block;background:var(--move);color:#fff;border-radius:50%;width:1.7em;height:1.7em;text-align:center;line-height:1.7em;margin-right:8px;font-size:14px}
+.three li small{display:block;color:var(--sub);font-size:13px;margin-top:2px}
+.steps{margin:0 0 16px;padding-left:1.4em}
+.steps li{margin-bottom:6px}
+.sum{background:var(--soft);border-radius:12px;padding:16px 18px;margin:20px 0}
+.sum p:last-child{margin:0}
+.warn{background:#fff3ec;border:2px solid #ffb48a;border-radius:12px;padding:14px 16px;margin:12px 0 16px;font-size:15px;line-height:1.85}
+.warn ul{margin:6px 0 0;padding-left:1.3em}
+.note{font-size:13px;color:var(--sub);border-top:1px solid var(--line);margin-top:40px;padding-top:16px;line-height:1.8}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* ---- 明るいテーマ ---- */
+:root{--bg:#fff6ee;--line:#f7d9bc;--soft:#ffeedb;--blk:#ffe2c4;--bone:#ffe2c4}
+body{background:var(--bg);font-size:16.5px;line-height:2}
+main{padding-top:24px}
+h1{background:linear-gradient(135deg,#ffb36b 0%,#ff7f6e 100%);color:#4a1500;padding:22px 20px 20px;border-radius:20px;margin:0 0 16px;box-shadow:0 5px 0 rgba(240,90,40,.30);font-size:clamp(22px,6.3vw,34px)}
+.lead{font-size:17px;font-weight:700;color:#8a2f08;margin:0 0 30px;padding-left:14px;border-left:5px solid #ff8a4c}
+h2{display:block;background:#ffd9b8;color:#4a1500;border-left:8px solid #ff6b35;border-radius:12px;padding:10px 14px;font-size:20px;margin:52px 0 14px}
+p strong,.sum strong{background:linear-gradient(transparent 62%,#ffd9b8 62%);font-weight:800}
+.fig{border:2px solid #ffcfa6;border-radius:18px;box-shadow:0 4px 0 #ffe8d2}
+.seg button,.tabs button,.presets button,.modes button{border-color:#ffcfa6;background:#fff;border-radius:12px;color:var(--ink)}
+.seg button[aria-pressed="true"],.tabs button[aria-pressed="true"],.presets button[aria-pressed="true"],.modes button[aria-pressed="true"]{border-color:var(--move);background:#d3f9e8}
+.read{background:#fff1e4;border-left:6px solid #ff8a4c;border-radius:12px}
+.sum{background:#e4f8ef;border:2px solid #9be3c4;border-radius:16px}
+.track{background:#ffe8d2}
+.note{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:48px}
+h1,h2,.lead{word-break:auto-phrase;text-wrap:balance}
+
+h1,h2{text-wrap:balance;word-break:auto-phrase}
+.ph{display:inline-block}
+</style>
+<body>
+<main>
+<h1>再発。<br><span class="ph">痛みが戻る理由と、</span><span class="ph">早めの合図</span></h1>
+<p class="lead">良くなったのに、また痛くなった。そんな経験はありませんか。</p>
+<p>ここから、新しいシリーズ「長く付き合う」が始まります。第1回は、<strong>再発</strong>についてです。</p>
+<p>再発は、「治療が足りなかった」からとは限りません。<strong>痛みが引いたこと</strong>と、<strong>からだの受け止める力（キャパ）が育ったこと</strong>は、別のことだからです。</p>
+
+<h2>① 痛みが引いても、キャパは同じかもしれない</h2>
+<p class="key">見てほしいところ：「負担」の棒と「キャパ」の棒、どちらが長いか</p>
+<div class="fig" id="f1">
+  <div class="seg" role="group" aria-label="時期">
+    <button type="button" data-m="0" aria-pressed="true">痛いとき</button>
+    <button type="button" data-m="1" aria-pressed="false">痛みが引いた</button>
+    <button type="button" data-m="2" aria-pressed="false">元の生活に戻る</button>
+  </div>
+  <svg viewBox="0 0 320 100" role="img" aria-labelledby="t1 d1">
+    <title id="t1">再発のしくみ（負担とキャパ）</title>
+    <desc id="d1">痛いときは負担がキャパを超えている。痛みが引いたのは、負担が減ったから。キャパが小さいまま元の生活に戻ると、また負担が超えて、再発する。</desc>
+    <g id="g1"></g>
+  </svg>
+  <div class="legend"><span><i style="background:var(--load)"></i>負担</span><span><i style="background:var(--hold)"></i>キャパ（受け止める力）</span></div>
+  <div class="read" id="r1" aria-live="polite"></div>
+  <p class="cap">棒は、イメージを伝えるための模式図です。数値ではありません。</p>
+</div>
+
+<h2>② 痛みの前に、合図が出ることがある</h2>
+<p class="key">見てほしいところ：痛みになる前の、3つの段階</p>
+<div class="fig" id="f2">
+  <div class="seg" role="group" aria-label="合図の段階">
+    <button type="button" data-m="0" aria-pressed="true">① 違和感</button>
+    <button type="button" data-m="1" aria-pressed="false">② 重だるさ</button>
+    <button type="button" data-m="2" aria-pressed="false">③ 痛み</button>
+  </div>
+  <svg viewBox="0 0 320 150" role="img" aria-labelledby="t2 d2">
+    <title id="t2">痛みの前の合図の階段</title>
+    <desc id="d2">痛みになる前に、違和感、重だるさ、痛みの順に、合図が強くなる階段。</desc>
+    <g id="g2"></g>
+  </svg>
+  <div class="read" id="r2" aria-live="polite"></div>
+  <p class="cap">合図の出方は、人によって違います。</p>
+</div>
+
+<h2>再発を、小さくするために</h2>
+<ul class="three">
+  <li><b class="n">1</b><strong>痛みが引いても、やめない</strong><small>痛みが引いたあとが、キャパを育てる時間です</small></li>
+  <li><b class="n">2</b><strong>合図に、早めに気づく</strong><small>違和感や重だるさの段階で、見直します</small></li>
+  <li><b class="n">3</b><strong>日常の使い方を整える</strong><small>立つ・座る・歩く・呼吸を、無理なく続けます</small></li>
+</ul>
+
+<div class="sum">
+<p><strong>当院の考え方</strong></p>
+<p>痛みが引いたら終わり、ではありません。まず、動かない関節を動く状態にします（改善期）。痛みが引いたあとは、ご自身の筋肉で、キャパを育てる時間にします（安定期）。最後に、意識しなくても、自然に体が使える状態を目指します（定着期）。<strong>再発しにくい体は、安定期と定着期でつくられます</strong>。</p>
+</div>
+
+<h2>今日からできる、小さな一歩</h2>
+<ol class="steps">
+  <li><strong>自分の合図を知る</strong>：痛くなる前に、どんな感じが出やすいか、思い出してみましょう。</li>
+  <li><strong>合図が出たら、1つ確かめる</strong>：セルフチェックの中から、1つだけやってみましょう。</li>
+</ol>
+<p>強い痛みやしびれがあるときは、無理をせず、ご相談ください。</p>
+<p>次回は、通院の意味についてお話しします。</p>
+
+<p class="note">この内容は、からだの動きについての一般的な説明です。個別の診断ではありません。強い痛み、しびれ、安静にしていても続く痛みがあるときは、無理をせず、先に医療機関を受診するか、LINEでご相談ください。<br>かたぎはら鍼灸整骨院</p>
+</main>
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function lerp(a,b,k){return a+(b-a)*k}
+  function ringS(x,y,k,p,r){return k>0.02?'<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="'+((r||19)+3*p).toFixed(1)+'" fill="none" stroke="var(--load)" stroke-width="3.5" stroke-opacity="'+(Math.min(1,k)*(0.55+0.45*p)).toFixed(2)+'"/>':""}
+  function lab(x,y,n,a,b,k){k=Math.min(1,k);return '<text x="'+x+'" y="'+y+'" font-size="13" font-weight="800" fill="var(--ink)">'+n+'</text><text x="'+x+'" y="'+(y+16)+'" font-size="12" font-weight="800" fill="'+a[1]+'" opacity="'+(1-k).toFixed(2)+'">'+a[0]+'</text><text x="'+x+'" y="'+(y+16)+'" font-size="12" font-weight="800" fill="'+b[1]+'" opacity="'+k.toFixed(2)+'">'+b[0]+'</text>'}
+  function qpt(t,p0,pc,p1){var q=1-t;return [q*q*p0[0]+2*q*t*pc[0]+t*t*p1[0],q*q*p0[1]+2*q*t*pc[1]+t*t*p1[1]]}
+  function setup(fid,rid,T,keys,draw){
+    var st={},bs=document.querySelectorAll("#"+fid+" .seg button"),tw=0,j;
+    for(j=0;j<keys.length;j++)st[keys[j]]=T[0][keys[j]];
+    $(rid).innerHTML=T[0].t;
+    function go(m){
+      $(rid).innerHTML=T[m].t;
+      for(var q=0;q<bs.length;q++)bs[q].setAttribute("aria-pressed",q===m?"true":"false");
+      cancelAnimationFrame(tw);var f={},s0=null,i;for(i=0;i<keys.length;i++)f[keys[i]]=st[keys[i]];
+      if(reduce){for(i=0;i<keys.length;i++)st[keys[i]]=T[m][keys[i]];draw(st,0.5);return}
+      (function step(ts){if(s0===null)s0=ts;var k=Math.min(1,(ts-s0)/650);k=1-Math.pow(1-k,3);
+        for(var n=0;n<keys.length;n++)st[keys[n]]=lerp(f[keys[n]],T[m][keys[n]],k);
+        if(k<1)tw=requestAnimationFrame(step)})(performance.now());
+    }
+    for(var q=0;q<bs.length;q++)bs[q].onclick=function(){go(+this.getAttribute("data-m"))};
+    draw(st,0.5);
+    if(!reduce){var vis=true;
+      if("IntersectionObserver" in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting},{threshold:.1}).observe($(fid));
+      (function loop(t){if(vis)draw(st,0.5+0.5*Math.sin(t*0.005));requestAnimationFrame(loop)})(0);}
+  }
+  function bar(y,name,v,col){
+    var x=82,W=200;
+    return '<text x="10" y="'+(y+15)+'" font-size="13" font-weight="800" fill="var(--ink)">'+name+'</text><rect x="'+x+'" y="'+y+'" width="'+W+'" height="20" rx="10" fill="var(--soft)"/><rect x="'+x+'" y="'+y+'" width="'+Math.max(20,W*v).toFixed(1)+'" height="20" rx="10" fill="'+col+'"/>';
+  }
+  var T1=[{b:0.85,k:0.4,t:"<b>痛いとき</b>負担が、キャパを超えています。この状態が、「頑張りすぎの合図」としての痛みです。"},
+          {b:0.25,k:0.4,t:"<b>痛みが引いた</b>施術や安静で、負担が小さくなり、痛みが引きました。ただし、キャパは、まだ小さいままかもしれません。"},
+          {b:0.85,k:0.4,t:"<b>元の生活に戻る</b>キャパが小さいまま、元の生活の負担が戻ると、また超えてしまいます。これが、再発の一つのしくみです。"}];
+  function d1(s,p){
+    var g=bar(22,"負担",s.b,"var(--load)")+bar(56,"キャパ",s.k,"var(--hold)");
+    if(s.b>s.k+0.02)g+='<text x="296" y="16" text-anchor="end" font-size="12" font-weight="800" fill="var(--load)" opacity="'+Math.min(1,(s.b-s.k)*8).toFixed(2)+'">キャパ超え</text>';
+    $("g1").innerHTML=g;
+  }
+  setup("f1","r1",T1,["b","k"],d1);
+  var T2=[{a:0,t:"<b>① 違和感</b>いつもの動きが、少し硬い、やりにくい、という段階です。<u>こうしてみましょう</u>セルフチェックで、動きを1つ確かめてみましょう。"},
+          {a:1,t:"<b>② 重だるさ</b>首や腰が、重い、張る、という段階です。<u>こうしてみましょう</u>日常の姿勢や動き方を見直して、気になるときは早めにご相談ください。"},
+          {a:2,t:"<b>③ 痛み</b>痛みは、頑張りすぎの合図です。<u>こうしてみましょう</u>無理をせず、ご相談ください。早めの対応が、長引きにくさにつながります。"}];
+  function d2(s,p){
+    var g="",cols=["var(--move)","#ffb84d","var(--load)"],names=["違和感","重だるさ","痛み"];
+    for(var i=0;i<3;i++){
+      var x=20+i*98,h=40+i*34,y=130-h,act=Math.max(0,1-Math.abs(s.a-i));
+      g+='<rect x="'+x+'" y="'+y+'" width="88" height="'+h+'" rx="10" fill="'+cols[i]+'" fill-opacity="'+(0.25+0.75*act).toFixed(2)+'" stroke="'+cols[i]+'" stroke-width="2.5"/>';
+      g+='<text x="'+(x+44)+'" y="'+(y+h/2+5)+'" text-anchor="middle" font-size="14" font-weight="800" fill="var(--ink)">'+names[i]+'</text>';
+    }
+    var cx=64+s.a*98,cy=130-(40+s.a*34)-10;
+    g+='<path d="M'+(cx-9)+' '+(cy-14)+' L'+(cx+9)+' '+(cy-14)+' L'+cx+' '+cy+' Z" fill="var(--ink)"/>';
+    $("g2").innerHTML=g;
+  }
+  setup("f2","r2",T2,["a"],d2);
+})();
+</script>
+</body>
+</html>

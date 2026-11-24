@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第22回 セルフチェック。ご自身で見る6つの場所｜からだの使い方講座</title>
+<style>
+:root{
+  --bg:#fff7e6; --surface:#ffffff; --ink:#2a2e38; --sub:#5f6672; --line:#ecd9b0;
+  --move:#0b8f6b; --hold:#2878cc; --load:#e04e1b; --soft:#fff0c2;
+  --blk:#ffe3a3; --bone:#ffe0a0; --amber:#e8950f;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.95;font-size:16px;-webkit-text-size-adjust:100%}
+main{max-width:640px;margin:0 auto;padding:40px 20px 64px}
+h1{font-size:clamp(26px,7vw,36px);line-height:1.4;margin:0 0 12px;font-weight:800;letter-spacing:.02em}
+.lead{color:var(--sub);margin:0 0 28px}
+h2{font-size:20px;line-height:1.5;margin:48px 0 12px;font-weight:700;border-left:4px solid var(--move);padding-left:12px}
+p{margin:0 0 16px}
+.key{background:#fff;border:2px dashed var(--line);border-radius:10px;padding:8px 12px;font-size:14px;font-weight:700;line-height:1.7;margin:0 0 10px}
+.fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;margin:0 0 8px}
+.fig svg{display:block;width:100%;height:auto;max-height:330px}
+.seg{display:flex;gap:8px;margin:0 0 10px}
+.seg.wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.seg.wrap button{flex:none}
+.read u{display:block;text-decoration:none;font-weight:800;color:var(--sub);font-size:13px;margin-top:6px}
+.seg button{flex:1;font:inherit;font-size:14px;font-weight:700;line-height:1.4;padding:10px 6px;border-radius:10px;border:2px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.seg button[aria-pressed="true"]{border-color:var(--move);background:var(--soft)}
+button:focus-visible{outline:3px solid var(--move);outline-offset:2px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--sub);margin:6px 0 0}
+.legend i{display:inline-block;width:.9em;height:.9em;border-radius:50%;vertical-align:-1px;margin-right:4px}
+.read{font-size:15px;line-height:1.8;min-height:8.6em;background:var(--soft);border-radius:10px;padding:12px 14px;margin:12px 0 0}
+.read b{display:block;margin-bottom:2px}.read u{display:block;text-decoration:none;font-weight:800;color:var(--sub);font-size:13px;margin-top:6px}
+.cap{font-size:13px;color:var(--sub);margin:10px 4px 0;line-height:1.7}
+.three{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:8px}
+.three li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:15px;line-height:1.7}
+.three li b.n{display:inline-block;background:var(--move);color:#fff;border-radius:50%;width:1.7em;height:1.7em;text-align:center;line-height:1.7em;margin-right:8px;font-size:14px}
+.three li small{display:block;color:var(--sub);font-size:13px;margin-top:2px}
+.steps{margin:0 0 16px;padding-left:1.4em}
+.steps li{margin-bottom:6px}
+.sum{background:var(--soft);border-radius:12px;padding:16px 18px;margin:20px 0}
+.sum p:last-child{margin:0}
+.warn{background:#fff3ec;border:2px solid #ffb48a;border-radius:12px;padding:14px 16px;margin:12px 0 16px;font-size:15px;line-height:1.85}
+.warn ul{margin:6px 0 0;padding-left:1.3em}
+.note{font-size:13px;color:var(--sub);border-top:1px solid var(--line);margin-top:40px;padding-top:16px;line-height:1.8}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* ---- 明るいテーマ ---- */
+:root{--bg:#fff3f6;--line:#f6cfdb;--soft:#ffe6ee;--blk:#ffdbe7;--bone:#ffdbe7}
+body{background:var(--bg);font-size:16.5px;line-height:2}
+main{padding-top:24px}
+h1{background:linear-gradient(135deg,#ff9ec0 0%,#ffb86b 100%);color:#4a0f27;padding:22px 20px 20px;border-radius:20px;margin:0 0 16px;box-shadow:0 5px 0 rgba(214,51,108,.28);font-size:clamp(22px,6.3vw,34px)}
+.lead{font-size:17px;font-weight:700;color:#7a1d44;margin:0 0 30px;padding-left:14px;border-left:5px solid #f06595}
+h2{display:block;background:#ffd0e0;color:#4a0f27;border-left:8px solid #e64980;border-radius:12px;padding:10px 14px;font-size:20px;margin:52px 0 14px}
+p strong,.sum strong{background:linear-gradient(transparent 62%,#ffd0e0 62%);font-weight:800}
+.fig{border:2px solid #ffc2d6;border-radius:18px;box-shadow:0 4px 0 #ffe3ec}
+.seg button,.tabs button,.presets button,.modes button{border-color:#ffc2d6;background:#fff;border-radius:12px;color:var(--ink)}
+.seg button[aria-pressed="true"],.tabs button[aria-pressed="true"],.presets button[aria-pressed="true"],.modes button[aria-pressed="true"]{border-color:var(--move);background:#d3f9e8}
+.read{background:#fff0f4;border-left:6px solid #f06595;border-radius:12px}
+.sum{background:#e6f8ef;border:2px solid #9be3c4;border-radius:16px}
+.track{background:#ffe3ec}
+.note{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:48px}
+h1,h2,.lead{word-break:auto-phrase;text-wrap:balance}
+
+h1,h2{text-wrap:balance;word-break:auto-phrase}
+.ph{display:inline-block}
+</style>
+<body>
+<main>
+<h1>セルフチェック。<br>ご自身で見る6つの場所</h1>
+<p class="lead">ここまでの内容を、ご自宅で見られる形にまとめます。</p>
+<p>この講座では、<strong>痛い場所と原因は違う</strong>こと、<strong>動く役と支える役</strong>があること、<strong>骨盤を立てる</strong>ことをお話ししてきました。</p>
+<p>今回は、その見方を、ご自身で確かめられる<strong>6つの場所</strong>にまとめます。</p>
+
+<h2>6つの場所を、順に見る</h2>
+<p class="key">見てほしいところ：ボタンを押すと、からだの場所が光り、確かめ方が出ます</p>
+<div class="fig" id="f1">
+  <div class="seg wrap" role="group" aria-label="チェックする場所">
+    <button type="button" data-m="0" aria-pressed="true">① 耳の位置</button>
+    <button type="button" data-m="1" aria-pressed="false">② 胸郭</button>
+    <button type="button" data-m="2" aria-pressed="false">③ 肩甲骨</button>
+    <button type="button" data-m="3" aria-pressed="false">④ 骨盤</button>
+    <button type="button" data-m="4" aria-pressed="false">⑤ 股関節</button>
+    <button type="button" data-m="5" aria-pressed="false">⑥ 足元</button>
+  </div>
+  <svg viewBox="0 20 320 270" role="img" aria-labelledby="t1 d1">
+    <title id="t1">セルフチェックの6つの場所（横から）</title>
+    <desc id="d1">横から見た立ち姿。耳、胸郭、肩甲骨、骨盤、股関節、足元の6つの場所のうち、選んだ場所が光る。</desc>
+    <line x1="30" y1="268" x2="300" y2="268" stroke="var(--line)" stroke-width="3" stroke-linecap="round"/>
+    <text x="296" y="40" text-anchor="end" font-size="12" fill="var(--sub)">前 ▶</text>
+    <g id="g1"></g>
+  </svg>
+  <div class="read" id="r1" aria-live="polite" style="min-height:11em"></div>
+  <p class="cap">図は分かりやすくするための模式図です。</p>
+</div>
+
+<h2>セルフチェックの使い方</h2>
+<ul class="three">
+  <li><b class="n">1</b><strong>同じ条件で、月に1回</strong><small>同じ場所、同じ服、同じ時間帯で見ると、比べやすくなります</small></li>
+  <li><b class="n">2</b><strong>動画や写真に残す</strong><small>家族に頼むか、スマホを置いて、横と正面から撮ります</small></li>
+  <li><b class="n">3</b><strong>気になる場所を、1つだけ</strong><small>全部を直そうとせず、気になる1つから取り組みます</small></li>
+</ul>
+<p>この6つは、<strong>良い悪いを決めるためのものではありません</strong>。ご自身のからだの「いまの状態」を知り、変化を確かめるための目安です。</p>
+
+<div class="sum">
+<p><strong>当院の考え方</strong></p>
+<p>セルフチェックは、診察の代わりではなく、ご自身が主体的にからだと関わるための入り口です。気づいたことを、通院のときにお伝えください。まず、動かない関節を動く状態にします（改善期）。次に、ご自身の筋肉で、使い方を練習します（安定期）。最後に、意識しなくても、自然にできる体を目指します（定着期）。</p>
+</div>
+
+<h2>今日からできる、小さな一歩</h2>
+<ol class="steps">
+  <li><strong>横から1枚撮る</strong>：まっすぐ立った姿を、横から動画か写真で残しましょう。耳の位置と、骨盤の向きを見てみます。</li>
+  <li><strong>1つだけ、確かめる</strong>：6つのうち、気になる1つだけ、実際にやってみましょう。</li>
+</ol>
+<p>痛みが出るときは、すぐに中止してください。</p>
+<p>次回から、新しいシリーズ「長く付き合う」が始まります。第1回は、再発についてお話しします。</p>
+
+<p class="note">この内容は、からだの動きについての一般的な説明です。個別の診断ではありません。強い痛み、しびれ、安静にしていても続く痛みがあるときは、無理をせず、先に医療機関を受診するか、LINEでご相談ください。<br>かたぎはら鍼灸整骨院</p>
+</main>
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var T=[
+   {x:150,y:72,n:"耳の位置",t:"<b>① 耳の位置</b><u>やり方</u>横から、まっすぐ立った姿を撮ります。<u>見るところ</u>耳が、骨盤の真上近くにあるか。前に出ているほど、首が頑張りやすくなります。"},
+   {x:150,y:128,n:"胸郭",t:"<b>② 胸郭（肋骨のかご）</b><u>やり方</u>背筋を伸ばして座り、ゆっくり深く息を吸います。<u>見るところ</u>胸や背中の上のほうが、ふくらむか。動かないと、首や腰が頑張りやすくなります。"},
+   {x:128,y:100,n:"肩甲骨",t:"<b>③ 肩甲骨</b><u>やり方</u>痛みの出ない範囲で、両腕をゆっくり上げます。<u>見るところ</u>肩がすくまずに、腕が上がるか。正面から動画を撮ると分かりやすくなります。"},
+   {x:150,y:190,n:"骨盤",t:"<b>④ 骨盤の向き</b><u>やり方</u>骨盤の前のでっぱりと、後ろのでっぱりを触ります。<u>見るところ</u>前にも後ろにも倒れすぎていないか。後ろのでっぱりが少し高いくらいが目安です。"},
+   {x:150,y:208,n:"股関節",t:"<b>⑤ 股関節</b><u>やり方</u>立って、お尻を後ろに引きながら、お辞儀をします。<u>見るところ</u>足の付け根から曲がるか。腰だけで曲がっていないか、横から見ます。"},
+   {x:172,y:258,n:"足元",t:"<b>⑥ 足元</b><u>やり方</u>裸足で立って、足の裏のどこに体重が乗っているか感じます。<u>見るところ</u>かかと、親指側、小指側の3点で、バランスよく乗っているか。"}];
+  var cur=0;
+  function draw(t){
+    var p=0.5+0.5*Math.sin(t*0.005),g="";
+    g+='<polyline fill="none" stroke="var(--ink)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" points="150,208 150,266 176,266"/>';
+    g+='<ellipse cx="156" cy="128" rx="30" ry="40" fill="var(--blk)" fill-opacity=".8" stroke="var(--ink)" stroke-width="2.5"/>';
+    g+='<rect x="128" y="180" width="44" height="34" rx="12" fill="var(--blk)" stroke="var(--ink)" stroke-width="3"/><text x="150" y="203" text-anchor="middle" font-size="14" font-weight="700" fill="var(--ink)">骨盤</text>';
+    g+='<line x1="150" y1="190" x2="150" y2="80" stroke="var(--ink)" stroke-width="11" stroke-linecap="round"/>';
+    g+='<circle cx="150" cy="60" r="17" fill="var(--ink)"/>';
+    g+='<polyline fill="none" stroke="var(--ink)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" points="148,100 160,140 172,176"/>';
+    var s=T[cur];
+    g+='<circle cx="'+s.x+'" cy="'+s.y+'" r="'+(20+4*p).toFixed(1)+'" fill="none" stroke="var(--move)" stroke-width="4" stroke-opacity="'+(0.6+0.4*p).toFixed(2)+'"/>';
+    g+='<circle cx="'+s.x+'" cy="'+s.y+'" r="6" fill="var(--move)"/>';
+    var lx=s.x<150?s.x-34:s.x+34,anc=s.x<150?"end":"start";
+    if(s.x>=176)lx=s.x-30,anc="end";
+    g+='<line x1="'+s.x+'" y1="'+s.y+'" x2="'+(anc==="end"?lx+4:lx-4)+'" y2="'+(s.y-24)+'" stroke="var(--move)" stroke-width="2"/>';
+    g+='<text x="'+lx+'" y="'+(s.y-28)+'" text-anchor="'+anc+'" font-size="14" font-weight="800" fill="var(--ink)">'+s.n+'</text>';
+    $("g1").innerHTML=g;
+  }
+  var bs=document.querySelectorAll("#f1 .seg button");
+  function go(m){cur=m;$("r1").innerHTML=T[m].t;for(var q=0;q<bs.length;q++)bs[q].setAttribute("aria-pressed",q===m?"true":"false");if(reduce)draw(0)}
+  for(var q=0;q<bs.length;q++)bs[q].onclick=function(){go(+this.getAttribute("data-m"))};
+  $("r1").innerHTML=T[0].t;draw(0);
+  if(!reduce){var vis=true;
+    if("IntersectionObserver" in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting},{threshold:.1}).observe($("f1"));
+    (function loop(t){if(vis)draw(t);requestAnimationFrame(loop)})(0);}
+})();
+</script>
+</body>
+</html>

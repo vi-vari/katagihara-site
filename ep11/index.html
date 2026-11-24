@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第11回 呼吸は、何のためにするのか｜からだの使い方講座</title>
+<style>
+:root{
+  --bg:#fff7e6; --surface:#ffffff; --ink:#2a2e38; --sub:#5f6672; --line:#ecd9b0;
+  --move:#0b8f6b; --hold:#2878cc; --load:#e04e1b; --soft:#fff0c2;
+  --blk:#ffe3a3; --bone:#ffe0a0; --amber:#e8950f;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.95;font-size:16px;-webkit-text-size-adjust:100%}
+main{max-width:640px;margin:0 auto;padding:40px 20px 64px}
+h1{font-size:clamp(26px,7vw,36px);line-height:1.4;margin:0 0 12px;font-weight:800;letter-spacing:.02em}
+.lead{color:var(--sub);margin:0 0 28px}
+h2{font-size:20px;line-height:1.5;margin:48px 0 12px;font-weight:700;border-left:4px solid var(--move);padding-left:12px}
+p{margin:0 0 16px}
+.fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;margin:0 0 8px}
+.fig svg{display:block;width:100%;height:auto;max-height:330px}
+.seg{display:flex;gap:8px;margin:0 0 10px}
+.seg button{flex:1;font:inherit;font-size:14px;font-weight:700;line-height:1.4;padding:10px 6px;border-radius:10px;border:2px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.seg button[aria-pressed="true"]{border-color:var(--move);background:var(--soft)}
+button:focus-visible{outline:3px solid var(--move);outline-offset:2px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--sub);margin:6px 0 0}
+.legend i{display:inline-block;width:.9em;height:.9em;border-radius:50%;vertical-align:-1px;margin-right:4px}
+.read{font-size:15px;line-height:1.8;min-height:7.2em;background:var(--soft);border-radius:10px;padding:12px 14px;margin:12px 0 0}
+.read b{display:block;margin-bottom:2px}
+.cap{font-size:13px;color:var(--sub);margin:10px 4px 0;line-height:1.7}
+.loop{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:6px}
+.loop li{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:15px;line-height:1.6}
+.loop li b{color:var(--load);margin-right:6px}
+.sum{background:var(--soft);border-radius:12px;padding:16px 18px;margin:20px 0}
+.sum p:last-child{margin:0}
+.note{font-size:13px;color:var(--sub);border-top:1px solid var(--line);margin-top:40px;padding-top:16px;line-height:1.8}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* ---- 明るいテーマ ---- */
+:root{--bg:#eef8ff;--line:#c5e1f5;--soft:#dff0fd;--blk:#d6ebff;--bone:#d6ebff}
+body{background:var(--bg);font-size:16.5px;line-height:2}
+main{padding-top:24px}
+h1{background:linear-gradient(135deg,#74c0fc 0%,#3bc9db 100%);color:#062a40;padding:22px 20px 20px;border-radius:20px;margin:0 0 16px;box-shadow:0 5px 0 rgba(25,113,194,.30);font-size:clamp(22px,6.3vw,34px)}
+.lead{font-size:17px;font-weight:700;color:#0b4a6f;margin:0 0 30px;padding-left:14px;border-left:5px solid #339af0}
+h2{display:block;background:#a5d8ff;color:#08283d;border-left:8px solid #1c7ed6;border-radius:12px;padding:10px 14px;font-size:20px;margin:52px 0 14px}
+p strong,.sum strong{background:linear-gradient(transparent 62%,#a5d8ff 62%);font-weight:800}
+.fig{border:2px solid #a5d8ff;border-radius:18px;box-shadow:0 4px 0 #d0ebff}
+.seg button,.tabs button,.presets button,.modes button{border-color:#a5d8ff;background:#fff;border-radius:12px;color:var(--ink)}
+.seg button[aria-pressed="true"],.tabs button[aria-pressed="true"],.presets button[aria-pressed="true"],.modes button[aria-pressed="true"]{border-color:var(--move);background:#d3f9e8}
+.read{background:#e7f5ff;border-left:6px solid #339af0;border-radius:12px}
+.sum{background:#fff0e0;border:2px solid #ffc78f;border-radius:16px}
+.track{background:#d0ebff}
+.note{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:48px}
+h1,h2,.lead{word-break:auto-phrase;text-wrap:balance}
+
+h1,h2{text-wrap:balance;word-break:auto-phrase}
+.ph{display:inline-block}
+</style>
+</head>
+<body>
+<main>
+<h1>呼吸は、<br>何のためにするのか</h1>
+<p class="lead">息が浅くなると、体は「疲れて丸まる」ほうへ向かいます。</p>
+
+<p>私たちの体は、食べ物と酸素を使って、動くためのエネルギーをつくっています。呼吸は、その材料である酸素を取り込み、体の隅々へ届けるための、土台の仕事です。</p>
+<p>体のインフラ（電気）にあたる呼吸が弱ると、その影響は、疲れや姿勢、痛みとして出てきます。まず、息の入り方で、体がどう変わるかを見てみましょう。</p>
+
+<h2>息の入り方で、体の状態が変わる</h2>
+<div class="fig" id="fg">
+  <div class="seg" role="group" aria-label="呼吸の状態">
+    <button type="button" data-m="0" aria-pressed="true">息がしっかり入る</button>
+    <button type="button" data-m="1" aria-pressed="false">息が浅い</button>
+  </div>
+  <svg viewBox="0 0 320 290" role="img" aria-labelledby="ft fd">
+    <title id="ft">呼吸の深さと、姿勢・エネルギーの図解</title>
+    <desc id="fd">横から見た人。息がしっかり入る場合は、胸が大きく動き、背すじが伸び、エネルギーが十分ある。息が浅い場合は、胸があまり動かず、体が丸まり、エネルギーが少なく、首や背中の筋肉が頑張っている。</desc>
+    <line x1="30" y1="270" x2="290" y2="270" stroke="var(--line)" stroke-width="3" stroke-linecap="round"/>
+    <g id="bt"></g>
+  </svg>
+  <div class="legend"><span><i style="background:var(--move)"></i>息で広がる胸</span><span><i style="border:2.5px solid var(--load);background:transparent"></i>頑張る首・背中の筋肉</span></div>
+  <div class="read" id="rd" aria-live="polite"></div>
+  <p class="cap">ボタンで切り替えてみてください。胸がゆっくり息で動いています。電池は「体のエネルギー」のイメージで、図は分かりやすくするための模式図です。</p>
+</div>
+
+<h2>息が浅いと、悪循環が起きやすい</h2>
+<ul class="loop">
+  <li><b>①</b>息が浅く、体にエネルギーの材料が届きにくい</li>
+  <li><b>②</b>体が疲れやすく、しんどくなる</li>
+  <li><b>③</b>疲れると、体が丸まりやすい</li>
+  <li><b>④</b>丸まると、肋骨が動きにくくなり、さらに息が浅くなる</li>
+</ul>
+<p>さらに、息を引き上げるために首や肩の筋肉が頑張り続けると、筋肉が緊張したままになります。緊張が続くと、筋肉への血の巡りや酸素の届き方が悪くなり、疲れや痛みとして出やすくなります。</p>
+<p>反対に、深呼吸をすると、それだけで背すじが自然に伸びることがあります。呼吸と姿勢は、お互いに影響し合っているのです。</p>
+
+<div class="sum">
+<p><strong>当院の考え方</strong></p>
+<p>痛みが出ている筋肉だけを見るのではなく、「息がきちんと入る体か」も確認します。息が入る状態に整え、自分の筋肉で呼吸を使えるようにし、最後は、意識しなくても自然に深く呼吸できる体を目指します。</p>
+</div>
+
+<h2>今日からできる、小さな一歩</h2>
+<p>椅子に座って、ゆっくり鼻から吸って、口から長めに吐く深呼吸を、3回行ってみてください。吸うときに、背すじが自然に伸びる感覚があるか、探してみましょう。無理に深く吸おうとせず、めまいがしたら中止してください。</p>
+<p>次回は、「深呼吸で姿勢が伸びる」仕組みを、もう少し詳しく見ていきます。</p>
+
+<p class="note">この内容は、からだの動きについての一般的な説明です。個別の診断ではありません。強い痛み、しびれ、安静にしていても続く痛みがあるときは、無理をせず、LINEでご相談ください。息苦しさや胸の痛みが強いときは、すぐに医療機関を受診してください。<br>かたぎはら鍼灸整骨院</p>
+</main>
+
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var R=Math.PI/180;
+  function lerp(a,b,k){return a+(b-a)*k}
+  var M=[
+    {curl:0,amp:13,energy:90,tens:0,t:"<b>息がしっかり入る</b>胸が大きく動き、体にエネルギーの材料がしっかり届きます。体が元気で、背すじも自然に伸びやすくなります。"},
+    {curl:1,amp:4,energy:28,tens:1,t:"<b>息が浅い</b>胸があまり動かず、息の入りが小さくなります。エネルギーをつくりにくく疲れやすいうえ、疲れると体が丸まり、首や背中の筋肉が頑張り続けます。"}
+  ];
+  var st={curl:0,amp:13,energy:90,tens:0};
+  var keys=["curl","amp","energy","tens"];
+  function pt(p,len,deg){return{x:p.x+len*Math.sin(deg*R),y:p.y-len*Math.cos(deg*R)}}
+  function ln(a,b,c,w,o){return '<line x1="'+a.x.toFixed(1)+'" y1="'+a.y.toFixed(1)+'" x2="'+b.x.toFixed(1)+'" y2="'+b.y.toFixed(1)+'" stroke="'+c+'" stroke-width="'+w+'" stroke-linecap="round"'+(o!==undefined?' stroke-opacity="'+o+'"':'')+'/>'}
+  function draw(t){
+    var b=reduce?1:0.5-0.5*Math.cos(2*Math.PI*t/4000);
+    var H={x:150,y:204},A={x:150,y:268};
+    var l1=6*st.curl,l2=34*st.curl;
+    var L=pt(H,40,l1),S=pt(L,40,l2),Hd=pt(S,26,l2+12*st.curl);
+    var g="";
+    g+=ln(H,A,"var(--ink)",10)+ln(A,{x:174,y:268},"var(--ink)",8);
+    g+=ln(H,L,"var(--ink)",11)+ln(L,S,"var(--ink)",11);
+    g+=ln(S,{x:S.x+6,y:S.y+68},"var(--ink)",8,0.6);
+    g+='<circle cx="'+Hd.x.toFixed(1)+'" cy="'+Hd.y.toFixed(1)+'" r="15" fill="var(--ink)"/>';
+    var lean=(l1+l2)/2*R;
+    var C={x:(L.x+S.x)/2+14*Math.cos(lean),y:(L.y+S.y)/2+14*Math.sin(lean)};
+    g+='<circle cx="'+C.x.toFixed(1)+'" cy="'+C.y.toFixed(1)+'" r="'+(14+st.amp*b).toFixed(1)+'" fill="var(--move)" fill-opacity=".38" stroke="var(--move)" stroke-width="3"/>';
+    var ro=st.tens*(0.6+0.4*Math.sin(t*0.004));
+    if(st.tens>0.02){
+      g+='<circle cx="'+S.x.toFixed(1)+'" cy="'+S.y.toFixed(1)+'" r="21" fill="none" stroke="var(--load)" stroke-width="3.5" stroke-opacity="'+ro.toFixed(2)+'"/>';
+      g+='<circle cx="'+L.x.toFixed(1)+'" cy="'+L.y.toFixed(1)+'" r="17" fill="none" stroke="var(--load)" stroke-width="3.5" stroke-opacity="'+(ro*0.85).toFixed(2)+'"/>';
+    }
+    // 電池（体のエネルギー）
+    var col=st.energy>55?"var(--move)":"var(--load)";
+    g+='<rect x="212" y="24" width="72" height="26" rx="6" fill="none" stroke="var(--ink)" stroke-width="3"/><rect x="284" y="32" width="6" height="10" rx="2" fill="var(--ink)"/>';
+    g+='<rect x="217" y="29" width="'+(62*st.energy/100).toFixed(1)+'" height="16" rx="3" fill="'+col+'"/>';
+    g+='<text x="248" y="68" text-anchor="middle" font-size="12" font-weight="700" fill="var(--sub)">体のエネルギー</text>';
+    $("bt").innerHTML=g;
+  }
+  var bs=document.querySelectorAll(".seg button"),tw=0;
+  function go(i){
+    $("rd").innerHTML=M[i].t;
+    for(var q=0;q<bs.length;q++)bs[q].setAttribute("aria-pressed",q===i?"true":"false");
+    cancelAnimationFrame(tw);
+    var to=M[i],f={},s0=null,n;
+    for(n=0;n<keys.length;n++)f[keys[n]]=st[keys[n]];
+    if(reduce){for(n=0;n<keys.length;n++)st[keys[n]]=to[keys[n]];draw(0);return}
+    (function step(ts){
+      if(s0===null)s0=ts;var k=Math.min(1,(ts-s0)/600);k=1-Math.pow(1-k,3);
+      for(var m=0;m<keys.length;m++)st[keys[m]]=lerp(f[keys[m]],to[keys[m]],k);
+      if(k<1)tw=requestAnimationFrame(step);
+    })(performance.now());
+  }
+  for(var q=0;q<bs.length;q++)bs[q].onclick=function(){go(+this.getAttribute("data-m"))};
+  $("rd").innerHTML=M[0].t;draw(0);
+  if(!reduce){
+    var vis=true;
+    if("IntersectionObserver" in window){new IntersectionObserver(function(e){vis=e[0].isIntersecting},{threshold:.1}).observe($("fg"))}
+    (function loop(t){if(vis)draw(t);requestAnimationFrame(loop)})(0);
+  }
+})();
+</script>
+</body>
+</html>

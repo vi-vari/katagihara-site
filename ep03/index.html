@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第3回 関節には、「動く役」と「支える役」がある｜からだの使い方講座</title>
+<style>
+:root{
+  --bg:#fff7e6; --surface:#ffffff; --ink:#2a2e38; --sub:#5f6672; --line:#ecd9b0;
+  --move:#0b8f6b; --hold:#2878cc; --load:#e04e1b; --soft:#fff0c2;
+  --blk:#ffe3a3; --bone:#ffe0a0; --amber:#e8950f;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.95;font-size:16px;-webkit-text-size-adjust:100%}
+main{max-width:640px;margin:0 auto;padding:40px 20px 64px}
+h1{font-size:clamp(26px,7vw,36px);line-height:1.4;margin:0 0 12px;font-weight:800;letter-spacing:.02em}
+.lead{color:var(--sub);margin:0 0 28px}
+h2{font-size:20px;line-height:1.5;margin:48px 0 12px;font-weight:700;border-left:4px solid var(--move);padding-left:12px}
+p{margin:0 0 16px}
+.chain{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 8px;padding:0;list-style:none}
+.chain li{font-size:13px;font-weight:700;line-height:1.4;padding:6px 10px;border-radius:999px;background:var(--surface);border:2px solid var(--line)}
+.chain .m{border-color:var(--move)}
+.chain .h{border-color:var(--hold)}
+.cap{font-size:13px;color:var(--sub);margin:10px 4px 0;line-height:1.7}
+.fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;margin:0 0 8px}
+.fig svg{display:block;width:100%;height:auto;max-height:260px}
+.seg{display:flex;gap:8px;margin:0 0 6px}
+.seg button{flex:1;font:inherit;font-size:14px;font-weight:700;line-height:1.4;padding:10px 6px;border-radius:10px;border:2px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.seg button[aria-pressed="true"]{border-color:var(--move);background:var(--soft)}
+button:focus-visible{outline:3px solid var(--move);outline-offset:2px}
+.lg{margin:6px 0 0;font-size:14px;line-height:1.6}
+.lr{display:flex;align-items:baseline;gap:8px;margin:4px 0}
+.lr i{width:.9em;height:.9em;border-radius:50%;flex:none;align-self:center}
+.lr b{flex:none}
+.lr small{color:var(--sub);font-size:12px;flex:none}
+.lr .st{margin-left:auto;text-align:right;font-weight:700}
+.sum{background:var(--soft);border-radius:12px;padding:16px 18px;margin:20px 0}
+.sum p:last-child{margin:0}
+.note{font-size:13px;color:var(--sub);border-top:1px solid var(--line);margin-top:40px;padding-top:16px;line-height:1.8}
+
+/* ---- 明るいテーマ ---- */
+body{background:var(--bg);font-size:16.5px;line-height:2}
+main{padding-top:24px}
+h1{background:linear-gradient(135deg,#ffd43b 0%,#ffa94d 100%);color:#3b2500;padding:22px 20px 20px;border-radius:20px;margin:0 0 16px;box-shadow:0 5px 0 rgba(240,140,0,.35)}
+.lead{font-size:17px;font-weight:700;color:#5a3d00;margin:0 0 30px;padding-left:14px;border-left:5px solid #ffa94d}
+h2{display:block;background:#ffe066;color:#2f2200;border-left:8px solid #ff922b;border-radius:12px;padding:10px 14px;font-size:20px;margin:52px 0 14px}
+p strong,.sum strong{background:linear-gradient(transparent 62%,#ffe066 62%);font-weight:800}
+.fig{border:2px solid #ffd8a8;border-radius:18px;box-shadow:0 4px 0 #ffe8cc}
+.seg button,.tabs button,.presets button,.modes button{border-color:#ffd8a8;background:#fff;border-radius:12px;color:var(--ink)}
+.seg button[aria-pressed="true"],.tabs button[aria-pressed="true"],.presets button[aria-pressed="true"],.modes button[aria-pressed="true"]{border-color:var(--move);background:#d3f9e8}
+.read{background:#fff5d6;border-left:6px solid #ffa94d;border-radius:12px}
+.sum{background:#e3f9ee;border:2px solid #9be3c4;border-radius:16px}
+.track{background:#ffeec8}
+.note{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:48px}
+h1{font-size:clamp(22px,6.3vw,34px)}
+h1,h2,.lead{word-break:auto-phrase;text-wrap:balance}
+
+h1,h2{text-wrap:balance;word-break:auto-phrase}
+.ph{display:inline-block}
+</style>
+</head>
+<body>
+<main>
+<h1>関節には、<br><span class="ph">「動く役」と</span><span class="ph">「支える役」がある</span></h1>
+<p class="lead">痛みが出る関節は、頑張りすぎている関節かもしれません。</p>
+
+<p>「痛い場所と原因の場所は違う」という考え方を、関節の分担で見てみましょう。</p>
+<p>体の関節は、ただ並んでいるのではなく、<strong>よく動いてほしい関節</strong>と、<strong>しっかり安定してほしい関節</strong>が、交互に並んで分担していると考えると、体の動きが整理しやすくなります。</p>
+
+<h2>動く役と支える役は、交互に並ぶ</h2>
+<ul class="chain" aria-label="足元から順に並ぶ関節">
+  <li class="m">足首：動く役</li>
+  <li class="h">膝：支える役</li>
+  <li class="m">股関節：動く役</li>
+  <li class="h">腰：支える役</li>
+  <li class="m">背中の上部：動く役</li>
+  <li class="h">首：支える役</li>
+</ul>
+<p class="cap">足元から順に並べた図です。動く役が動かなくなると、隣の支える役が頑張りすぎます。次の3つの場面で見てみましょう。</p>
+
+<h2>① 足首が硬いと、膝が頑張る</h2>
+<div class="fig" id="f0">
+  <div class="seg" role="group" aria-label="足首の状態"><button type="button" data-m="0" aria-pressed="true">足首がよく動く</button><button type="button" data-m="1" aria-pressed="false">足首が硬い</button></div>
+  <svg viewBox="0 0 340 220" role="img" aria-label="足首と膝の動きの図"><line x1="20" y1="207" x2="320" y2="207" stroke="var(--line)" stroke-width="3" stroke-linecap="round"/><g id="g0"></g></svg>
+  <div class="lg" id="l0"></div>
+</div>
+<p>足首が動かない分、膝が代わりに大きく動こうとします。痛いのは膝でも、きっかけは足首にあるかもしれません。</p>
+
+<h2>② 股関節が硬いと、腰が頑張る</h2>
+<div class="fig" id="f1">
+  <div class="seg" role="group" aria-label="股関節の状態"><button type="button" data-m="0" aria-pressed="true">股関節がよく動く</button><button type="button" data-m="1" aria-pressed="false">股関節が硬い</button></div>
+  <svg viewBox="0 0 340 220" role="img" aria-label="股関節と腰の動きの図"><line x1="20" y1="207" x2="320" y2="207" stroke="var(--line)" stroke-width="3" stroke-linecap="round"/><g id="g1"></g></svg>
+  <div class="lg" id="l1"></div>
+</div>
+<p>前かがみになるときに股関節が動かないと、腰が代わりに曲がります。痛いのは腰でも、原因は股関節にあることがあります。</p>
+
+<h2><span class="ph">③ 背中の上部が硬いと、</span><span class="ph">腰が頑張る</span></h2>
+<div class="fig" id="f2">
+  <div class="seg" role="group" aria-label="背中の上部の状態"><button type="button" data-m="0" aria-pressed="true">背中がよく動く</button><button type="button" data-m="1" aria-pressed="false">背中が硬い</button></div>
+  <svg viewBox="0 0 340 220" role="img" aria-label="背中の上部と腰の動きの図"><line x1="20" y1="207" x2="320" y2="207" stroke="var(--line)" stroke-width="3" stroke-linecap="round"/><g id="g2"></g></svg>
+  <div class="lg" id="l2"></div>
+</div>
+<p>体を後ろに反らすとき、背中の上部が反らない分、腰が代わりに大きく反ります。腰の痛みとして出やすくなります。首も一緒に頑張ることがあります。</p>
+
+<h2>分担が崩れると、何が起きるか</h2>
+<p>長く座り続ける、ケガのあと、使わない動きが増える。こうした理由で動く役の関節が硬くなると、その分を隣の「支える役」が引き受けます。</p>
+<p>支える役の関節は、本来、動くのが得意ではありません。動き続けると疲れ、そこに痛みが出ます。ですから、<strong>痛みが出ている関節は、実は頑張りすぎている関節</strong>であることが少なくありません。</p>
+
+<div class="sum">
+<p><strong>当院の考え方</strong></p>
+<p>痛い関節だけを見るのではなく、動く役の関節が、きちんと動ける状態かを確認します。動かない関節は、まず施術で動く状態にします。</p>
+<p>そのうえで、動くようになった体を、自分の筋肉で支え、動かせるように進めていきます。</p>
+</div>
+
+<h2>今日からできる、小さな一歩</h2>
+<p>椅子に座って、足首をゆっくり大きく回してみてください。曲げ伸ばしも、あわせて行います。痛みの出ない範囲で、左右の違いを感じてみましょう。足首が動くと、膝や腰が頑張りすぎずに済みます。</p>
+
+<p class="note">この内容は、からだの動きについての一般的な説明です。個別の診断ではありません。関節の役割は、体の動きを整理する考え方の一つで、すべての人に当てはまるわけではありません。強い痛み、しびれ、安静にしていても続く痛みがあるときは、無理をせず、LINEでご相談ください。<br>かたぎはら鍼灸整骨院</p>
+</main>
+
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function pt(p,len,deg){var r=deg*Math.PI/180;return{x:p.x+len*Math.sin(r),y:p.y-len*Math.cos(r)}}
+  function ln(a,b,c,w){return '<line x1="'+a.x.toFixed(1)+'" y1="'+a.y.toFixed(1)+'" x2="'+b.x.toFixed(1)+'" y2="'+b.y.toFixed(1)+'" stroke="'+c+'" stroke-width="'+w+'" stroke-linecap="round"/>'}
+  function dot(p,kind,t){
+    var h="",x=p.x.toFixed(1),y=p.y.toFixed(1);
+    if(kind==="over")h+='<circle cx="'+x+'" cy="'+y+'" r="'+(17+3*(0.5+0.5*Math.sin(t*0.006))).toFixed(1)+'" fill="none" stroke="var(--load)" stroke-width="3.5"/>';
+    var col=kind==="stuck"?"var(--sub)":(kind==="over"||kind==="h"?"var(--hold)":"var(--move)");
+    h+='<circle cx="'+x+'" cy="'+y+'" r="11" fill="'+col+'"'+(kind==="stuck"?' fill-opacity=".65"':'')+'/>';
+    if(kind==="stuck")h+='<text x="'+x+'" y="'+(p.y+5).toFixed(1)+'" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">×</text>';
+    return h;
+  }
+  var C=[
+    {names:[["足首","動く役","var(--move)"],["膝","支える役","var(--hold)"]],
+     st:[["よく動く","安定している"],["ほとんど動かない","大きく動いて頑張りすぎ"]],
+     pose:function(s,m,t){
+       var g=m?{a:6,k:46}:{a:22,k:30},a=g.a*s,k=g.k*s;
+       var A={x:100,y:192},K=pt(A,70,a),H=pt(K,75,a-k);
+       return '<path d="M74 203 L130 203" stroke="var(--sub)" stroke-width="8" stroke-linecap="round"/>'+ln(A,K,"var(--ink)",10)+ln(K,H,"var(--ink)",10)+dot(A,m?"stuck":"m",t)+dot(K,m?"over":"h",t);
+     }},
+    {names:[["股関節","動く役","var(--move)"],["腰","支える役","var(--hold)"]],
+     st:[["よく動く","安定している"],["ほとんど動かない","大きく曲がって頑張りすぎ"]],
+     pose:function(s,m,t){
+       var g=m?{p:32,q:48}:{p:60,q:20},p=g.p*s,q=g.q*s;
+       var B={x:95,y:205},H={x:95,y:118},L=pt(H,38,p),S=pt(L,70,p+q),Hd=pt(S,19,p+q);
+       return ln(B,H,"var(--sub)",10)+ln(H,L,"var(--ink)",10)+ln(L,S,"var(--ink)",10)+'<circle cx="'+Hd.x.toFixed(1)+'" cy="'+Hd.y.toFixed(1)+'" r="15" fill="var(--ink)"/>'+dot(H,m?"stuck":"m",t)+dot(L,m?"over":"h",t);
+     }},
+    {names:[["背中の上部","動く役","var(--move)"],["腰","支える役","var(--hold)"]],
+     st:[["よく反る","安定している"],["ほとんど反らない","大きく反って頑張りすぎ"]],
+     pose:function(s,m,t){
+       var g=m?{a:40,b:5}:{a:15,b:30},a=g.a*s,b=g.b*s;
+       var B={x:140,y:205},L={x:140,y:150},T=pt(L,45,-a),U=pt(T,40,-(a+b)),Hd=pt(U,24,-(a+b));
+       return ln(B,L,"var(--sub)",10)+ln(L,T,"var(--ink)",10)+ln(T,U,"var(--ink)",10)+'<circle cx="'+Hd.x.toFixed(1)+'" cy="'+Hd.y.toFixed(1)+'" r="15" fill="var(--ink)"/>'+dot(T,m?"stuck":"m",t)+dot(L,m?"over":"h",t);
+     }}
+  ];
+  var mode=[0,0,0],vis=[true,true,true];
+  function legend(i){
+    var c=C[i],m=mode[i],h="";
+    for(var k=0;k<2;k++){
+      var col=c.names[k][2],txt=c.st[m][k],tc="var(--ink)";
+      if(m&&k===0){col="var(--sub)";tc="var(--sub)"}
+      if(m&&k===1){tc="var(--load)"}
+      h+='<div class="lr"><i style="background:'+col+'"></i><b>'+c.names[k][0]+'</b><small>'+c.names[k][1]+'</small><span class="st" style="color:'+tc+'">'+txt+'</span></div>';
+    }
+    $("l"+i).innerHTML=h;
+  }
+  function draw(i,t){
+    var s=reduce?1:(0.5-0.5*Math.cos(2*Math.PI*t/3000));
+    $("g"+i).innerHTML=C[i].pose(s,mode[i],t);
+  }
+  for(var i=0;i<3;i++){
+    (function(i){
+      var bs=$("f"+i).querySelectorAll("button");
+      for(var k=0;k<bs.length;k++)bs[k].onclick=function(){
+        mode[i]=+this.getAttribute("data-m");
+        for(var q=0;q<bs.length;q++)bs[q].setAttribute("aria-pressed",q===mode[i]?"true":"false");
+        legend(i);draw(i,performance.now());
+      };
+      legend(i);draw(i,0);
+      if("IntersectionObserver" in window){new IntersectionObserver(function(e){vis[i]=e[0].isIntersecting},{threshold:.1}).observe($("f"+i))}
+    })(i);
+  }
+  if(!reduce){(function loop(t){for(var i=0;i<3;i++)if(vis[i])draw(i,t);requestAnimationFrame(loop)})(0)}
+})();
+</script>
+</body>
+</html>

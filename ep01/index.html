@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第1回 痛い場所と、原因の場所は違う｜からだの使い方講座</title>
+<style>
+:root{
+  --bg:#fff7e6; --surface:#ffffff; --ink:#2a2e38; --sub:#5f6672; --line:#ecd9b0;
+  --move:#0b8f6b; --hold:#2878cc; --load:#e04e1b; --soft:#fff0c2;
+  --blk:#ffe3a3; --bone:#ffe0a0; --amber:#e8950f;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.95;font-size:16px;-webkit-text-size-adjust:100%}
+main{max-width:640px;margin:0 auto;padding:40px 20px 64px}
+h1{font-size:clamp(26px,7vw,36px);line-height:1.4;margin:0 0 12px;font-weight:800;letter-spacing:.02em}
+.lead{color:var(--sub);margin:0 0 28px}
+h2{font-size:20px;line-height:1.5;margin:48px 0 12px;font-weight:700;border-left:4px solid var(--move);padding-left:12px}
+p{margin:0 0 16px}
+.fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;margin:0 0 8px}
+.fig svg{display:block;width:100%;height:auto;max-height:340px}
+.modes{display:flex;gap:8px;margin:0 0 12px}
+.modes button{flex:1;font:inherit;font-size:14px;font-weight:700;line-height:1.4;padding:10px 8px;border-radius:10px;border:2px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.modes button[aria-pressed="true"]{border-color:var(--move);background:var(--soft)}
+button:focus-visible,input:focus-visible{outline:3px solid var(--move);outline-offset:2px}
+.slider{display:flex;align-items:center;gap:12px;margin:8px 0 14px;font-size:14px;color:var(--sub)}
+.slider input{flex:1;accent-color:var(--move);height:28px}
+.meter{font-size:14px;margin:6px 0}
+.meter .row{display:flex;align-items:center;gap:10px}
+.meter .lab{width:6.5em;flex:none}
+.meter .track{flex:1;height:12px;border-radius:6px;background:var(--soft);overflow:hidden}
+.meter .bar{height:100%;width:0;border-radius:6px}
+.meter .val{width:3.2em;text-align:right;font-variant-numeric:tabular-nums}
+.cap{font-size:13px;color:var(--sub);margin:10px 4px 0;line-height:1.7}
+.sum{background:var(--soft);border-radius:12px;padding:16px 18px;margin:20px 0}
+.sum p:last-child{margin:0}
+.note{font-size:13px;color:var(--sub);border-top:1px solid var(--line);margin-top:40px;padding-top:16px;line-height:1.8}
+.dot{display:inline-block;width:.8em;height:.8em;border-radius:50%;vertical-align:-1px;margin-right:4px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* ---- 明るいテーマ ---- */
+:root{--bg:#fff7e6;--line:#ecd9b0;--soft:#fff0c2;--blk:#ffe3a3;--bone:#ffe0a0}
+body{background:var(--bg);font-size:16.5px;line-height:2}
+main{padding-top:24px}
+h1{background:linear-gradient(135deg,#ffd43b 0%,#ffa94d 100%);color:#3b2500;padding:22px 20px 20px;border-radius:20px;margin:0 0 16px;box-shadow:0 5px 0 rgba(240,140,0,.35);font-size:clamp(22px,6.3vw,34px)}
+.lead{font-size:17px;font-weight:700;color:#5a3d00;margin:0 0 30px;padding-left:14px;border-left:5px solid #ffa94d}
+h2{display:block;background:#ffe066;color:#2f2200;border-left:8px solid #ff922b;border-radius:12px;padding:10px 14px;font-size:20px;margin:52px 0 14px}
+p strong,.sum strong{background:linear-gradient(transparent 62%,#ffe066 62%);font-weight:800}
+.fig{border:2px solid #ffd8a8;border-radius:18px;box-shadow:0 4px 0 #ffe8cc}
+.seg button,.tabs button,.presets button,.modes button{border-color:#ffd8a8;background:#fff;border-radius:12px;color:var(--ink)}
+.seg button[aria-pressed="true"],.tabs button[aria-pressed="true"],.presets button[aria-pressed="true"],.modes button[aria-pressed="true"]{border-color:var(--move);background:#d3f9e8}
+.read{background:#fff5d6;border-left:6px solid #ffa94d;border-radius:12px}
+.sum{background:#e3f9ee;border:2px solid #9be3c4;border-radius:16px}
+.track{background:#ffeec8}
+.note{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:48px}
+h1,h2,.lead{word-break:auto-phrase;text-wrap:balance}
+.meter .bar{display:block}
+
+h1,h2{text-wrap:balance;word-break:auto-phrase}
+.ph{display:inline-block}
+</style>
+</head>
+<body>
+<main>
+<h1>痛い場所と、<br>原因の場所は違う</h1>
+<p class="lead">腰が痛いのに、本当に動いていないのは別の場所かもしれません。</p>
+
+<p>「ちゃんと痛いところを治療してもらったのに、しばらくするとまた痛くなる」。そんな経験はありませんか。</p>
+<p>実は、痛みが出ている場所は<strong>「頑張りすぎている場所」</strong>であることが少なくありません。まずは下の図で、その様子を見てみましょう。</p>
+
+<h2>同じお辞儀でも、動く場所が違う</h2>
+<div class="fig">
+  <div class="modes" role="group" aria-label="体の動きのタイプ">
+    <button type="button" id="mGood" aria-pressed="true">股関節がよく動く人</button>
+    <button type="button" id="mStiff" aria-pressed="false">股関節が硬い人</button>
+  </div>
+  <svg viewBox="0 0 320 300" role="img" aria-labelledby="ft fd">
+    <title id="ft">前かがみ動作の図解</title>
+    <desc id="fd">横から見た人の前かがみ。股関節が動く場合と、硬くて腰が代わりに曲がる場合を比べる。</desc>
+    <line x1="20" y1="290" x2="300" y2="290" stroke="var(--line)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M120 190 L120 240 L120 284 L146 284" fill="none" stroke="var(--sub)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline id="trunk" fill="none" stroke="var(--ink)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" points="0,0 0,0 0,0"/>
+    <circle id="head" r="15" fill="var(--ink)"/>
+    <circle id="hipDot" cx="120" cy="190" r="8" fill="var(--move)" fill-opacity=".85"/>
+    <circle id="lumDot" r="8" fill="var(--load)" fill-opacity=".85"/>
+    <text x="120" y="222" text-anchor="end" font-size="12" fill="var(--move)" dx="-14" font-weight="700">股関節</text>
+    <text id="lumTxt" font-size="12" fill="var(--load)" font-weight="700">腰</text>
+  </svg>
+  <div class="slider">
+    <span>立つ</span>
+    <input type="range" id="t" min="0" max="100" value="0" aria-label="前かがみの深さ">
+    <span>深く倒す</span>
+  </div>
+  <div class="meter">
+    <div class="row"><span class="lab"><span class="dot" style="background:var(--move)"></span>股関節</span><span class="track"><span class="bar" id="bH" style="background:var(--move)"></span></span><span class="val" id="vH">0°</span></div>
+    <div class="row"><span class="lab"><span class="dot" style="background:var(--load)"></span>腰</span><span class="track"><span class="bar" id="bL" style="background:var(--load)"></span></span><span class="val" id="vL">0°</span></div>
+  </div>
+  <p class="cap">スライダーを動かして、2つのタイプを切り替えてみてください。体を倒す量はほぼ同じでも、股関節と腰の分担が変わります。</p>
+</div>
+
+<h2>何が起きているのか</h2>
+<p>前かがみは、本来「股関節」と「腰」が分担して行う動きです。ところが股関節が動きにくいと、足りない分を腰が引き受けます。</p>
+<p>毎日の立ち座り、物を拾う、洗顔、仕事の姿勢。そのたびに腰だけがたくさん曲がり、使われすぎた腰が痛みを出します。この場合、痛いのは腰ですが、動きの問題は股関節にあります。</p>
+<p>このような「動かない場所の代わりに、動きやすい場所が頑張る」という関係は、腰と股関節に限らず、首と肩、膝と足首など、体のいろいろな場所で見られる考え方です。</p>
+
+<div class="sum">
+<p><strong>痛い場所だけを治療すると</strong>、一時的に楽になっても、動きの分担が変わっていなければ、また同じ場所に負担が戻ります。</p>
+<p><strong>当院では</strong>、痛みの場所に加えて、体全体の動きの分担を確認し、動くべき場所が動けるように整えることを大切にしています。</p>
+</div>
+
+<h2>今日からできる、小さな一歩</h2>
+<p>物を拾うとき、顔を洗うとき、「背中を丸める」よりも「お尻を後ろに引いて、股関節からお辞儀をする」ことを意識してみてください。無理のない範囲で、ゆっくり行ってください。</p>
+<p>次回は、動きの分担を日常で保つ「姿勢より動き方」についてお話しします。</p>
+
+<p class="note">この内容は、からだの動きについての一般的な説明です。個別の診断ではありません。強い痛み、しびれ、安静にしていても続く痛みがあるときは、無理をせず、LINEでご相談ください。<br>かたぎはら鍼灸整骨院</p>
+</main>
+
+<script>
+(function(){
+  var H={x:120,y:190}, PL=38, UL=85;
+  var modes={good:{h:70,l:22},stiff:{h:28,l:62}};
+  var cur={h:70,l:22}, tgt=modes.good, t=0;
+  var $=function(i){return document.getElementById(i)};
+  var slider=$("t"), reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function draw(){
+    var a=cur.h*t, l=cur.l*t, r=Math.PI/180;
+    var P={x:H.x+PL*Math.sin(a*r), y:H.y-PL*Math.cos(a*r)};
+    var b=(a+l)*r;
+    var S={x:P.x+UL*Math.sin(b), y:P.y-UL*Math.cos(b)};
+    var Hd={x:S.x+24*Math.sin(b), y:S.y-24*Math.cos(b)};
+    $("trunk").setAttribute("points",H.x+","+H.y+" "+P.x.toFixed(1)+","+P.y.toFixed(1)+" "+S.x.toFixed(1)+","+S.y.toFixed(1));
+    $("head").setAttribute("cx",Hd.x.toFixed(1)); $("head").setAttribute("cy",Hd.y.toFixed(1));
+    $("hipDot").setAttribute("r",(8+a*0.08).toFixed(1));
+    var lm=$("lumDot"); lm.setAttribute("cx",P.x.toFixed(1)); lm.setAttribute("cy",P.y.toFixed(1)); lm.setAttribute("r",(8+l*0.22).toFixed(1));
+    var tx=$("lumTxt"); tx.setAttribute("x",(P.x+22).toFixed(1)); tx.setAttribute("y",(P.y-8).toFixed(1));
+    $("bH").style.width=Math.min(100,a/90*100)+"%"; $("bL").style.width=Math.min(100,l/90*100)+"%";
+    $("vH").textContent=Math.round(a)+"°"; $("vL").textContent=Math.round(l)+"°";
+  }
+  var raf=0;
+  function tween(to){
+    tgt=to; cancelAnimationFrame(raf);
+    if(reduce){cur={h:to.h,l:to.l};draw();return}
+    var from={h:cur.h,l:cur.l}, st=null;
+    function step(ts){ if(!st)st=ts; var k=Math.min(1,(ts-st)/450); k=1-Math.pow(1-k,3);
+      cur.h=from.h+(to.h-from.h)*k; cur.l=from.l+(to.l-from.l)*k; draw(); if(k<1)raf=requestAnimationFrame(step)}
+    raf=requestAnimationFrame(step);
+  }
+  function setMode(m){
+    $("mGood").setAttribute("aria-pressed",m==="good"); $("mStiff").setAttribute("aria-pressed",m==="stiff");
+    tween(modes[m]);
+  }
+  $("mGood").onclick=function(){setMode("good")};
+  $("mStiff").onclick=function(){setMode("stiff")};
+  slider.oninput=function(){t=slider.value/100;draw()};
+  draw();
+  // 読み込み時に一度だけ、ゆっくり前かがみを見せる
+  if(reduce){t=.8;slider.value=80;draw()}
+  else{var s0=null;(function go(ts){if(!s0)s0=ts;var k=Math.min(1,(ts-s0)/1600);t=.85*(1-Math.pow(1-k,3));slider.value=Math.round(t*100);draw();if(k<1)requestAnimationFrame(go)})(performance.now?performance.now():0)}
+})();
+</script>
+</body>
+</html>

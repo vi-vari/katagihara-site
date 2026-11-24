@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第20回 運動の始め方。まず動く体、次に少しずつ｜からだの使い方講座</title>
+<style>
+:root{
+  --bg:#fff7e6; --surface:#ffffff; --ink:#2a2e38; --sub:#5f6672; --line:#ecd9b0;
+  --move:#0b8f6b; --hold:#2878cc; --load:#e04e1b; --soft:#fff0c2;
+  --blk:#ffe3a3; --bone:#ffe0a0; --amber:#e8950f;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.95;font-size:16px;-webkit-text-size-adjust:100%}
+main{max-width:640px;margin:0 auto;padding:40px 20px 64px}
+h1{font-size:clamp(26px,7vw,36px);line-height:1.4;margin:0 0 12px;font-weight:800;letter-spacing:.02em}
+.lead{color:var(--sub);margin:0 0 28px}
+h2{font-size:20px;line-height:1.5;margin:48px 0 12px;font-weight:700;border-left:4px solid var(--move);padding-left:12px}
+p{margin:0 0 16px}
+.key{background:#fff;border:2px dashed var(--line);border-radius:10px;padding:8px 12px;font-size:14px;font-weight:700;line-height:1.7;margin:0 0 10px}
+.fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;margin:0 0 8px}
+.fig svg{display:block;width:100%;height:auto;max-height:330px}
+.seg{display:flex;gap:8px;margin:0 0 10px}
+.seg button{flex:1;font:inherit;font-size:14px;font-weight:700;line-height:1.4;padding:10px 6px;border-radius:10px;border:2px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.seg button[aria-pressed="true"]{border-color:var(--move);background:var(--soft)}
+button:focus-visible{outline:3px solid var(--move);outline-offset:2px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--sub);margin:6px 0 0}
+.legend i{display:inline-block;width:.9em;height:.9em;border-radius:50%;vertical-align:-1px;margin-right:4px}
+.read{font-size:15px;line-height:1.8;min-height:8.6em;background:var(--soft);border-radius:10px;padding:12px 14px;margin:12px 0 0}
+.read b{display:block;margin-bottom:2px}
+.cap{font-size:13px;color:var(--sub);margin:10px 4px 0;line-height:1.7}
+.three{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:8px}
+.three li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:15px;line-height:1.7}
+.three li b.n{display:inline-block;background:var(--move);color:#fff;border-radius:50%;width:1.7em;height:1.7em;text-align:center;line-height:1.7em;margin-right:8px;font-size:14px}
+.three li small{display:block;color:var(--sub);font-size:13px;margin-top:2px}
+.steps{margin:0 0 16px;padding-left:1.4em}
+.steps li{margin-bottom:6px}
+.sum{background:var(--soft);border-radius:12px;padding:16px 18px;margin:20px 0}
+.sum p:last-child{margin:0}
+.warn{background:#fff3ec;border:2px solid #ffb48a;border-radius:12px;padding:14px 16px;margin:12px 0 16px;font-size:15px;line-height:1.85}
+.warn ul{margin:6px 0 0;padding-left:1.3em}
+.note{font-size:13px;color:var(--sub);border-top:1px solid var(--line);margin-top:40px;padding-top:16px;line-height:1.8}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* ---- 明るいテーマ ---- */
+:root{--bg:#fff3f6;--line:#f6cfdb;--soft:#ffe6ee;--blk:#ffdbe7;--bone:#ffdbe7}
+body{background:var(--bg);font-size:16.5px;line-height:2}
+main{padding-top:24px}
+h1{background:linear-gradient(135deg,#ff9ec0 0%,#ffb86b 100%);color:#4a0f27;padding:22px 20px 20px;border-radius:20px;margin:0 0 16px;box-shadow:0 5px 0 rgba(214,51,108,.28);font-size:clamp(22px,6.3vw,34px)}
+.lead{font-size:17px;font-weight:700;color:#7a1d44;margin:0 0 30px;padding-left:14px;border-left:5px solid #f06595}
+h2{display:block;background:#ffd0e0;color:#4a0f27;border-left:8px solid #e64980;border-radius:12px;padding:10px 14px;font-size:20px;margin:52px 0 14px}
+p strong,.sum strong{background:linear-gradient(transparent 62%,#ffd0e0 62%);font-weight:800}
+.fig{border:2px solid #ffc2d6;border-radius:18px;box-shadow:0 4px 0 #ffe3ec}
+.seg button,.tabs button,.presets button,.modes button{border-color:#ffc2d6;background:#fff;border-radius:12px;color:var(--ink)}
+.seg button[aria-pressed="true"],.tabs button[aria-pressed="true"],.presets button[aria-pressed="true"],.modes button[aria-pressed="true"]{border-color:var(--move);background:#d3f9e8}
+.read{background:#fff0f4;border-left:6px solid #f06595;border-radius:12px}
+.sum{background:#e6f8ef;border:2px solid #9be3c4;border-radius:16px}
+.track{background:#ffe3ec}
+.note{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:48px}
+h1,h2,.lead{word-break:auto-phrase;text-wrap:balance}
+
+h1,h2{text-wrap:balance;word-break:auto-phrase}
+.ph{display:inline-block}
+</style>
+<body>
+<main>
+<h1>運動の始め方。<br>まず動く体、次に少しずつ</h1>
+<p class="lead">運動は、からだにいい。けれど、始め方で結果が変わります。</p>
+<p>「運動を始めたら、腰や膝が痛くなった」という声は、少なくありません。運動そのものが悪いのではなく、<strong>始める順番</strong>と<strong>量</strong>がカギになります。</p>
+<p>当院では、<strong>まず動く体をつくり、次に使い方を覚え、少しずつ増やす</strong>、という順で考えます。</p>
+
+<h2><span class="ph">① 動く役が使えているか、</span><span class="ph">から始める</span></h2>
+<p class="key">見てほしいところ：しゃがむとき、曲がっているのが「股関節」か「腰」か</p>
+<div class="fig" id="f1">
+  <div class="seg" role="group" aria-label="しゃがみ方">
+    <button type="button" data-m="0" aria-pressed="true">股関節から動く</button>
+    <button type="button" data-m="1" aria-pressed="false">腰で代わりに動く</button>
+  </div>
+  <svg viewBox="0 70 320 210" role="img" aria-labelledby="t1 d1">
+    <title id="t1">スクワットの動き（横から）</title>
+    <desc id="d1">スクワットをする姿を横から見た図。股関節から動くと、背中はまっすぐで腰は楽。股関節が使えないと、腰が代わりに丸まって頑張る。</desc>
+    <line x1="30" y1="268" x2="300" y2="268" stroke="var(--line)" stroke-width="3" stroke-linecap="round"/>
+    <text x="296" y="90" text-anchor="end" font-size="12" fill="var(--sub)">前 ▶</text>
+    <g id="g1"></g>
+  </svg>
+  <div class="legend"><span><i style="background:var(--move)"></i>股関節（動く役）</span><span><i style="background:var(--hold)"></i>腰（支える役）</span><span><i style="border:2.5px solid var(--load);background:transparent"></i>頑張りすぎ</span></div>
+  <div class="read" id="r1" aria-live="polite"></div>
+  <p class="cap">図は分かりやすくするための模式図です。</p>
+</div>
+
+<h2>② 負担は少しずつ。キャパは育つ</h2>
+<p class="key">見てほしいところ：「負担」の棒と「キャパ」の棒、どちらが長いか</p>
+<div class="fig" id="f2">
+  <div class="seg" role="group" aria-label="運動の進め方">
+    <button type="button" data-m="0" aria-pressed="true">急に強く</button>
+    <button type="button" data-m="1" aria-pressed="false">小さく</button>
+    <button type="button" data-m="2" aria-pressed="false">続けた後</button>
+  </div>
+  <svg viewBox="0 0 320 100" role="img" aria-labelledby="t2 d2">
+    <title id="t2">運動の負担とキャパ</title>
+    <desc id="d2">運動の負担と、受け止める力（キャパ）を、2本の棒で表す。いきなり強くすると負担がキャパを超える。小さく始めて続けると、キャパが育つ。</desc>
+    <g id="g2"></g>
+  </svg>
+  <div class="legend"><span><i style="background:var(--load)"></i>負担（運動の強さ・量）</span><span><i style="background:var(--hold)"></i>キャパ（受け止める力）</span></div>
+  <div class="read" id="r2" aria-live="polite"></div>
+  <p class="cap">棒は、イメージを伝えるための模式図です。数値ではありません。</p>
+</div>
+
+<h2>運動の始め方は、3つ</h2>
+<ul class="three">
+  <li><b class="n">1</b><strong>まず、動く関節を使えるように</strong><small>股関節や胸郭など、動く役が使えているかを確認します</small></li>
+  <li><b class="n">2</b><strong>小さく始める</strong><small>痛みなく、余裕のある量から始めます</small></li>
+  <li><b class="n">3</b><strong>少しずつ増やす</strong><small>キャパが育つのに合わせて、回数や強さを増やします</small></li>
+</ul>
+
+<div class="sum">
+<p><strong>当院の考え方</strong></p>
+<p>運動は、安定期の中心になる取り組みで、筋肉の使い方を覚えて、キャパを育てる時間です。まず、動かない関節を動く状態にします（改善期）。次に、運動で、筋肉を自分の意思で使えるようにします（安定期）。最後に、意識しなくても、自然に体が使える状態を目指します（定着期）。</p>
+</div>
+
+<h2>今日からできる、小さな一歩</h2>
+<ol class="steps">
+  <li><strong>しゃがみ方を見る</strong>：椅子の前に立ち、お尻を後ろに引いて、ゆっくり座って立ちます。横から動画を撮って、背中がまっすぐのままか見てみましょう。</li>
+  <li><strong>回数は少なめに</strong>：まず3〜5回など、余裕のある回数から始めましょう。</li>
+</ol>
+<p>痛みが出るときは、すぐに中止してください。持病のある方や、痛みが続いている方は、始める前にご相談ください。</p>
+<p>次回は、膝・股関節の見方についてお話しします。</p>
+
+<p class="note">この内容は、からだの動きについての一般的な説明です。個別の診断ではありません。強い痛み、しびれ、安静にしていても続く痛みがあるときは、無理をせず、先に医療機関を受診するか、LINEでご相談ください。<br>かたぎはら鍼灸整骨院</p>
+</main>
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function lerp(a,b,k){return a+(b-a)*k}
+  function ringS(x,y,k,p,r){return k>0.02?'<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="'+((r||19)+3*p).toFixed(1)+'" fill="none" stroke="var(--load)" stroke-width="3.5" stroke-opacity="'+(Math.min(1,k)*(0.55+0.45*p)).toFixed(2)+'"/>':""}
+  function lab(x,y,n,a,b,k){k=Math.min(1,k);return '<text x="'+x+'" y="'+y+'" font-size="13" font-weight="800" fill="var(--ink)">'+n+'</text><text x="'+x+'" y="'+(y+16)+'" font-size="12" font-weight="800" fill="'+a[1]+'" opacity="'+(1-k).toFixed(2)+'">'+a[0]+'</text><text x="'+x+'" y="'+(y+16)+'" font-size="12" font-weight="800" fill="'+b[1]+'" opacity="'+k.toFixed(2)+'">'+b[0]+'</text>'}
+  function qpt(t,p0,pc,p1){var q=1-t;return [q*q*p0[0]+2*q*t*pc[0]+t*t*p1[0],q*q*p0[1]+2*q*t*pc[1]+t*t*p1[1]]}
+  function setup(fid,rid,T,keys,draw){
+    var st={},bs=document.querySelectorAll("#"+fid+" .seg button"),tw=0,j;
+    for(j=0;j<keys.length;j++)st[keys[j]]=T[0][keys[j]];
+    $(rid).innerHTML=T[0].t;
+    function go(m){
+      $(rid).innerHTML=T[m].t;
+      for(var q=0;q<bs.length;q++)bs[q].setAttribute("aria-pressed",q===m?"true":"false");
+      cancelAnimationFrame(tw);var f={},s0=null,i;for(i=0;i<keys.length;i++)f[keys[i]]=st[keys[i]];
+      if(reduce){for(i=0;i<keys.length;i++)st[keys[i]]=T[m][keys[i]];draw(st,0.5);return}
+      (function step(ts){if(s0===null)s0=ts;var k=Math.min(1,(ts-s0)/650);k=1-Math.pow(1-k,3);
+        for(var n=0;n<keys.length;n++)st[keys[n]]=lerp(f[keys[n]],T[m][keys[n]],k);
+        if(k<1)tw=requestAnimationFrame(step)})(performance.now());
+    }
+    for(var q=0;q<bs.length;q++)bs[q].onclick=function(){go(+this.getAttribute("data-m"))};
+    draw(st,0.5);
+    if(!reduce){var vis=true;
+      if("IntersectionObserver" in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting},{threshold:.1}).observe($(fid));
+      (function loop(t){if(vis)draw(st,0.5+0.5*Math.sin(t*0.005));requestAnimationFrame(loop)})(0);}
+  }
+  /* 図1：スクワット */
+  var T1=[{c:0,t:"<b>股関節から動く</b>お尻を後ろに引き、股関節が曲がってしゃがみます。背中はまっすぐのままで、支える役の腰は、安定させる仕事に集中できます。"},
+          {c:1,t:"<b>腰で代わりに動く</b>股関節が使われないと、腰が丸まって、しゃがむ動きを代わりに引き受けます。くり返すほど、腰の負担がたまりやすくなります。"}];
+  function d1(s,p){
+    var c=s.c,g="";
+    var H=[lerp(122,142,c),lerp(204,216,c)],K=[lerp(180,190,c),lerp(228,236,c)];
+    var S=[lerp(176,166,c),lerp(130,140,c)];
+    var mid=[(H[0]+S[0])/2,(H[1]+S[1])/2],ctl=[lerp(mid[0],H[0]-16,c),lerp(mid[1],mid[1]-6,c)];
+    g+='<polyline fill="none" stroke="var(--ink)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" points="'+H[0].toFixed(1)+','+H[1].toFixed(1)+' '+K[0].toFixed(1)+','+K[1].toFixed(1)+' 156,266 182,266"/>';
+    g+='<g transform="translate('+H[0].toFixed(1)+' '+H[1].toFixed(1)+') rotate('+lerp(34,-8,c).toFixed(1)+')"><rect x="-22" y="-20" width="44" height="34" rx="12" fill="var(--blk)" stroke="var(--ink)" stroke-width="3"/><text x="0" y="3" text-anchor="middle" font-size="14" font-weight="700" fill="var(--ink)">骨盤</text></g>';
+    g+='<path d="M'+H[0].toFixed(1)+' '+(H[1]-14).toFixed(1)+' Q'+ctl[0].toFixed(1)+' '+ctl[1].toFixed(1)+' '+S[0].toFixed(1)+' '+S[1].toFixed(1)+'" fill="none" stroke="var(--ink)" stroke-width="11" stroke-linecap="round"/>';
+    var dir=[S[0]-ctl[0],S[1]-ctl[1]],dl=Math.sqrt(dir[0]*dir[0]+dir[1]*dir[1]);
+    g+='<circle cx="'+(S[0]+dir[0]/dl*18).toFixed(1)+'" cy="'+(S[1]+dir[1]/dl*18).toFixed(1)+'" r="16" fill="var(--ink)"/>';
+    g+='<line x1="'+S[0].toFixed(1)+'" y1="'+(S[1]+6).toFixed(1)+'" x2="'+(S[0]+52)+'" y2="'+(S[1]+14).toFixed(1)+'" stroke="var(--ink)" stroke-width="9" stroke-linecap="round"/>';
+    var L=qpt(0.25,[H[0],H[1]-14],ctl,S);
+    g+='<circle cx="'+H[0].toFixed(1)+'" cy="'+H[1].toFixed(1)+'" r="8" fill="var(--move)"/>';
+    g+='<circle cx="'+L[0].toFixed(1)+'" cy="'+L[1].toFixed(1)+'" r="7" fill="var(--hold)"/>'+ringS(L[0],L[1],c,p,19);
+    g+=lab(6,150,"腰",["支える役","var(--hold)"],["頑張りすぎ","var(--load)"],c);
+    g+=lab(6,214,"股関節",["使えている","var(--move)"],["使われない","var(--sub)"],c);
+    $("g1").innerHTML=g;
+  }
+  setup("f1","r1",T1,["c"],d1);
+  /* 図2：負担とキャパ */
+  var T2=[{b:0.9,k:0.35,t:"<b>いきなり強く</b>キャパがまだ小さいうちに、強い運動を始めると、負担がキャパを超えます。痛みやケガにつながりやすくなります。"},
+          {b:0.3,k:0.35,t:"<b>小さく始める</b>負担を小さくして、キャパの中におさめます。痛みなく続けられる量から始めるのが、いちばんの近道です。"},
+          {b:0.6,k:0.8,t:"<b>続けたあと</b>小さな運動を続けると、キャパが育ちます。その分、負担を少し増やしても、余裕をもって受け止められます。"}];
+  function bar(y,name,v,col){
+    var x=82,W=200;
+    return '<text x="10" y="'+(y+15)+'" font-size="13" font-weight="800" fill="var(--ink)">'+name+'</text><rect x="'+x+'" y="'+y+'" width="'+W+'" height="20" rx="10" fill="var(--soft)"/><rect x="'+x+'" y="'+y+'" width="'+Math.max(20,W*v).toFixed(1)+'" height="20" rx="10" fill="'+col+'"/>';
+  }
+  function d2(s,p){
+    var g=bar(22,"負担",s.b,"var(--load)")+bar(56,"キャパ",s.k,"var(--hold)");
+    if(s.b>s.k+0.02)g+='<text x="296" y="16" text-anchor="end" font-size="12" font-weight="800" fill="var(--load)" opacity="'+Math.min(1,(s.b-s.k)*8).toFixed(2)+'">キャパ超え</text>';
+    $("g2").innerHTML=g;
+  }
+  setup("f2","r2",T2,["b","k"],d2);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第13回 ちゃんと息が入る体とは｜からだの使い方講座</title>
+<style>
+:root{
+  --bg:#fff7e6; --surface:#ffffff; --ink:#2a2e38; --sub:#5f6672; --line:#ecd9b0;
+  --move:#0b8f6b; --hold:#2878cc; --load:#e04e1b; --soft:#fff0c2;
+  --blk:#ffe3a3; --bone:#ffe0a0; --amber:#e8950f;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.95;font-size:16px;-webkit-text-size-adjust:100%}
+main{max-width:640px;margin:0 auto;padding:40px 20px 64px}
+h1{font-size:clamp(26px,7vw,36px);line-height:1.4;margin:0 0 12px;font-weight:800;letter-spacing:.02em}
+.lead{color:var(--sub);margin:0 0 28px}
+h2{font-size:20px;line-height:1.5;margin:48px 0 12px;font-weight:700;border-left:4px solid var(--move);padding-left:12px}
+p{margin:0 0 16px}
+.key{background:#fff;border:2px dashed var(--line);border-radius:10px;padding:8px 12px;font-size:14px;font-weight:700;line-height:1.7;margin:0 0 10px}
+.fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;margin:0 0 8px}
+.fig svg{display:block;width:100%;height:auto;max-height:310px}
+.seg{display:flex;gap:8px;margin:0 0 10px}
+.seg button{flex:1;font:inherit;font-size:14px;font-weight:700;line-height:1.4;padding:10px 6px;border-radius:10px;border:2px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.seg button[aria-pressed="true"]{border-color:var(--move);background:var(--soft)}
+button:focus-visible{outline:3px solid var(--move);outline-offset:2px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--sub);margin:6px 0 0}
+.legend i{display:inline-block;width:.9em;height:.9em;border-radius:50%;vertical-align:-1px;margin-right:4px}
+.read{font-size:15px;line-height:1.8;min-height:7.6em;background:var(--soft);border-radius:10px;padding:12px 14px;margin:12px 0 0}
+.read b{display:block;margin-bottom:2px}
+.cap{font-size:13px;color:var(--sub);margin:10px 4px 0;line-height:1.7}
+.three{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:8px}
+.three li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:15px;line-height:1.7}
+.three li b{display:inline-block;background:var(--move);color:#fff;border-radius:50%;width:1.7em;height:1.7em;text-align:center;line-height:1.7em;margin-right:8px;font-size:14px}
+.steps{margin:0 0 16px;padding-left:1.4em}
+.steps li{margin-bottom:6px}
+.sum{background:var(--soft);border-radius:12px;padding:16px 18px;margin:20px 0}
+.sum p:last-child{margin:0}
+.note{font-size:13px;color:var(--sub);border-top:1px solid var(--line);margin-top:40px;padding-top:16px;line-height:1.8}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* ---- 明るいテーマ ---- */
+:root{--bg:#eef8ff;--line:#c5e1f5;--soft:#dff0fd;--blk:#d6ebff;--bone:#d6ebff}
+body{background:var(--bg);font-size:16.5px;line-height:2}
+main{padding-top:24px}
+h1{background:linear-gradient(135deg,#74c0fc 0%,#3bc9db 100%);color:#062a40;padding:22px 20px 20px;border-radius:20px;margin:0 0 16px;box-shadow:0 5px 0 rgba(25,113,194,.30);font-size:clamp(22px,6.3vw,34px)}
+.lead{font-size:17px;font-weight:700;color:#0b4a6f;margin:0 0 30px;padding-left:14px;border-left:5px solid #339af0}
+h2{display:block;background:#a5d8ff;color:#08283d;border-left:8px solid #1c7ed6;border-radius:12px;padding:10px 14px;font-size:20px;margin:52px 0 14px}
+p strong,.sum strong{background:linear-gradient(transparent 62%,#a5d8ff 62%);font-weight:800}
+.fig{border:2px solid #a5d8ff;border-radius:18px;box-shadow:0 4px 0 #d0ebff}
+.seg button,.tabs button,.presets button,.modes button{border-color:#a5d8ff;background:#fff;border-radius:12px;color:var(--ink)}
+.seg button[aria-pressed="true"],.tabs button[aria-pressed="true"],.presets button[aria-pressed="true"],.modes button[aria-pressed="true"]{border-color:var(--move);background:#d3f9e8}
+.read{background:#e7f5ff;border-left:6px solid #339af0;border-radius:12px}
+.sum{background:#fff0e0;border:2px solid #ffc78f;border-radius:16px}
+.track{background:#d0ebff}
+.note{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:48px}
+h1,h2,.lead{word-break:auto-phrase;text-wrap:balance}
+
+h1,h2{text-wrap:balance;word-break:auto-phrase}
+.ph{display:inline-block}
+</style>
+</head>
+<body>
+<main>
+<h1>ちゃんと息が入る体とは</h1>
+<p class="lead">「深く吸って」と言われても、体が動かなければ、息は入りません。</p>
+
+<p>前回は、息が入ると背すじが起きる、という話をしました。では、<strong>「ちゃんと息が入る体」</strong>とは、どんな体でしょうか。</p>
+<p>体の中で起きていることを、むずかしい言葉を使わずに、次の<strong>3つ</strong>に分けて見てみましょう。</p>
+<ul class="three">
+  <li><b>1</b><strong>横隔膜</strong>が、ドームのように下がれる</li>
+  <li><b>2</b><strong>肋骨</strong>が、前・横・後ろに広がれる</li>
+  <li><b>3</b>それを支える<strong>土台</strong>（肋骨と骨盤）が、そろっている</li>
+</ul>
+
+<h2>① 横隔膜が、ドームのように下がる</h2>
+<p class="key">見てほしいところ：吸うと、緑の線（横隔膜）が下がって、お腹がふくらむこと</p>
+<div class="fig" id="fa">
+  <svg viewBox="0 0 320 270" role="img" aria-labelledby="fta fda">
+    <title id="fta">横隔膜の動きの図（横から）</title>
+    <desc id="fda">横から見た胴体。息を吸うと、肺の下にあるドーム形の横隔膜が下がり、肺が下にふくらみ、お腹の前側がふくらむ。吐くと元に戻る。</desc>
+    <g id="ga"></g>
+  </svg>
+  <div class="legend"><span><i style="background:var(--move)"></i>横隔膜</span><span><i style="background:var(--blk);border:2px solid var(--hold)"></i>肺</span></div>
+  <p class="cap">ゆっくり息を吸って吐く動きが、自動でくり返されます。図は分かりやすくするための模式図です。</p>
+</div>
+<p>横隔膜は、肺の下にある、ドーム形の膜のような筋肉です。息を吸うと、ドームが平らになるように<strong>下がり</strong>、肺が下にふくらみます。下がった分、お腹の中身が押されて、<strong>お腹まわりがふくらむ</strong>のです。</p>
+<p>息は、胸だけでなく、<strong>下にも入る</strong>ものなのです。</p>
+
+<h2>② 肋骨が、前・横・後ろに広がる</h2>
+<p class="key">見てほしいところ：吸うと、胸の箱が横に広がること（特に下のほう）</p>
+<div class="fig" id="fb">
+  <svg viewBox="0 0 320 270" role="img" aria-labelledby="ftb fdb">
+    <title id="ftb">肋骨の広がりの図（前から）</title>
+    <desc id="fdb">前から見た胸の箱。息を吸うと、肋骨が持ち上がって横に広がり、特に下のほうが大きく広がる。</desc>
+    <g id="gb"></g>
+  </svg>
+  <div class="legend"><span><i style="background:var(--blk);border:2px solid var(--ink)"></i>胸の箱（肋骨）を前から見た図</span><span><i style="background:var(--move)"></i>広がる向き</span></div>
+  <p class="cap">前から見た図です。ゆっくり息を吸って吐く動きが、自動でくり返されます。</p>
+</div>
+<p>肋骨は、バケツの取っ手を持ち上げると横に広がるのと同じように、<strong>持ち上がりながら横へ広がります</strong>。特に、下のほうの肋骨は、大きく広がります。</p>
+<p>この広がりがあるから、肺がふくらむ場所ができます。胸の箱が固まっていると、広がれず、息が入る量が小さくなります。</p>
+
+<h2>③ 土台がそろっていると、①②が起きやすい</h2>
+<p class="key">見てほしいところ：肋骨が、骨盤の真上に乗っているかどうか</p>
+<div class="fig" id="fc">
+  <div class="seg" role="group" aria-label="肋骨と骨盤の例">
+    <button type="button" data-m="0" aria-pressed="true">肋骨と骨盤がそろう</button>
+    <button type="button" data-m="1" aria-pressed="false">肋骨が反って、ずれる</button>
+  </div>
+  <svg viewBox="0 0 320 280" role="img" aria-labelledby="ftc fdc">
+    <title id="ftc">肋骨と骨盤のそろい方の図（横から）</title>
+    <desc id="fdc">横から見た肋骨と骨盤。肋骨が骨盤の真上にそろっている場合と、肋骨が反って骨盤とずれている場合を比べる。</desc>
+    <line x1="30" y1="268" x2="290" y2="268" stroke="var(--line)" stroke-width="3" stroke-linecap="round"/>
+    <g id="gc"></g>
+  </svg>
+  <div class="read" id="rdc" aria-live="polite"></div>
+  <p class="cap">ボタンで切り替えてみてください。第5回の「骨盤を立てる」とつながる内容です。</p>
+</div>
+<p>横隔膜は、下のほうの肋骨に付いています。肋骨が反って開いたり、骨盤とずれたりすると、横隔膜が上下に動きにくくなり、肋骨も広がりにくくなる傾向があります。</p>
+<p>すると、息が上に逃げて、<strong>首や肩の筋肉が頑張って息を入れる</strong>ことになります。第5回でお話しした「骨盤を立てる」は、呼吸の土台にもなっているのです。</p>
+
+<div class="sum">
+<p><strong>当院の考え方</strong></p>
+<p>「ちゃんと息が入る」ためには、<strong>横隔膜が下がれる・肋骨が広がれる・土台がそろっている</strong>の3つが働くことが大切です。この3つのうち、どこが動いていないのかを確認して、まず動く状態にします。次に、自分の筋肉で呼吸を使う練習をし、最後は、意識しなくても自然に深く呼吸できる体を目指します。</p>
+</div>
+
+<h2>今日からできる、小さな一歩</h2>
+<ol class="steps">
+  <li>椅子に座って、骨盤を立てます。</li>
+  <li>片手を下の肋骨の横に、もう片方の手をお腹に当てます。</li>
+  <li>ゆっくり鼻から吸って、<strong>お腹と肋骨が一緒にふくらむか</strong>、肩が上がっていないかを感じます。</li>
+  <li>左右で、ふくらみ方に違いがないかも、見てみましょう。</li>
+</ol>
+<p>3〜5回で十分です。無理に深く吸わず、めまいがしたら中止してください。</p>
+<p>次回からは、立つ・座る・歩くに続く、体の使い方のテーマ（足元）に進みます。</p>
+
+<p class="note">この内容は、からだの動きについての一般的な説明です。個別の診断ではありません。強い痛み、しびれ、安静にしていても続く痛みがあるときは、無理をせず、LINEでご相談ください。息苦しさや胸の痛みが強いときは、すぐに医療機関を受診してください。<br>かたぎはら鍼灸整骨院</p>
+</main>
+
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function lerp(a,b,k){return a+(b-a)*k}
+  function breath(t){
+    var ph=reduce?0.5:(t%4600)/4600;
+    return {b:reduce?1:0.5-0.5*Math.cos(2*Math.PI*ph),inh:reduce?true:ph<0.5};
+  }
+
+  /* ---------- ① 横隔膜（横から） ---------- */
+  function drawA(t){
+    var s=breath(t),b=s.b;
+    var apex=112+34*b,edge=150+6*b,yc=2*apex-edge,bel=14*b;
+    var g="";
+    g+='<path d="M100,24 L205,24 Q222,24 222,60 L222,150 Q'+(222+bel*1.6).toFixed(1)+',205 214,250 L100,250 Q90,140 100,24Z" fill="var(--soft)" stroke="var(--ink)" stroke-width="3.5" stroke-linejoin="round"/>';
+    g+='<path d="M112,'+edge.toFixed(1)+' L112,50 Q112,30 132,30 L188,30 Q210,30 210,50 L210,'+edge.toFixed(1)+' Q160,'+yc.toFixed(1)+' 112,'+edge.toFixed(1)+'Z" fill="var(--blk)" stroke="var(--hold)" stroke-width="3"/>';
+    g+='<text x="161" y="76" text-anchor="middle" font-size="15" font-weight="800" fill="var(--hold)">肺</text>';
+    g+='<path d="M104,'+edge.toFixed(1)+' Q160,'+yc.toFixed(1)+' 218,'+edge.toFixed(1)+'" fill="none" stroke="var(--move)" stroke-width="6" stroke-linecap="round"/>';
+    g+='<line x1="56" y1="'+(edge-4).toFixed(1)+'" x2="102" y2="'+edge.toFixed(1)+'" stroke="var(--move)" stroke-width="2.5"/>';
+    g+='<text x="10" y="'+(edge-10).toFixed(1)+'" font-size="14" font-weight="800" fill="var(--move)">横隔膜</text>';
+    g+='<text x="14" y="34" font-size="16" font-weight="800" fill="'+(s.inh?"var(--move)":"var(--sub)")+'">'+(s.inh?"吸う":"吐く")+'</text>';
+    if(s.inh&&b>0.2){
+      var o=Math.min(1,b*1.3).toFixed(2);
+      g+='<g opacity="'+o+'"><line x1="161" y1="'+(apex-44).toFixed(1)+'" x2="161" y2="'+(apex-14).toFixed(1)+'" stroke="var(--move)" stroke-width="3.5" stroke-linecap="round"/><path d="M153,'+(apex-22).toFixed(1)+' L161,'+(apex-12).toFixed(1)+' L169,'+(apex-22).toFixed(1)+'" fill="none" stroke="var(--move)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><text x="161" y="'+(apex-50).toFixed(1)+'" text-anchor="middle" font-size="12" font-weight="800" fill="var(--move)">下がる</text></g>';
+      g+='<g opacity="'+o+'"><text x="244" y="192" font-size="13" font-weight="800" fill="var(--move)">ふくらむ</text><line x1="240" y1="204" x2="'+(244+22*b).toFixed(1)+'" y2="204" stroke="var(--move)" stroke-width="3.5" stroke-linecap="round"/></g>';
+    }
+    $("ga").innerHTML=g;
+  }
+
+  /* ---------- ② 肋骨（前から） ---------- */
+  function W(y,b){
+    var u=(y-40)/190;u=Math.max(0,Math.min(1,u));
+    var w=26+46*Math.pow(Math.sin(Math.PI*Math.pow(u,1.4)),0.8);
+    return w*(1+(0.04+0.16*u)*b);
+  }
+  function drawB(t){
+    var s=breath(t),b=s.b,g="",y,pl=[],pr=[];
+    for(y=40;y<=230;y+=10){var w=W(y,b);pl.push((160-w).toFixed(1)+","+y);pr.unshift((160+w).toFixed(1)+","+y)}
+    g+='<polygon points="'+pl.concat(pr).join(" ")+'" fill="var(--blk)" stroke="var(--ink)" stroke-width="3.5" stroke-linejoin="round"/>';
+    for(var i=0;i<6;i++){
+      var yi=66+28*i,wi=W(yi,b);
+      g+='<path d="M'+(160-wi+2).toFixed(1)+','+yi+' Q160,'+(yi+18)+' '+(160+wi-2).toFixed(1)+','+yi+'" fill="none" stroke="var(--ink)" stroke-opacity=".4" stroke-width="3" stroke-linecap="round"/>';
+    }
+    g+='<rect x="153" y="56" width="14" height="100" rx="7" fill="var(--soft)" stroke="var(--ink)" stroke-width="2.5"/>';
+    g+='<text x="14" y="34" font-size="16" font-weight="800" fill="'+(s.inh?"var(--move)":"var(--sub)")+'">'+(s.inh?"吸う":"吐く")+'</text>';
+    if(s.inh&&b>0.15){
+      var wy=W(180,b),o=Math.min(1,b*1.3).toFixed(2),len=10+26*b;
+      g+='<g opacity="'+o+'" stroke="var(--move)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none">';
+      g+='<line x1="'+(160-wy-6).toFixed(1)+'" y1="180" x2="'+(160-wy-6-len).toFixed(1)+'" y2="180"/><path d="M'+(160-wy-6-len+8).toFixed(1)+',172 L'+(160-wy-6-len).toFixed(1)+',180 L'+(160-wy-6-len+8).toFixed(1)+',188"/>';
+      g+='<line x1="'+(160+wy+6).toFixed(1)+'" y1="180" x2="'+(160+wy+6+len).toFixed(1)+'" y2="180"/><path d="M'+(160+wy+6+len-8).toFixed(1)+',172 L'+(160+wy+6+len).toFixed(1)+',180 L'+(160+wy+6+len-8).toFixed(1)+',188"/></g>';
+      g+='<text x="160" y="258" text-anchor="middle" font-size="14" font-weight="800" fill="var(--move)" opacity="'+o+'">横に広がる</text>';
+    }
+    $("gb").innerHTML=g;
+  }
+
+  /* ---------- ③ 肋骨と骨盤 ---------- */
+  var MC=[
+    {pt:0,rt:0,gap:0,t:"<b>肋骨が骨盤の真上に、そろっている</b>肋骨の下に付いている横隔膜が、まっすぐ上下に動けます。胸の箱も広がりやすく、肩や首は静かなままで、息が深く入ります。"},
+    {pt:12,rt:-16,gap:1,t:"<b>肋骨が反って、骨盤とずれている</b>肋骨の向きが骨盤とずれると、横隔膜が上下に動きにくくなり、胸の箱も広がりにくくなる傾向があります。息が上に逃げて、首や肩が頑張りやすくなります。"}
+  ];
+  var sc={pt:0,rt:0,gap:0},kc=["pt","rt","gap"];
+  function drawC(t){
+    var g="",pulse=0.55+0.45*Math.sin(t*0.005);
+    g+='<line x1="150" y1="14" x2="150" y2="266" stroke="var(--move)" stroke-width="2" stroke-dasharray="6 6"/>';
+    g+='<line x1="150" y1="222" x2="150" y2="266" stroke="var(--ink)" stroke-width="10" stroke-linecap="round"/><line x1="150" y1="266" x2="176" y2="266" stroke="var(--ink)" stroke-width="8" stroke-linecap="round"/>';
+    g+='<line x1="150" y1="190" x2="150" y2="66" stroke="var(--ink)" stroke-width="9" stroke-linecap="round"/>';
+    g+='<circle cx="150" cy="38" r="15" fill="var(--ink)"/>';
+    g+='<g transform="rotate('+sc.pt.toFixed(1)+' 150 205)"><rect x="128" y="188" width="44" height="34" rx="12" fill="var(--blk)" stroke="var(--ink)" stroke-width="3"/><text x="150" y="211" text-anchor="middle" font-size="14" font-weight="700" fill="var(--ink)">骨盤</text></g>';
+    g+='<g transform="rotate('+sc.rt.toFixed(1)+' 150 172)"><ellipse cx="150" cy="116" rx="40" ry="56" fill="var(--blk)" fill-opacity=".92" stroke="var(--ink)" stroke-width="3"/><text x="150" y="121" text-anchor="middle" font-size="15" font-weight="700" fill="var(--ink)">肋骨</text></g>';
+    if(sc.gap>0.02){
+      g+='<circle cx="150" cy="176" r="'+(20+3*pulse).toFixed(1)+'" fill="none" stroke="var(--load)" stroke-width="3.5" stroke-opacity="'+(sc.gap*(0.5+0.5*pulse)).toFixed(2)+'"/>';
+      g+='<text x="186" y="170" font-size="15" font-weight="800" fill="var(--load)" opacity="'+sc.gap.toFixed(2)+'">ずれる</text>';
+    }
+    $("gc").innerHTML=g;
+  }
+  var bs=document.querySelectorAll("#fc .seg button"),tw=0;
+  function go(m){
+    $("rdc").innerHTML=MC[m].t;
+    for(var q=0;q<bs.length;q++)bs[q].setAttribute("aria-pressed",q===m?"true":"false");
+    cancelAnimationFrame(tw);
+    var to=MC[m],f={},s0=null,n;
+    for(n=0;n<kc.length;n++)f[kc[n]]=sc[kc[n]];
+    if(reduce){for(n=0;n<kc.length;n++)sc[kc[n]]=to[kc[n]];drawC(0);return}
+    (function step(ts){
+      if(s0===null)s0=ts;var k=Math.min(1,(ts-s0)/650);k=1-Math.pow(1-k,3);
+      for(var j=0;j<kc.length;j++)sc[kc[j]]=lerp(f[kc[j]],to[kc[j]],k);
+      if(k<1)tw=requestAnimationFrame(step);
+    })(performance.now());
+  }
+  for(var q=0;q<bs.length;q++)bs[q].onclick=function(){go(+this.getAttribute("data-m"))};
+  $("rdc").innerHTML=MC[0].t;
+  drawA(0);drawB(0);drawC(0);
+  if(!reduce){
+    var vis={fa:true,fb:true,fc:true};
+    if("IntersectionObserver" in window){
+      var io=new IntersectionObserver(function(es){es.forEach(function(e){vis[e.target.id]=e.isIntersecting})},{threshold:.1});
+      ["fa","fb","fc"].forEach(function(id){io.observe($(id))});
+    }
+    (function loop(t){if(vis.fa)drawA(t);if(vis.fb)drawB(t);if(vis.fc)drawC(t);requestAnimationFrame(loop)})(0);
+  }
+})();
+</script>
+</body>
+</html>

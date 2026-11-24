@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第25回 季節と年齢。変わるのは、負担とキャパ｜からだの使い方講座</title>
+<style>
+:root{
+  --bg:#fff7e6; --surface:#ffffff; --ink:#2a2e38; --sub:#5f6672; --line:#ecd9b0;
+  --move:#0b8f6b; --hold:#2878cc; --load:#e04e1b; --soft:#fff0c2;
+  --blk:#ffe3a3; --bone:#ffe0a0; --amber:#e8950f;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.95;font-size:16px;-webkit-text-size-adjust:100%}
+main{max-width:640px;margin:0 auto;padding:40px 20px 64px}
+h1{font-size:clamp(26px,7vw,36px);line-height:1.4;margin:0 0 12px;font-weight:800;letter-spacing:.02em}
+.lead{color:var(--sub);margin:0 0 28px}
+h2{font-size:20px;line-height:1.5;margin:48px 0 12px;font-weight:700;border-left:4px solid var(--move);padding-left:12px}
+p{margin:0 0 16px}
+.key{background:#fff;border:2px dashed var(--line);border-radius:10px;padding:8px 12px;font-size:14px;font-weight:700;line-height:1.7;margin:0 0 10px}
+.fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;margin:0 0 8px}
+.fig svg{display:block;width:100%;height:auto;max-height:330px}
+.seg{display:flex;gap:8px;margin:0 0 10px}
+.seg button{flex:1;font:inherit;font-size:14px;font-weight:700;line-height:1.4;padding:10px 6px;border-radius:10px;border:2px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.seg button[aria-pressed="true"]{border-color:var(--move);background:var(--soft)}
+button:focus-visible{outline:3px solid var(--move);outline-offset:2px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--sub);margin:6px 0 0}
+.legend i{display:inline-block;width:.9em;height:.9em;border-radius:50%;vertical-align:-1px;margin-right:4px}
+.read{font-size:15px;line-height:1.8;min-height:8.6em;background:var(--soft);border-radius:10px;padding:12px 14px;margin:12px 0 0}
+.read b{display:block;margin-bottom:2px}.read u{display:block;text-decoration:none;font-weight:800;color:var(--sub);font-size:13px;margin-top:6px}
+.cap{font-size:13px;color:var(--sub);margin:10px 4px 0;line-height:1.7}
+.three{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:8px}
+.three li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:15px;line-height:1.7}
+.three li b.n{display:inline-block;background:var(--move);color:#fff;border-radius:50%;width:1.7em;height:1.7em;text-align:center;line-height:1.7em;margin-right:8px;font-size:14px}
+.three li small{display:block;color:var(--sub);font-size:13px;margin-top:2px}
+.steps{margin:0 0 16px;padding-left:1.4em}
+.steps li{margin-bottom:6px}
+.sum{background:var(--soft);border-radius:12px;padding:16px 18px;margin:20px 0}
+.sum p:last-child{margin:0}
+.warn{background:#fff3ec;border:2px solid #ffb48a;border-radius:12px;padding:14px 16px;margin:12px 0 16px;font-size:15px;line-height:1.85}
+.warn ul{margin:6px 0 0;padding-left:1.3em}
+.note{font-size:13px;color:var(--sub);border-top:1px solid var(--line);margin-top:40px;padding-top:16px;line-height:1.8}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* ---- 明るいテーマ ---- */
+:root{--bg:#fff6ee;--line:#f7d9bc;--soft:#ffeedb;--blk:#ffe2c4;--bone:#ffe2c4}
+body{background:var(--bg);font-size:16.5px;line-height:2}
+main{padding-top:24px}
+h1{background:linear-gradient(135deg,#ffb36b 0%,#ff7f6e 100%);color:#4a1500;padding:22px 20px 20px;border-radius:20px;margin:0 0 16px;box-shadow:0 5px 0 rgba(240,90,40,.30);font-size:clamp(22px,6.3vw,34px)}
+.lead{font-size:17px;font-weight:700;color:#8a2f08;margin:0 0 30px;padding-left:14px;border-left:5px solid #ff8a4c}
+h2{display:block;background:#ffd9b8;color:#4a1500;border-left:8px solid #ff6b35;border-radius:12px;padding:10px 14px;font-size:20px;margin:52px 0 14px}
+p strong,.sum strong{background:linear-gradient(transparent 62%,#ffd9b8 62%);font-weight:800}
+.fig{border:2px solid #ffcfa6;border-radius:18px;box-shadow:0 4px 0 #ffe8d2}
+.seg button,.tabs button,.presets button,.modes button{border-color:#ffcfa6;background:#fff;border-radius:12px;color:var(--ink)}
+.seg button[aria-pressed="true"],.tabs button[aria-pressed="true"],.presets button[aria-pressed="true"],.modes button[aria-pressed="true"]{border-color:var(--move);background:#d3f9e8}
+.read{background:#fff1e4;border-left:6px solid #ff8a4c;border-radius:12px}
+.sum{background:#e4f8ef;border:2px solid #9be3c4;border-radius:16px}
+.track{background:#ffe8d2}
+.note{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:48px}
+h1,h2,.lead{word-break:auto-phrase;text-wrap:balance}
+
+h1,h2{text-wrap:balance;word-break:auto-phrase}
+.ph{display:inline-block}
+</style>
+<body>
+<main>
+<h1>季節と年齢。<br>変わるのは、負担とキャパ</h1>
+<p class="lead">「寒くなると、腰が痛む」「冷房で、からだが冷えた」「年のせいかな」と思うことはありませんか。</p>
+<p>季節や年齢で、からだの調子が変わることはあります。当院では、それを<strong>負担とキャパ（受け止める力）のバランスが変わる</strong>こと、と考えます。</p>
+<p>バランスが変わるのなら、<strong>整え方も変えられます</strong>。「仕方がない」と、あきらめなくて大丈夫です。</p>
+
+<h2>① 季節で、バランスが動く</h2>
+<p class="key">見てほしいところ：「負担」と「キャパ」の棒、どちらが長いか</p>
+<div class="fig" id="f1">
+  <div class="seg" role="group" aria-label="季節の場面">
+    <button type="button" data-m="0" aria-pressed="true">暖かい</button>
+    <button type="button" data-m="1" aria-pressed="false">暑い</button>
+    <button type="button" data-m="2" aria-pressed="false">寒い</button>
+    <button type="button" data-m="3" aria-pressed="false">忙しい</button>
+  </div>
+  <svg viewBox="0 0 320 100" role="img" aria-labelledby="t1 d1">
+    <title id="t1">季節や時期による負担とキャパ</title>
+    <desc id="d1">暖かい季節は余裕がある。暑い季節は冷房などで冷えやすい。寒い季節は動く量が減ってキャパが小さくなりやすい。忙しい時期は負担が増えて、キャパを超えやすい。</desc>
+    <g id="g1"></g>
+  </svg>
+  <div class="legend"><span><i style="background:var(--load)"></i>負担</span><span><i style="background:var(--hold)"></i>キャパ（受け止める力）</span></div>
+  <div class="read" id="r1" aria-live="polite"></div>
+  <p class="cap">棒は、イメージを伝えるための模式図です。感じ方は、人によって違います。</p>
+</div>
+
+<h2><span class="ph">② キャパは、</span><span class="ph">「使う量」ではなく</span><span class="ph">「使い方」で変わる</span></h2>
+<p class="key">見てほしいところ：「使う量」が多くても、キャパの棒が伸びるとは限らないこと</p>
+<div class="fig" id="f2">
+  <div class="seg" role="group" aria-label="年齢と使い方">
+    <button type="button" data-m="0" aria-pressed="true">若いころ</button>
+    <button type="button" data-m="1" aria-pressed="false">使わない</button>
+    <button type="button" data-m="2" aria-pressed="false">量が多い</button>
+    <button type="button" data-m="3" aria-pressed="false">整えて使う</button>
+  </div>
+  <svg viewBox="0 0 320 100" role="img" aria-labelledby="t2 d2">
+    <title id="t2">年を重ねたときの、使い方によるキャパの違い</title>
+    <desc id="d2">若いころは余裕がある。年を重ねて筋肉を使わないと、キャパが小さくなりやすい。量が多くても、同じ場所に偏った使い方だと、負担が大きい。動く役と支える役が働く使い方なら、キャパを保ちやすい。</desc>
+    <g id="g2"></g>
+  </svg>
+  <div class="legend"><span><i style="background:var(--load)"></i>負担</span><span><i style="background:var(--hold)"></i>キャパ（受け止める力）</span></div>
+  <div class="read" id="r2" aria-live="polite"></div>
+  <p class="cap">棒は、イメージを伝えるための模式図です。個人差があります。</p>
+</div>
+
+<h2>変化に、合わせて整える</h2>
+<ul class="three">
+  <li><b class="n">1</b><strong>冷えと寒さに、備える</strong><small>冷房や寒い時期は、からだを冷やしすぎず、短い時間でも動かします</small></li>
+  <li><b class="n">2</b><strong>忙しい時期は、負担を減らす</strong><small>座り方や持ち方など、負担を小さくする工夫を優先します</small></li>
+  <li><b class="n">3</b><strong>量より、使い方を整える</strong><small>動く役が動き、支える役が支える使い方を、少しずつ続けます</small></li>
+</ul>
+
+<div class="sum">
+<p><strong>当院の考え方</strong></p>
+<p>年齢や季節は、変えられません。けれど、負担とキャパの関係は、整えることができます。まず、動かない関節を動く状態にします（改善期）。次に、筋肉の使い方を練習して、キャパを育てます（安定期）。最後に、意識しなくても、整った状態を保てる体を目指します（定着期）。</p>
+</div>
+
+<h2>今日からできる、小さな一歩</h2>
+<ol class="steps">
+  <li><strong>いまの季節を振り返る</strong>：この時期、からだが重くなる場面は、どんなときか、思い出してみましょう。</li>
+  <li><strong>1日1回、からだを動かす</strong>：深呼吸や、お尻を引いてのお辞儀など、1つだけ、毎日続けましょう。</li>
+</ol>
+<p>強い痛みやしびれがあるときは、無理をせず、ご相談ください。</p>
+<p>次回は、ここまでの振り返りです。</p>
+
+<p class="note">この内容は、からだの動きについての一般的な説明です。個別の診断ではありません。強い痛み、しびれ、安静にしていても続く痛みがあるときは、無理をせず、先に医療機関を受診するか、LINEでご相談ください。<br>かたぎはら鍼灸整骨院</p>
+</main>
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function lerp(a,b,k){return a+(b-a)*k}
+  function ringS(x,y,k,p,r){return k>0.02?'<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="'+((r||19)+3*p).toFixed(1)+'" fill="none" stroke="var(--load)" stroke-width="3.5" stroke-opacity="'+(Math.min(1,k)*(0.55+0.45*p)).toFixed(2)+'"/>':""}
+  function lab(x,y,n,a,b,k){k=Math.min(1,k);return '<text x="'+x+'" y="'+y+'" font-size="13" font-weight="800" fill="var(--ink)">'+n+'</text><text x="'+x+'" y="'+(y+16)+'" font-size="12" font-weight="800" fill="'+a[1]+'" opacity="'+(1-k).toFixed(2)+'">'+a[0]+'</text><text x="'+x+'" y="'+(y+16)+'" font-size="12" font-weight="800" fill="'+b[1]+'" opacity="'+k.toFixed(2)+'">'+b[0]+'</text>'}
+  function qpt(t,p0,pc,p1){var q=1-t;return [q*q*p0[0]+2*q*t*pc[0]+t*t*p1[0],q*q*p0[1]+2*q*t*pc[1]+t*t*p1[1]]}
+  function setup(fid,rid,T,keys,draw){
+    var st={},bs=document.querySelectorAll("#"+fid+" .seg button"),tw=0,j;
+    for(j=0;j<keys.length;j++)st[keys[j]]=T[0][keys[j]];
+    $(rid).innerHTML=T[0].t;
+    function go(m){
+      $(rid).innerHTML=T[m].t;
+      for(var q=0;q<bs.length;q++)bs[q].setAttribute("aria-pressed",q===m?"true":"false");
+      cancelAnimationFrame(tw);var f={},s0=null,i;for(i=0;i<keys.length;i++)f[keys[i]]=st[keys[i]];
+      if(reduce){for(i=0;i<keys.length;i++)st[keys[i]]=T[m][keys[i]];draw(st,0.5);return}
+      (function step(ts){if(s0===null)s0=ts;var k=Math.min(1,(ts-s0)/650);k=1-Math.pow(1-k,3);
+        for(var n=0;n<keys.length;n++)st[keys[n]]=lerp(f[keys[n]],T[m][keys[n]],k);
+        if(k<1)tw=requestAnimationFrame(step)})(performance.now());
+    }
+    for(var q=0;q<bs.length;q++)bs[q].onclick=function(){go(+this.getAttribute("data-m"))};
+    draw(st,0.5);
+    if(!reduce){var vis=true;
+      if("IntersectionObserver" in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting},{threshold:.1}).observe($(fid));
+      (function loop(t){if(vis)draw(st,0.5+0.5*Math.sin(t*0.005));requestAnimationFrame(loop)})(0);}
+  }
+  function bar(y,name,v,col){
+    var x=82,W=200;
+    return '<text x="10" y="'+(y+15)+'" font-size="13" font-weight="800" fill="var(--ink)">'+name+'</text><rect x="'+x+'" y="'+y+'" width="'+W+'" height="20" rx="10" fill="var(--soft)"/><rect x="'+x+'" y="'+y+'" width="'+Math.max(20,W*v).toFixed(1)+'" height="20" rx="10" fill="'+col+'"/>';
+  }
+  var T1=[{b:0.4,k:0.7,t:"<b>暖かい季節</b>動きやすく、からだも動かしやすい時期です。負担がキャパの中におさまりやすく、余裕があります。"},
+          {b:0.5,k:0.45,t:"<b>暑い季節（冷房）</b>冷房や冷たい飲み物で、からだが冷えやすい時期です。冷えで筋肉がこわばり、動きが小さくなると、キャパが小さくなる人がいます。"},
+          {b:0.5,k:0.42,t:"<b>寒い季節</b>寒さで、からだを縮めて過ごしたり、動く量が減ったりしやすい時期です。キャパが小さくなり、同じ負担でも、受け止めにくくなる人がいます。"},
+          {b:0.85,k:0.6,t:"<b>忙しい時期</b>仕事や家事で、座りっぱなしや、同じ姿勢が増えやすい時期です。負担が増えて、キャパを超えやすくなります。"}];
+  function d1(s,p){
+    var g=bar(22,"負担",s.b,"var(--load)")+bar(56,"キャパ",s.k,"var(--hold)");
+    if(s.b>s.k+0.02)g+='<text x="296" y="16" text-anchor="end" font-size="12" font-weight="800" fill="var(--load)" opacity="'+Math.min(1,(s.b-s.k)*8).toFixed(2)+'">キャパ超え</text>';
+    $("g1").innerHTML=g;
+  }
+  setup("f1","r1",T1,["b","k"],d1);
+  var T2=[{b:0.5,k:0.75,t:"<b>若いころ</b>筋肉も関節も動きやすく、キャパに余裕があります。多少の負担は、受け止められます。"},
+          {b:0.5,k:0.38,t:"<b>使わない</b>年を重ねて、筋肉をあまり使わない状態が続くと、キャパが小さくなりやすくなります。同じ負担でも、超えやすくなります。"},
+          {b:0.85,k:0.55,t:"<b>量だけ多い</b>力仕事や立ち仕事など、たくさん使っていても、同じ動きのくり返しや、腰・肩などの特定の場所に偏った使い方だと、負担が大きくなります。使う量が多いことと、キャパが育つことは、別です。"},
+          {b:0.5,k:0.7,t:"<b>整えて使う</b>動く役（股関節や胸郭など）が動き、支える役（腰や首など）が支える、という使い方で、少しずつ使い続けると、キャパが育ち、保ちやすくなります。大切なのは、量より、使い方です。"}];
+  function d2(s,p){
+    var g=bar(22,"負担",s.b,"var(--load)")+bar(56,"キャパ",s.k,"var(--hold)");
+    if(s.b>s.k+0.02)g+='<text x="296" y="16" text-anchor="end" font-size="12" font-weight="800" fill="var(--load)" opacity="'+Math.min(1,(s.b-s.k)*8).toFixed(2)+'">キャパ超え</text>';
+    $("g2").innerHTML=g;
+  }
+  setup("f2","r2",T2,["b","k"],d2);
+})();
+</script>
+</body>
+</html>

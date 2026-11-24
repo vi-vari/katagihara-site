@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第7回 立つ。骨で立つと、力がいらない｜からだの使い方講座</title>
+<style>
+:root{
+  --bg:#fff7e6; --surface:#ffffff; --ink:#2a2e38; --sub:#5f6672; --line:#ecd9b0;
+  --move:#0b8f6b; --hold:#2878cc; --load:#e04e1b; --soft:#fff0c2;
+  --blk:#ffe3a3; --bone:#ffe0a0; --amber:#e8950f;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.95;font-size:16px;-webkit-text-size-adjust:100%}
+main{max-width:640px;margin:0 auto;padding:40px 20px 64px}
+h1{font-size:clamp(26px,7vw,36px);line-height:1.4;margin:0 0 12px;font-weight:800;letter-spacing:.02em}
+.lead{color:var(--sub);margin:0 0 28px}
+h2{font-size:20px;line-height:1.5;margin:48px 0 12px;font-weight:700;border-left:4px solid var(--move);padding-left:12px}
+p{margin:0 0 16px}
+.fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;margin:0 0 8px}
+.fig svg{display:block;width:100%;height:auto;max-height:320px}
+.presets{display:grid;grid-template-columns:1fr;gap:8px;margin:0 0 10px}
+.presets button{font:inherit;font-size:14px;font-weight:700;line-height:1.4;padding:10px 8px;border-radius:10px;border:2px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.presets button[aria-pressed="true"]{border-color:var(--move);background:var(--soft)}
+button:focus-visible{outline:3px solid var(--move);outline-offset:2px}
+.meter{font-size:14px;margin:12px 0 0}
+.meter .hd{font-size:13px;color:var(--sub);margin:0 0 4px;line-height:1.5}
+.meter .track{height:14px;border-radius:7px;background:var(--soft);overflow:hidden}
+.meter .bar{display:block;height:100%;width:0;border-radius:7px}
+.read{font-size:15px;line-height:1.8;min-height:7.2em;background:var(--soft);border-radius:10px;padding:12px 14px;margin:12px 0 0}
+.read b{display:block;margin-bottom:2px}
+.cap{font-size:13px;color:var(--sub);margin:10px 4px 0;line-height:1.7}
+.sum{background:var(--soft);border-radius:12px;padding:16px 18px;margin:20px 0}
+.sum p:last-child{margin:0}
+.note{font-size:13px;color:var(--sub);border-top:1px solid var(--line);margin-top:40px;padding-top:16px;line-height:1.8}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* ---- 明るいテーマ ---- */
+:root{--bg:#eef8ff;--line:#c5e1f5;--soft:#dff0fd;--blk:#d6ebff;--bone:#d6ebff}
+body{background:var(--bg);font-size:16.5px;line-height:2}
+main{padding-top:24px}
+h1{background:linear-gradient(135deg,#74c0fc 0%,#3bc9db 100%);color:#062a40;padding:22px 20px 20px;border-radius:20px;margin:0 0 16px;box-shadow:0 5px 0 rgba(25,113,194,.30);font-size:clamp(22px,6.3vw,34px)}
+.lead{font-size:17px;font-weight:700;color:#0b4a6f;margin:0 0 30px;padding-left:14px;border-left:5px solid #339af0}
+h2{display:block;background:#a5d8ff;color:#08283d;border-left:8px solid #1c7ed6;border-radius:12px;padding:10px 14px;font-size:20px;margin:52px 0 14px}
+p strong,.sum strong{background:linear-gradient(transparent 62%,#a5d8ff 62%);font-weight:800}
+.fig{border:2px solid #a5d8ff;border-radius:18px;box-shadow:0 4px 0 #d0ebff}
+.seg button,.tabs button,.presets button,.modes button{border-color:#a5d8ff;background:#fff;border-radius:12px;color:var(--ink)}
+.seg button[aria-pressed="true"],.tabs button[aria-pressed="true"],.presets button[aria-pressed="true"],.modes button[aria-pressed="true"]{border-color:var(--move);background:#d3f9e8}
+.read{background:#e7f5ff;border-left:6px solid #339af0;border-radius:12px}
+.sum{background:#fff0e0;border:2px solid #ffc78f;border-radius:16px}
+.track{background:#d0ebff}
+.note{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:48px}
+h1,h2,.lead{word-break:auto-phrase;text-wrap:balance}
+
+h1,h2{text-wrap:balance;word-break:auto-phrase}
+.ph{display:inline-block}
+</style>
+</head>
+<body>
+<main>
+<h1>立つ。<br>骨で立つと、力がいらない</h1>
+<p class="lead">立っているだけで疲れる人は、筋肉で立っているのかもしれません。</p>
+
+<p>積み木を、まっすぐ積むと、手で支えなくても立っています。でも、少しずれて積むと、倒れないように、誰かが支え続けなければいけません。</p>
+<p>体も同じです。足・骨盤・胸・頭が、縦にそろって積み重なっていれば、<strong>骨で体を支えられる</strong>ので、筋肉は軽く調整するだけで済みます。</p>
+
+<h2>積み木がずれると、筋肉が支え続ける</h2>
+<div class="fig">
+  <div class="presets" role="group" aria-label="立ち姿の例">
+    <button type="button" data-v="0" aria-pressed="true">まっすぐ積めている</button>
+    <button type="button" data-v="1" aria-pressed="false">骨盤が前に出て、胸が後ろ</button>
+    <button type="button" data-v="2" aria-pressed="false">骨盤が後ろに引けて、胸が前</button>
+  </div>
+  <svg viewBox="0 0 320 300" role="img" aria-labelledby="ft fd">
+    <title id="ft">立ち姿を積み木に見立てた図</title>
+    <desc id="fd">足、骨盤、胸、頭を積み木のように積んだ横からの図。ずれるほど、支える筋肉の頑張りが増える。</desc>
+    <line x1="20" y1="290" x2="300" y2="290" stroke="var(--line)" stroke-width="3" stroke-linecap="round"/>
+    <line x1="150" y1="14" x2="150" y2="290" stroke="var(--move)" stroke-width="2" stroke-dasharray="6 6"/>
+    <rect x="136" y="214" width="28" height="72" rx="8" fill="var(--blk)" stroke="var(--ink)" stroke-width="3"/>
+    <path d="M118 288 L190 288" stroke="var(--ink)" stroke-width="6" stroke-linecap="round"/>
+    <g id="gp"><rect x="112" y="166" width="76" height="46" rx="12" fill="var(--blk)" stroke="var(--ink)" stroke-width="3"/><text x="150" y="194" text-anchor="middle" font-size="14" font-weight="700" fill="var(--ink)">骨盤</text></g>
+    <g id="gc"><rect x="108" y="84" width="84" height="76" rx="14" fill="var(--blk)" stroke="var(--ink)" stroke-width="3"/><text x="150" y="128" text-anchor="middle" font-size="14" font-weight="700" fill="var(--ink)">胸</text></g>
+    <g id="gh"><circle cx="150" cy="52" r="22" fill="var(--blk)" stroke="var(--ink)" stroke-width="3"/><text x="150" y="57" text-anchor="middle" font-size="14" font-weight="700" fill="var(--ink)">頭</text></g>
+    <g id="mini"><rect x="222" y="122" width="92" height="166" rx="10" fill="var(--soft)" fill-opacity=".7"/>
+    <text x="268" y="136" text-anchor="middle" font-size="10" fill="var(--sub)">実際の姿勢</text>
+    <text id="mTx" x="268" y="150" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">まっすぐ</text>
+    <line x1="260" y1="285" x2="282" y2="285" stroke="var(--sub)" stroke-width="5" stroke-linecap="round"/>
+    <polyline id="mLeg" fill="none" stroke="var(--sub)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline id="mSp" fill="none" stroke="var(--ink)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline id="mOv" fill="none" stroke="var(--load)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" style="opacity:0"/>
+    <circle id="mHd" r="9" fill="var(--ink)"/></g>
+  </svg>
+  <div class="meter">
+    <p class="hd">支えている筋肉の頑張り（イメージ）</p>
+    <div class="track"><span class="bar" id="bar"></span></div>
+  </div>
+  <div class="read" id="rd" aria-live="polite"></div>
+  <p class="cap">ボタンで立ち姿を切り替えてみてください。右下の小さな図が、実際の立ち姿のイメージです。図は分かりやすくするための模式図です。</p>
+</div>
+
+<h2>そろえる土台は、骨盤</h2>
+<p>積み木の真ん中あたりにある骨盤が、上の胸と頭の位置を決める土台になります。骨盤が立っていると、その上に胸と頭を乗せやすくなります。</p>
+<p>「胸を張って」「背筋を伸ばして」と、1つずつ無理に直す必要はありません。骨盤が立てば、上の積み木も、無意識にそろいやすくなります。</p>
+
+<div class="sum">
+<p><strong>当院の考え方</strong></p>
+<p>立ち姿を横から見て、足・骨盤・胸・頭のそろい具合を確認します。そろいにくいときは、どの関節が動いていないかを見て、まず動く状態にします。そのうえで、自分の筋肉で積み重ねる練習をし、最後は意識しなくても立てる体を目指します。</p>
+</div>
+
+<h2>今日からできる、小さな一歩</h2>
+<p>足を腰幅に開き、足の裏の真ん中に体重を乗せて、1分ほど立ってみてください。首、肩、腰、ふくらはぎのうち、どこが疲れやすいかを感じてみましょう。疲れる場所が、頑張って支えている場所のヒントになります。</p>
+
+<p class="note">この内容は、からだの動きについての一般的な説明です。個別の診断ではありません。強い痛み、しびれ、安静にしていても続く痛みがあるときは、無理をせず、LINEでご相談ください。<br>かたぎはら鍼灸整骨院</p>
+</main>
+
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // dx:横ずれ(px), r:傾き(度) [骨盤, 胸, 頭], e:頑張り
+  var S=[
+    {p:[0,0],c:[0,0],h:[0,0],e:15,t:"<b>まっすぐ積めています</b>足・骨盤・胸・頭が縦にそろい、骨で体を支えられます。筋肉は、軽く調整するだけで済みます。"},
+    {p:[16,6],c:[-12,-4],h:[0,0],e:70,t:"<b>骨盤が前に出て、胸が後ろに引けています</b>反ったような立ち姿です。ずれた分を、腰や太ももの前の筋肉が支え続けるので、腰が疲れやすくなります。"},
+    {p:[-14,-6],c:[14,6],h:[12,0],e:75,t:"<b>骨盤が後ろに引けて、胸が前に出ています</b>丸まったような立ち姿です。倒れないように、背中や首の筋肉が支え続けるので、肩や首が疲れやすくなります。"}
+  ];
+  var cur={p:[0,0],c:[0,0],h:[0,0],e:15};
+  var cy={p:189,c:122,h:52};
+  var MI=[
+    {m:[268,282,268,259,268,236, 268,236,268.5,222,269,206,268,188,268,175, 268,162],o:null,l:"まっすぐ"},
+    {m:[268,282,271,259,276,236, 276,236,281,222,280,206,270,190,263,176, 262,163],o:[0,2],l:"腰が反る"},
+    {m:[268,282,264,259,259,236, 259,236,258,222,262,204,271,189,281,176, 285,164],o:[2,4],l:"背中が丸まる"}
+  ];
+  var mcur=MI[0].m.slice(),mo=null,ml=MI[0].l;
+  function P(a,i){return a[i*2].toFixed(1)+","+a[i*2+1].toFixed(1)}
+  function drawMini(){
+    var a=mcur;
+    $("mLeg").setAttribute("points",P(a,0)+" "+P(a,1)+" "+P(a,2));
+    var sp=[];for(var i=3;i<8;i++)sp.push(P(a,i));
+    $("mSp").setAttribute("points",sp.join(" "));
+    $("mHd").setAttribute("cx",a[16].toFixed(1));$("mHd").setAttribute("cy",a[17].toFixed(1));
+    var o=$("mOv");
+    if(mo){var q=[];for(var j=mo[0];j<=mo[1];j++)q.push(P(a,3+j));o.setAttribute("points",q.join(" "));o.style.opacity=1}else{o.style.opacity=0}
+    var t=$("mTx");t.textContent=ml;t.setAttribute("fill",mo?"var(--load)":"var(--ink)");
+  }
+  function tr(g,v,y){$(g).setAttribute("transform","translate("+v[0].toFixed(1)+" 0) rotate("+v[1].toFixed(1)+" 150 "+y+")")}
+  function draw(){
+    tr("gp",cur.p,cy.p);tr("gc",cur.c,cy.c);tr("gh",cur.h,cy.h);
+    var b=$("bar");b.style.width=cur.e.toFixed(0)+"%";
+    b.style.background=cur.e>45?"var(--load)":"var(--move)";
+    drawMini();
+  }
+  var bs=document.querySelectorAll(".presets button"),raf=0;
+  function lerp(a,b,k){return a+(b-a)*k}
+  function go(i){
+    var to=S[i];$("rd").innerHTML=to.t;var mt=MI[i].m;mo=MI[i].o;ml=MI[i].l;
+    for(var q=0;q<bs.length;q++)bs[q].setAttribute("aria-pressed",q===i?"true":"false");
+    cancelAnimationFrame(raf);
+    if(reduce){cur={p:to.p.slice(),c:to.c.slice(),h:to.h.slice(),e:to.e};mcur=mt.slice();draw();return}
+    var f=JSON.parse(JSON.stringify(cur)),st=null,fm=mcur.slice();
+    function step(ts){
+      if(st===null)st=ts;var k=Math.min(1,(ts-st)/550);k=1-Math.pow(1-k,3);
+      ["p","c","h"].forEach(function(n){cur[n]=[lerp(f[n][0],to[n][0],k),lerp(f[n][1],to[n][1],k)]});
+      cur.e=lerp(f.e,to.e,k);for(var z=0;z<mt.length;z++)mcur[z]=lerp(fm[z],mt[z],k);draw();
+      if(k<1)raf=requestAnimationFrame(step);
+    }
+    raf=requestAnimationFrame(step);
+  }
+  for(var q=0;q<bs.length;q++)bs[q].onclick=function(){go(+this.getAttribute("data-v"))};
+  $("rd").innerHTML=S[0].t;cur={p:[0,0],c:[0,0],h:[0,0],e:S[0].e};draw();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第9回 歩く。股関節と、背中のひねりが大切｜からだの使い方講座</title>
+<style>
+:root{
+  --bg:#fff7e6; --surface:#ffffff; --ink:#2a2e38; --sub:#5f6672; --line:#ecd9b0;
+  --move:#0b8f6b; --hold:#2878cc; --load:#e04e1b; --soft:#fff0c2;
+  --blk:#ffe3a3; --bone:#ffe0a0; --amber:#e8950f;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.95;font-size:16px;-webkit-text-size-adjust:100%}
+main{max-width:640px;margin:0 auto;padding:40px 20px 64px}
+h1{font-size:clamp(26px,7vw,36px);line-height:1.4;margin:0 0 12px;font-weight:800;letter-spacing:.02em}
+.lead{color:var(--sub);margin:0 0 28px}
+h2{font-size:20px;line-height:1.5;margin:48px 0 12px;font-weight:700;border-left:4px solid var(--move);padding-left:12px}
+p{margin:0 0 16px}
+.fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;margin:0 0 8px}
+.fig svg{display:block;width:100%;height:auto;max-height:320px}
+.seg{display:flex;gap:8px;margin:0 0 10px}
+.seg button{flex:1;font:inherit;font-size:14px;font-weight:700;line-height:1.4;padding:10px 6px;border-radius:10px;border:2px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.seg button[aria-pressed="true"]{border-color:var(--move);background:var(--soft)}
+button:focus-visible{outline:3px solid var(--move);outline-offset:2px}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--sub);margin:6px 0 0}
+.legend i{display:inline-block;width:.9em;height:.9em;border-radius:50%;vertical-align:-1px;margin-right:4px}
+.meter{font-size:14px;margin:12px 0 0}
+.meter .hd{font-size:13px;color:var(--sub);margin:0 0 4px;line-height:1.5}
+.meter .track{height:14px;border-radius:7px;background:var(--soft);overflow:hidden}
+.meter .bar{display:block;height:100%;width:0;border-radius:7px}
+.read{font-size:15px;line-height:1.8;min-height:7.6em;background:var(--soft);border-radius:10px;padding:12px 14px;margin:12px 0 0}
+.read b{display:block;margin-bottom:2px}
+.cap{font-size:13px;color:var(--sub);margin:10px 4px 0;line-height:1.7}
+.sum{background:var(--soft);border-radius:12px;padding:16px 18px;margin:20px 0}
+.sum p:last-child{margin:0}
+.note{font-size:13px;color:var(--sub);border-top:1px solid var(--line);margin-top:40px;padding-top:16px;line-height:1.8}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* ---- 明るいテーマ ---- */
+:root{--bg:#eef8ff;--line:#c5e1f5;--soft:#dff0fd;--blk:#d6ebff;--bone:#d6ebff}
+body{background:var(--bg);font-size:16.5px;line-height:2}
+main{padding-top:24px}
+h1{background:linear-gradient(135deg,#74c0fc 0%,#3bc9db 100%);color:#062a40;padding:22px 20px 20px;border-radius:20px;margin:0 0 16px;box-shadow:0 5px 0 rgba(25,113,194,.30);font-size:clamp(22px,6.3vw,34px)}
+.lead{font-size:17px;font-weight:700;color:#0b4a6f;margin:0 0 30px;padding-left:14px;border-left:5px solid #339af0}
+h2{display:block;background:#a5d8ff;color:#08283d;border-left:8px solid #1c7ed6;border-radius:12px;padding:10px 14px;font-size:20px;margin:52px 0 14px}
+p strong,.sum strong{background:linear-gradient(transparent 62%,#a5d8ff 62%);font-weight:800}
+.fig{border:2px solid #a5d8ff;border-radius:18px;box-shadow:0 4px 0 #d0ebff}
+.seg button,.tabs button,.presets button,.modes button{border-color:#a5d8ff;background:#fff;border-radius:12px;color:var(--ink)}
+.seg button[aria-pressed="true"],.tabs button[aria-pressed="true"],.presets button[aria-pressed="true"],.modes button[aria-pressed="true"]{border-color:var(--move);background:#d3f9e8}
+.read{background:#e7f5ff;border-left:6px solid #339af0;border-radius:12px}
+.sum{background:#fff0e0;border:2px solid #ffc78f;border-radius:16px}
+.track{background:#d0ebff}
+.note{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:48px}
+h1,h2,.lead{word-break:auto-phrase;text-wrap:balance}
+
+h1,h2{text-wrap:balance;word-break:auto-phrase}
+.ph{display:inline-block}
+</style>
+</head>
+<body>
+<main>
+<h1>歩く。<br><span class="ph">股関節と、</span><span class="ph">背中のひねりが大切</span></h1>
+<p class="lead">歩くのが「楽な人」と「疲れる人」の違いは、足の付け根と背中の動きにあるかもしれません。</p>
+
+<p>私たちは、1日に何千回も歩きます。1歩1歩の小さなずれでも、毎日積み重なると、体への負担は大きくなります。</p>
+<p>呼吸・姿勢・歩行は、体のインフラでしたね。歩くことは、意識しなくても自然にできていてほしい動きです。歩きを見るポイントはたくさんありますが、ここでは、特に大切な<strong>3つ</strong>にしぼってお話しします。</p>
+
+<h2>① 股関節が硬いと、歩きが縮こまる</h2>
+<div class="fig" id="fg">
+  <div class="seg" role="group" aria-label="歩き方の例">
+    <button type="button" data-m="0" aria-pressed="true">股関節がよく動く</button>
+    <button type="button" data-m="1" aria-pressed="false">硬くて腰が揺れる</button>
+    <button type="button" data-m="2" aria-pressed="false">揺れを嫌って固める</button>
+  </div>
+  <svg viewBox="0 0 320 290" role="img" aria-labelledby="ft fd">
+    <title id="ft">歩く姿の図解（横から）</title>
+    <desc id="fd">横から見た歩く人。股関節がよく動く場合は脚が大きく振れる。硬いと脚の振りが小さくなり腰が揺れて補う。揺れを嫌って固めると、背中がこわばり、歩幅がさらに小さい縮こまった歩きになる。</desc>
+    <line id="gr" x1="10" y1="272" x2="310" y2="272" stroke="var(--line)" stroke-width="4" stroke-linecap="round" stroke-dasharray="16 12"/>
+    <g id="wk"></g>
+  </svg>
+  <div class="legend"><span><i style="background:var(--move)"></i>股関節</span><span><i style="border:2.5px solid var(--load);background:transparent"></i>腰・背中（頑張っている所）</span></div>
+  <div class="meter">
+    <p class="hd">腰・背中の頑張り（イメージ）</p>
+    <div class="track"><span class="bar" id="bar"></span></div>
+  </div>
+  <div class="read" id="rd" aria-live="polite"></div>
+  <p class="cap">ボタンで歩き方を切り替えてみてください。図は分かりやすくするための模式図です。</p>
+</div>
+<p>股関節が硬いと、脚の振りが小さくなり、その分を腰が揺れて補おうとします。ところが、腰が揺れるのは体にとって不快なので、今度は腰や背中を固めて揺れを止めようとします。</p>
+<p>その結果、歩幅がさらに小さく、背中がガチガチの、縮こまった歩き方になりやすくなります。</p>
+
+<h2><span class="ph">② 背中の真ん中が回ると、</span><span class="ph">腕が自然に振れる</span></h2>
+<div class="fig" id="fg2">
+  <div class="seg" role="group" aria-label="上半身のひねりの例">
+    <button type="button" data-m="0" aria-pressed="true">胸がよく回る</button>
+    <button type="button" data-m="1" aria-pressed="false">胸が回らない</button>
+  </div>
+  <svg viewBox="0 0 320 250" role="img" aria-labelledby="ft2 fd2">
+    <title id="ft2">歩くときの上半身のひねり（真上から）</title>
+    <desc id="fd2">真上から見た骨盤と肩。胸がよく回る場合は、骨盤と肩が逆向きにひねり合い、腕が大きく振れる。胸が回らない場合は、骨盤と肩が一緒に動き、腕の振りが小さい。</desc>
+    <text x="160" y="22" text-anchor="middle" font-size="12" fill="var(--sub)">▲ 進む方向</text>
+    <g id="top"></g>
+  </svg>
+  <div class="legend"><span><i style="background:var(--hold)"></i>骨盤</span><span><i style="background:var(--move)"></i>胸・肩</span></div>
+  <div class="read" id="rd2" aria-live="polite"></div>
+  <p class="cap">真上から見た図です。左の骨盤が前に出るとき、右の肩と右の腕が前に出ます。</p>
+</div>
+<p>歩くとき、骨盤と胸は、お互いに逆向きにひねり合います。この上半身のひねりを担当する場所の1つが、背中の真ん中あたり（胸椎）です。ここが動かないと、その分を腰が頑張りやすくなります。</p>
+
+<h2>③ 左右差も、大切な手がかり</h2>
+<p>左右で、歩幅や腕の振り、骨盤の出方が違っていないかも、見るポイントです。片側だけ動きが小さいときは、その側の関節や背中が固くなっているかもしれません。</p>
+<p>この3つを、バラバラに見るのではなく、<strong>股関節、骨盤、背中の動きがつながって、歩きになっている</strong>と考えます。</p>
+
+<div class="sum">
+<p><strong>当院の考え方</strong></p>
+<p>歩き方を気をつけるだけで変えるのは、長続きしません。まず、股関節や背中が動く状態にします。次に、動くようになった体を自分の筋肉で使う練習をし、最後は、意識しなくても自然に歩ける体を目指します。</p>
+</div>
+
+<h2>今日からできる、小さな一歩</h2>
+<p>ご家族に、後ろから10秒ほど、歩く動画を撮ってもらってください。腕の振りが左右で違わないか、肩や腰が揺れすぎていないかを見てみましょう。数週間後にまた撮ると、変化も分かります。</p>
+
+<p class="note">この内容は、からだの動きについての一般的な説明です。個別の診断ではありません。強い痛み、しびれ、安静にしていても続く痛みがあるときは、無理をせず、LINEでご相談ください。<br>かたぎはら鍼灸整骨院</p>
+</main>
+
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var R=Math.PI/180;
+  function lerp(a,b,k){return a+(b-a)*k}
+  function clamp(v,a,b){return Math.max(a,Math.min(b,v))}
+
+  /* ---------- 図1：横から見た歩き ---------- */
+  var M1=[
+    {A:28,Q:3,p:3,rig:0,bar:15,t:"<b>股関節がよく動く</b>脚が骨盤の下で大きく振れるので、腰は静かなまま、楽に進めます。歩幅も自然に出ます。"},
+    {A:12,Q:14,p:3,rig:0,bar:70,t:"<b>硬くて腰が揺れる</b>脚の振りが小さくなり、その分、腰が前後に揺れて動きを補います。毎歩、腰が頑張り続けるので、疲れやすくなります。"},
+    {A:8,Q:1,p:9,rig:1,bar:90,t:"<b>揺れを嫌って固める</b>腰の揺れを止めようと、腰や背中を固めます。すると、歩幅はさらに小さくなり、背中がガチガチの、縮こまった歩きになります。"}
+  ];
+  var s1={A:28,Q:3,p:3,rig:0,bar:15};
+  function lp(x,y,len,deg){return{x:x+len*Math.sin(deg*R),y:y+len*Math.cos(deg*R)}}
+  function ln(a,b,c,w,o){return '<line x1="'+a.x.toFixed(1)+'" y1="'+a.y.toFixed(1)+'" x2="'+b.x.toFixed(1)+'" y2="'+b.y.toFixed(1)+'" stroke="'+c+'" stroke-width="'+w+'" stroke-linecap="round"'+(o!==undefined?' stroke-opacity="'+o+'"':'')+'/>'}
+  function draw1(t){
+    var phi=reduce?0.9:t/1700*2*Math.PI;
+    var kmax=50*(0.4+0.6*s1.A/28),legs=[],vmax=0;
+    for(var i=0;i<2;i++){
+      var ph=phi+i*Math.PI,a=s1.A*Math.sin(ph),k=kmax*Math.max(0,Math.cos(ph+0.3)),b=a-k;
+      var v=62*Math.cos(a*R)+62*Math.cos(b*R);
+      legs.push({a:a,b:b});if(v>vmax)vmax=v;
+    }
+    var H={x:150,y:270-vmax},p=s1.p,q=s1.Q*Math.sin(2*phi);
+    var L={x:H.x+30*Math.sin(p*R),y:H.y-30*Math.cos(p*R)};
+    var S={x:L.x+56*Math.sin((p+q)*R),y:L.y-56*Math.cos((p+q)*R)};
+    var Hd={x:S.x+24*Math.sin((p+q)*R),y:S.y-24*Math.cos((p+q)*R)};
+    var g="";
+    for(var j=1;j>=0;j--){
+      var lg=legs[j],K=lp(H.x,H.y,62,lg.a),An=lp(K.x,K.y,62,lg.b);
+      var col=j?"var(--sub)":"var(--ink)",o=j?0.55:1;
+      g+=ln(H,K,col,10,o)+ln(K,An,col,9,o)+ln(An,{x:An.x+16,y:An.y},col,7,o);
+    }
+    g+=ln(H,L,"var(--ink)",11)+ln(L,S,"var(--ink)",11);
+    if(s1.rig>0.02)g+=ln(H,L,"var(--load)",11,s1.rig.toFixed(2))+ln(L,S,"var(--load)",11,s1.rig.toFixed(2));
+    g+='<circle cx="'+Hd.x.toFixed(1)+'" cy="'+Hd.y.toFixed(1)+'" r="15" fill="var(--ink)"/>';
+    var ro=clamp((s1.Q-3)/11,0,1);
+    if(ro>0.02)g+='<circle cx="'+L.x.toFixed(1)+'" cy="'+L.y.toFixed(1)+'" r="'+(17+2*Math.sin(phi*2)).toFixed(1)+'" fill="none" stroke="var(--load)" stroke-width="3.5" stroke-opacity="'+ro.toFixed(2)+'"/>';
+    g+='<circle cx="'+H.x.toFixed(1)+'" cy="'+H.y.toFixed(1)+'" r="9" fill="var(--move)"/>';
+    $("wk").innerHTML=g;
+    $("gr").setAttribute("stroke-dashoffset",reduce?0:(t*0.06*(s1.A/28*0.6+0.4)).toFixed(1));
+    var b=$("bar");b.style.width=s1.bar.toFixed(0)+"%";b.style.background=s1.bar>45?"var(--load)":"var(--move)";
+  }
+
+  /* ---------- 図2：真上から見た上半身のひねり ---------- */
+  var M2=[
+    {T:-16,t:"<b>胸が、骨盤と逆向きにひねれている</b>左の骨盤が前に出るとき、右の肩と右の腕が前に出ます。ひねり合うことで、体のバランスがとれ、腰への負担が少なくなります。"},
+    {T:5,t:"<b>胸が回らず、骨盤と一緒に固まっている</b>上半身が1つの塊のように動き、腕の振りも小さくなります。ひねりを担当する背中の真ん中が動かない分、腰が頑張りやすくなります。"}
+  ];
+  var s2={T:-16};
+  function draw2(t){
+    var phi=reduce?0.9:t/1700*2*Math.PI;
+    var al=9*Math.sin(phi)*R,be=s2.T*Math.sin(phi)*R;
+    var cx=160,py=178,sy0=118;
+    var pL={x:cx-34*Math.cos(al),y:py-34*Math.sin(al)},pR={x:cx+34*Math.cos(al),y:py+34*Math.sin(al)};
+    var sL={x:cx-54*Math.cos(be),y:sy0-54*Math.sin(be)},sR={x:cx+54*Math.cos(be),y:sy0+54*Math.sin(be)};
+    var gain=2.5;
+    var hL={x:sL.x-9,y:sL.y+38+gain*(sL.y-sy0)},hR={x:sR.x+9,y:sR.y+38+gain*(sR.y-sy0)};
+    var g="";
+    g+=ln(pL,pR,"var(--hold)",18);
+    g+=ln(sL,hL,"var(--ink)",8,0.55)+ln(sR,hR,"var(--ink)",8,0.55);
+    g+='<circle cx="'+hL.x.toFixed(1)+'" cy="'+hL.y.toFixed(1)+'" r="7" fill="var(--ink)" fill-opacity=".7"/><circle cx="'+hR.x.toFixed(1)+'" cy="'+hR.y.toFixed(1)+'" r="7" fill="var(--ink)" fill-opacity=".7"/>';
+    g+=ln(sL,sR,"var(--move)",14);
+    g+='<circle cx="'+cx+'" cy="'+(sy0-4)+'" r="14" fill="var(--ink)"/>';
+    g+='<text x="'+(sL.x-18).toFixed(1)+'" y="'+(sL.y+4).toFixed(1)+'" text-anchor="middle" font-size="12" font-weight="700" fill="var(--sub)">左</text>';
+    g+='<text x="'+(sR.x+18).toFixed(1)+'" y="'+(sR.y+4).toFixed(1)+'" text-anchor="middle" font-size="12" font-weight="700" fill="var(--sub)">右</text>';
+    $("top").innerHTML=g;
+  }
+
+  /* ---------- ボタンと動き ---------- */
+  var tw1=0,tw2=0;
+  function setup(id,M,st,rd,drawOnce,keys){
+    var bs=$(id).querySelectorAll(".seg button"),tw=0;
+    function go(i){
+      $(rd).innerHTML=M[i].t;
+      for(var k=0;k<bs.length;k++)bs[k].setAttribute("aria-pressed",k===i?"true":"false");
+      cancelAnimationFrame(tw);
+      var to=M[i],f={},s0=null,n;
+      for(n=0;n<keys.length;n++)f[keys[n]]=st[keys[n]];
+      if(reduce){for(n=0;n<keys.length;n++)st[keys[n]]=to[keys[n]];drawOnce();return}
+      (function step(ts){
+        if(s0===null)s0=ts;var k=Math.min(1,(ts-s0)/600);k=1-Math.pow(1-k,3);
+        for(var m=0;m<keys.length;m++)st[keys[m]]=lerp(f[keys[m]],to[keys[m]],k);
+        if(k<1)tw=requestAnimationFrame(step);
+      })(performance.now());
+    }
+    for(var k=0;k<bs.length;k++)bs[k].onclick=function(){go(+this.getAttribute("data-m"))};
+    $(rd).innerHTML=M[0].t;
+  }
+  setup("fg",M1,s1,"rd",function(){draw1(0)},["A","Q","p","rig","bar"]);
+  setup("fg2",M2,s2,"rd2",function(){draw2(0)},["T"]);
+  draw1(0);draw2(0);
+  if(!reduce){
+    var vis=[true,true];
+    if("IntersectionObserver" in window){
+      new IntersectionObserver(function(e){vis[0]=e[0].isIntersecting},{threshold:.1}).observe($("fg"));
+      new IntersectionObserver(function(e){vis[1]=e[0].isIntersecting},{threshold:.1}).observe($("fg2"));
+    }
+    (function loop(t){if(vis[0])draw1(t);if(vis[1])draw2(t);requestAnimationFrame(loop)})(0);
+  }
+})();
+</script>
+</body>
+</html>

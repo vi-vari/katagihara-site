@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第27回 これからも一緒に。からだと長く付き合う｜からだの使い方講座</title>
+<style>
+:root{
+  --bg:#fff7e6; --surface:#ffffff; --ink:#2a2e38; --sub:#5f6672; --line:#ecd9b0;
+  --move:#0b8f6b; --hold:#2878cc; --load:#e04e1b; --soft:#fff0c2;
+  --blk:#ffe3a3; --bone:#ffe0a0; --amber:#e8950f;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.95;font-size:16px;-webkit-text-size-adjust:100%}
+main{max-width:640px;margin:0 auto;padding:40px 20px 64px}
+h1{font-size:clamp(26px,7vw,36px);line-height:1.4;margin:0 0 12px;font-weight:800;letter-spacing:.02em}
+.lead{color:var(--sub);margin:0 0 28px}
+h2{font-size:20px;line-height:1.5;margin:48px 0 12px;font-weight:700;border-left:4px solid var(--move);padding-left:12px}
+p{margin:0 0 16px}
+.key{background:#fff;border:2px dashed var(--line);border-radius:10px;padding:8px 12px;font-size:14px;font-weight:700;line-height:1.7;margin:0 0 10px}
+.fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;margin:0 0 8px}
+.fig svg{display:block;width:100%;height:auto;max-height:330px}
+.seg{display:flex;gap:8px;margin:0 0 10px}
+.seg button{flex:1;font:inherit;font-size:14px;font-weight:700;line-height:1.4;padding:10px 6px;border-radius:10px;border:2px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.seg button[aria-pressed="true"]{border-color:var(--move);background:var(--soft)}
+button:focus-visible{outline:3px solid var(--move);outline-offset:2px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--sub);margin:6px 0 0}
+.legend i{display:inline-block;width:.9em;height:.9em;border-radius:50%;vertical-align:-1px;margin-right:4px}
+.read{font-size:15px;line-height:1.8;min-height:8.6em;background:var(--soft);border-radius:10px;padding:12px 14px;margin:12px 0 0}
+.read b{display:block;margin-bottom:2px}.read u{display:block;text-decoration:none;font-weight:800;color:var(--sub);font-size:13px;margin-top:6px}
+.cap{font-size:13px;color:var(--sub);margin:10px 4px 0;line-height:1.7}
+.three{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:8px}
+.three li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:15px;line-height:1.7}
+.three li b.n{display:inline-block;background:var(--move);color:#fff;border-radius:50%;width:1.7em;height:1.7em;text-align:center;line-height:1.7em;margin-right:8px;font-size:14px}
+.three li small{display:block;color:var(--sub);font-size:13px;margin-top:2px}
+.steps{margin:0 0 16px;padding-left:1.4em}
+.steps li{margin-bottom:6px}
+.sum{background:var(--soft);border-radius:12px;padding:16px 18px;margin:20px 0}
+.sum p:last-child{margin:0}
+.warn{background:#fff3ec;border:2px solid #ffb48a;border-radius:12px;padding:14px 16px;margin:12px 0 16px;font-size:15px;line-height:1.85}
+.warn ul{margin:6px 0 0;padding-left:1.3em}
+.note{font-size:13px;color:var(--sub);border-top:1px solid var(--line);margin-top:40px;padding-top:16px;line-height:1.8}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* ---- 明るいテーマ ---- */
+:root{--bg:#fff6ee;--line:#f7d9bc;--soft:#ffeedb;--blk:#ffe2c4;--bone:#ffe2c4}
+body{background:var(--bg);font-size:16.5px;line-height:2}
+main{padding-top:24px}
+h1{background:linear-gradient(135deg,#ffb36b 0%,#ff7f6e 100%);color:#4a1500;padding:22px 20px 20px;border-radius:20px;margin:0 0 16px;box-shadow:0 5px 0 rgba(240,90,40,.30);font-size:clamp(22px,6.3vw,34px)}
+.lead{font-size:17px;font-weight:700;color:#8a2f08;margin:0 0 30px;padding-left:14px;border-left:5px solid #ff8a4c}
+h2{display:block;background:#ffd9b8;color:#4a1500;border-left:8px solid #ff6b35;border-radius:12px;padding:10px 14px;font-size:20px;margin:52px 0 14px}
+p strong,.sum strong{background:linear-gradient(transparent 62%,#ffd9b8 62%);font-weight:800}
+.fig{border:2px solid #ffcfa6;border-radius:18px;box-shadow:0 4px 0 #ffe8d2}
+.seg button,.tabs button,.presets button,.modes button{border-color:#ffcfa6;background:#fff;border-radius:12px;color:var(--ink)}
+.seg button[aria-pressed="true"],.tabs button[aria-pressed="true"],.presets button[aria-pressed="true"],.modes button[aria-pressed="true"]{border-color:var(--move);background:#d3f9e8}
+.read{background:#fff1e4;border-left:6px solid #ff8a4c;border-radius:12px}
+.sum{background:#e4f8ef;border:2px solid #9be3c4;border-radius:16px}
+.track{background:#ffe8d2}
+.note{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:48px}
+h1,h2,.lead{word-break:auto-phrase;text-wrap:balance}
+
+h1,h2{text-wrap:balance;word-break:auto-phrase}
+.ph{display:inline-block}
+</style>
+<body>
+<main>
+<h1>これからも一緒に。<br>からだと長く付き合う</h1>
+<p class="lead">ここまで読んでくださり、ありがとうございます。</p>
+<p>痛い場所のこと、動く役と支える役、骨盤、呼吸、日常の使い方。たくさんのことをお伝えしてきました。</p>
+<p>今回は、ひとまずの区切りとして、<strong>これから、どう付き合っていくか</strong>をお話しします。</p>
+
+<h2>① からだは、二人三脚で整える</h2>
+<p class="key">見てほしいところ：院の役割と、ご自身の役割</p>
+<div class="fig" id="f1">
+  <div class="seg" role="group" aria-label="役割">
+    <button type="button" data-m="0" aria-pressed="true">院</button>
+    <button type="button" data-m="1" aria-pressed="false">ご自身</button>
+    <button type="button" data-m="2" aria-pressed="false">ふたりで</button>
+  </div>
+  <svg viewBox="0 0 320 120" role="img" aria-labelledby="t1 d1">
+    <title id="t1">院とご自身の役割</title>
+    <desc id="d1">院とご自身が、向かい合って並ぶ。選んだ側、または両方が光る。</desc>
+    <g id="g1"></g>
+  </svg>
+  <div class="read" id="r1" aria-live="polite"></div>
+  <p class="cap">どちらか片方ではなく、両方がそろうと、からだは整いやすくなります。</p>
+</div>
+
+<h2>② いまのからだは、どんな状態？</h2>
+<p class="key">見てほしいところ：信号の色を選ぶと、おすすめの動き方が出ます</p>
+<div class="fig" id="f2">
+  <div class="seg" role="group" aria-label="いまの状態">
+    <button type="button" data-m="0" aria-pressed="true">調子がいい</button>
+    <button type="button" data-m="1" aria-pressed="false">気になる</button>
+    <button type="button" data-m="2" aria-pressed="false">痛みがある</button>
+  </div>
+  <svg viewBox="0 0 320 100" role="img" aria-labelledby="t2 d2">
+    <title id="t2">いまの状態を表す信号</title>
+    <desc id="d2">緑、黄、赤の3つの丸。選んだ色が光る。</desc>
+    <g id="g2"></g>
+  </svg>
+  <div class="read" id="r2" aria-live="polite"></div>
+  <p class="cap">迷ったときは、LINEで、気軽にご相談ください。</p>
+</div>
+
+<h2>これからも、大切にしたい3つ</h2>
+<ul class="three">
+  <li><b class="n">1</b><strong>痛い場所だけを、見ない</strong><small>原因は、動き方や使い方にあるかもしれません</small></li>
+  <li><b class="n">2</b><strong>負担を減らし、キャパを育てる</strong><small>量より、使い方を整えます</small></li>
+  <li><b class="n">3</b><strong>気づいたら、早めに相談する</strong><small>合図の段階が、いちばん整えやすい時期です</small></li>
+</ul>
+
+<div class="sum">
+<p><strong>当院の考え方</strong></p>
+<p>治療は、痛みをとることだけが目的ではありません。動かない関節を動く状態にして（改善期）、ご自身の筋肉の使い方を練習し（安定期）、意識しなくても整っている体を目指します（定着期）。そのあいだ、ずっと、<strong>一緒に伴走する</strong>のが、私たちの役割です。</p>
+</div>
+
+<h2>今日からできる、小さな一歩</h2>
+<ol class="steps">
+  <li><strong>いまの状態を、1つ選ぶ</strong>：信号の、どの色が近いか、考えてみましょう。</li>
+  <li><strong>聞いてみたいことを、LINEで送る</strong>：気になることがあれば、気軽に、ご質問ください。</li>
+</ol>
+<p>強い痛みやしびれがあるときは、無理をせず、先に医療機関を受診するか、ご相談ください。</p>
+<p>このシリーズは、ここでひと区切りです。ただ、からだの話は、まだまだ続きます。近いうちに、新しい形で、またお届けします。楽しみにしていてください。</p>
+
+<p class="note">この内容は、からだの動きについての一般的な説明です。個別の診断ではありません。強い痛み、しびれ、安静にしていても続く痛みがあるときは、無理をせず、先に医療機関を受診するか、LINEでご相談ください。<br>かたぎはら鍼灸整骨院</p>
+</main>
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function lerp(a,b,k){return a+(b-a)*k}
+  function ringS(x,y,k,p,r){return k>0.02?'<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="'+((r||19)+3*p).toFixed(1)+'" fill="none" stroke="var(--load)" stroke-width="3.5" stroke-opacity="'+(Math.min(1,k)*(0.55+0.45*p)).toFixed(2)+'"/>':""}
+  function lab(x,y,n,a,b,k){k=Math.min(1,k);return '<text x="'+x+'" y="'+y+'" font-size="13" font-weight="800" fill="var(--ink)">'+n+'</text><text x="'+x+'" y="'+(y+16)+'" font-size="12" font-weight="800" fill="'+a[1]+'" opacity="'+(1-k).toFixed(2)+'">'+a[0]+'</text><text x="'+x+'" y="'+(y+16)+'" font-size="12" font-weight="800" fill="'+b[1]+'" opacity="'+k.toFixed(2)+'">'+b[0]+'</text>'}
+  function qpt(t,p0,pc,p1){var q=1-t;return [q*q*p0[0]+2*q*t*pc[0]+t*t*p1[0],q*q*p0[1]+2*q*t*pc[1]+t*t*p1[1]]}
+  function setup(fid,rid,T,keys,draw){
+    var st={},bs=document.querySelectorAll("#"+fid+" .seg button"),tw=0,j;
+    for(j=0;j<keys.length;j++)st[keys[j]]=T[0][keys[j]];
+    $(rid).innerHTML=T[0].t;
+    function go(m){
+      $(rid).innerHTML=T[m].t;
+      for(var q=0;q<bs.length;q++)bs[q].setAttribute("aria-pressed",q===m?"true":"false");
+      cancelAnimationFrame(tw);var f={},s0=null,i;for(i=0;i<keys.length;i++)f[keys[i]]=st[keys[i]];
+      if(reduce){for(i=0;i<keys.length;i++)st[keys[i]]=T[m][keys[i]];draw(st,0.5);return}
+      (function step(ts){if(s0===null)s0=ts;var k=Math.min(1,(ts-s0)/650);k=1-Math.pow(1-k,3);
+        for(var n=0;n<keys.length;n++)st[keys[n]]=lerp(f[keys[n]],T[m][keys[n]],k);
+        if(k<1)tw=requestAnimationFrame(step)})(performance.now());
+    }
+    for(var q=0;q<bs.length;q++)bs[q].onclick=function(){go(+this.getAttribute("data-m"))};
+    draw(st,0.5);
+    if(!reduce){var vis=true;
+      if("IntersectionObserver" in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting},{threshold:.1}).observe($(fid));
+      (function loop(t){if(vis)draw(st,0.5+0.5*Math.sin(t*0.005));requestAnimationFrame(loop)})(0);}
+  }
+  var T1=[{a:0,t:"<b>院の役割</b>からだを見て、原因を探します。動かない関節を、動く状態にします。そして、使い方を、分かりやすくお伝えします。"},
+          {a:1,t:"<b>ご自身の役割</b>日常の中で、からだの合図に気づきます。教わった使い方を、試します。そして、少しずつ、続けます。"},
+          {a:2,t:"<b>ふたりで</b>院が見て、整えて、教える。ご自身が気づいて、試して、続ける。この両方がそろうと、からだは、整いやすく、保ちやすくなります。"}];
+  function d1(s,p){
+    var a=s.a,L=a<=1?1-a:0,R=a<=1?a:0;
+    if(a>1){L=a-1;R=a-1;} // ふたりで
+    var g='<line x1="110" y1="60" x2="210" y2="60" stroke="var(--line)" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 10"/>';
+    g+='<circle cx="70" cy="60" r="44" fill="var(--hold)" fill-opacity="'+(0.18+0.82*L).toFixed(2)+'" stroke="var(--hold)" stroke-width="3"/>';
+    g+='<text x="70" y="66" text-anchor="middle" font-size="18" font-weight="800" fill="'+(L>0.5?"#fff":"var(--ink)")+'">院</text>';
+    g+='<circle cx="250" cy="60" r="44" fill="var(--move)" fill-opacity="'+(0.18+0.82*R).toFixed(2)+'" stroke="var(--move)" stroke-width="3"/>';
+    g+='<text x="250" y="66" text-anchor="middle" font-size="18" font-weight="800" fill="'+(R>0.5?"#fff":"var(--ink)")+'">ご自身</text>';
+    if(a>1.5)g+='<text x="160" y="52" text-anchor="middle" font-size="22">🤝</text>';
+    $("g1").innerHTML=g;
+  }
+  setup("f1","r1",T1,["a"],d1);
+  var T2=[{a:0,t:"<b>調子がいい</b>とてもよい状態です。この状態を保つために、ときどきセルフチェックをしてみましょう。変化に気づく練習になります。"},
+          {a:1,t:"<b>気になる</b>違和感や重だるさは、からだの合図です。セルフチェックを1つ試し、気になるときは、早めにご相談ください。"},
+          {a:2,t:"<b>痛みがある</b>痛みは、頑張りすぎの合図です。無理をせず、ご相談ください。強い痛みやしびれがあるときは、先に医療機関の受診も考えてください。"}];
+  function d2(s,p){
+    var g="",c=["var(--move)","#ffb84d","var(--load)"];
+    for(var i=0;i<3;i++){
+      var act=Math.max(0,1-Math.abs(s.a-i)),x=80+i*80;
+      g+='<circle cx="'+x+'" cy="50" r="'+(20+10*act).toFixed(1)+'" fill="'+c[i]+'" fill-opacity="'+(0.2+0.8*act).toFixed(2)+'" stroke="'+c[i]+'" stroke-width="3"/>';
+    }
+    $("g2").innerHTML=g;
+  }
+  setup("f2","r2",T2,["a"],d2);
+})();
+</script>
+</body>
+</html>

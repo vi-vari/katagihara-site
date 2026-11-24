@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第2回 揉む・ほぐすは、道具の一つ｜からだの使い方講座</title>
+<style>
+:root{
+  --bg:#fff7e6; --surface:#ffffff; --ink:#2a2e38; --sub:#5f6672; --line:#ecd9b0;
+  --move:#0b8f6b; --hold:#2878cc; --load:#e04e1b; --soft:#fff0c2;
+  --blk:#ffe3a3; --bone:#ffe0a0; --amber:#e8950f;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.95;font-size:16px;-webkit-text-size-adjust:100%}
+main{max-width:640px;margin:0 auto;padding:40px 20px 64px}
+h1{font-size:clamp(26px,7vw,36px);line-height:1.4;margin:0 0 12px;font-weight:800;letter-spacing:.02em}
+.lead{color:var(--sub);margin:0 0 28px}
+h2{font-size:20px;line-height:1.5;margin:48px 0 12px;font-weight:700;border-left:4px solid var(--move);padding-left:12px}
+p{margin:0 0 16px}
+.fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;margin:0 0 8px}
+.tabs{display:flex;gap:8px;margin:0 0 12px}
+.tabs button{flex:1;font:inherit;font-size:14px;font-weight:700;line-height:1.4;padding:10px 6px;border-radius:10px;border:2px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.tabs button[aria-pressed="true"]{border-color:var(--move);background:var(--soft)}
+button:focus-visible,input:focus-visible{outline:3px solid var(--move);outline-offset:2px}
+.sub{font-weight:700;margin:0 0 6px}
+.body{font-size:15px;line-height:1.85;margin:0 0 14px;min-height:7.4em}
+.row{display:flex;align-items:center;gap:10px;margin:6px 0;font-size:14px}
+.lab{width:8.4em;flex:none;line-height:1.4}
+.track{flex:1;height:14px;border-radius:7px;background:var(--soft);overflow:hidden;position:relative}
+.fill{display:block;height:100%;width:0;border-radius:7px;transition:width .45s ease}
+.cap{font-size:13px;color:var(--sub);margin:10px 4px 0;line-height:1.7}
+.big{height:26px;border-radius:8px;overflow:visible}
+.big .fill{border-radius:8px}
+.mark{position:absolute;top:-6px;bottom:-6px;width:4px;margin-left:-2px;background:var(--ink);border-radius:2px;transition:left .45s ease}
+.mlab{position:relative;height:18px;font-size:12px;font-weight:700;margin-top:8px}
+.mlab span{position:absolute;transform:translateX(-50%);white-space:nowrap;transition:left .45s ease}
+.sl{display:flex;align-items:center;gap:10px;margin:10px 0;font-size:14px;color:var(--sub)}
+.sl .lab{color:var(--ink);font-weight:700}
+.sl input{flex:1;accent-color:var(--move);height:28px}
+.read{font-size:15px;line-height:1.8;min-height:7em;background:var(--soft);border-radius:10px;padding:12px 14px;margin:12px 0 0}
+.read b{display:block;margin-bottom:2px}
+.infra{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 16px}
+.infra div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 6px;text-align:center;line-height:1.5}
+.infra small{display:block;color:var(--sub);font-size:12px}
+.infra b{display:block;font-size:17px}
+.sum{background:var(--soft);border-radius:12px;padding:16px 18px;margin:20px 0}
+.sum p:last-child{margin:0}
+.note{font-size:13px;color:var(--sub);border-top:1px solid var(--line);margin-top:40px;padding-top:16px;line-height:1.8}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* ---- 明るいテーマ ---- */
+body{background:var(--bg);font-size:16.5px;line-height:2}
+main{padding-top:24px}
+h1{background:linear-gradient(135deg,#ffd43b 0%,#ffa94d 100%);color:#3b2500;padding:22px 20px 20px;border-radius:20px;margin:0 0 16px;box-shadow:0 5px 0 rgba(240,140,0,.35)}
+.lead{font-size:17px;font-weight:700;color:#5a3d00;margin:0 0 30px;padding-left:14px;border-left:5px solid #ffa94d}
+h2{display:block;background:#ffe066;color:#2f2200;border-left:8px solid #ff922b;border-radius:12px;padding:10px 14px;font-size:20px;margin:52px 0 14px}
+p strong,.sum strong{background:linear-gradient(transparent 62%,#ffe066 62%);font-weight:800}
+.fig{border:2px solid #ffd8a8;border-radius:18px;box-shadow:0 4px 0 #ffe8cc}
+.seg button,.tabs button,.presets button,.modes button{border-color:#ffd8a8;background:#fff;border-radius:12px;color:var(--ink)}
+.seg button[aria-pressed="true"],.tabs button[aria-pressed="true"],.presets button[aria-pressed="true"],.modes button[aria-pressed="true"]{border-color:var(--move);background:#d3f9e8}
+.read{background:#fff5d6;border-left:6px solid #ffa94d;border-radius:12px}
+.sum{background:#e3f9ee;border:2px solid #9be3c4;border-radius:16px}
+.track{background:#ffeec8}
+.note{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:48px}
+h1{font-size:clamp(22px,6.3vw,34px)}
+h1,h2,.lead{word-break:auto-phrase;text-wrap:balance}
+
+h1,h2{text-wrap:balance;word-break:auto-phrase}
+.ph{display:inline-block}
+</style>
+</head>
+<body>
+<main>
+<h1>揉む・ほぐすは、<br>道具の一つ</h1>
+<p class="lead">ほぐして終わりではなく、自分で動ける体をつくるために。</p>
+
+<p>揉んでもらうと、体が軽くなる。でも、しばらくするとまた戻ってしまう。そんな経験はありませんか。</p>
+<p>揉む・ほぐすことは、とても大切な方法です。ただ、治療のすべてではありません。当院では、<strong>目的に合わせて使い分ける、道具の一つ</strong>として考えています。</p>
+
+<h2>治療には、3つの時期がある</h2>
+<div class="fig">
+  <div class="tabs" role="group" aria-label="治療の3つの時期">
+    <button type="button" data-i="0" aria-pressed="true">改善期</button>
+    <button type="button" data-i="1" aria-pressed="false">安定期</button>
+    <button type="button" data-i="2" aria-pressed="false">定着期</button>
+  </div>
+  <p class="sub" id="ps"></p>
+  <p class="body" id="pb" aria-live="polite"></p>
+  <div class="row"><span class="lab">施術に頼る割合</span><span class="track"><span class="fill" id="f1" style="background:var(--amber)"></span></span></div>
+  <div class="row"><span class="lab">自分で動かす割合</span><span class="track"><span class="fill" id="f2" style="background:var(--move)"></span></span></div>
+  <div class="row"><span class="lab">揉む・ほぐすを使う量</span><span class="track"><span class="fill" id="f3" style="background:var(--load)"></span></span></div>
+  <p class="cap">時期の名前をタップして、変化を見てください。棒の長さはイメージで、人によって異なります。</p>
+</div>
+
+<h2>体のインフラは、無意識に動くもの</h2>
+<p>家の暮らしを支えるのは、電気・ガス・水道です。体にも、同じように、止まっては困る土台があります。それが<strong>呼吸・姿勢・歩行</strong>です。</p>
+<div class="infra">
+  <div><small>電気</small><b>呼吸</b></div>
+  <div><small>ガス</small><b>姿勢</b></div>
+  <div><small>水道</small><b>歩行</b></div>
+</div>
+<p>この3つは、意識しなくても整っていることが大切です。「姿勢を意識しないと崩れる」状態では、長続きしません。定着期は、この土台を無意識に使える体にする時期です。</p>
+
+<h2><span class="ph">大切なのは、</span><span class="ph">「負担」と「キャパ」のバランス</span></h2>
+<p>日常には、仕事、家事、育児、スポーツなど、体にかかる<strong>負担</strong>があります。これをゼロにすることはできません。</p>
+<p>一方、その負担を受け止められる、体の<strong>キャパ</strong>（余裕）があります。負担がキャパの範囲に収まっていれば、痛みは出にくく、超えると痛みや疲れとして出やすくなります。</p>
+<div class="fig">
+  <div class="tabs" role="group" aria-label="負担とキャパの場面">
+    <button type="button" data-s="0">ほぐした直後</button>
+    <button type="button" data-s="1">日常に戻ると</button>
+    <button type="button" data-s="2">キャパが育つと</button>
+  </div>
+  <div class="track big"><span class="fill" id="lf"></span><span class="mark" id="cm"></span></div>
+  <div class="mlab"><span id="cl" style="color:var(--ink)">キャパ</span></div>
+  <div class="sl"><span class="lab">日常の負担</span><span>少</span><input type="range" id="ld" min="0" max="100" value="35" aria-label="日常の負担"><span>多</span></div>
+  <div class="sl"><span class="lab">自分のキャパ</span><span>小</span><input type="range" id="cp" min="0" max="100" value="45" aria-label="自分のキャパ"><span>大</span></div>
+  <div class="read" id="rd" aria-live="polite"></div>
+  <p class="cap">棒の長さが「負担」、黒い線が「キャパ」です。場面のボタンか、スライダーで動かしてみてください。</p>
+</div>
+
+<p>揉む・ほぐすは、筋肉の緊張をゆるめ、負担を一時的にやわらげる方法です。リラックスにも、痛みを和らげることにも役立ちます。ただ、日常の負担はなくならないので、それだけではキャパは増えません。</p>
+<p>キャパを増やすには、<strong>筋肉の教育</strong>が欠かせません。安定期、定着期を経て、日常の負担に少し余裕（プラスアルファ）を足した分のキャパを、自分の体に持つことを目指します。</p>
+
+<div class="sum">
+<p><strong>当院の考え方</strong></p>
+<p>改善期で、動かない体を動く状態にします。ここで、揉む・ほぐすをよく使います。次に、安定期で自分の筋肉を動かし、定着期で無意識にできる体にしていきます。後半でも、リラックスや緊張をゆるめる目的で、揉む・ほぐすを使うことがあります。</p>
+<p>「揉んでもらうだけ」から、「自分で動ける体」へ。この流れを、一緒に作っていきます。</p>
+</div>
+
+<p>施術のあとに動かしやすくなったら、教わった動きを、痛みの出ない範囲で、自分でも動かしてみてください。</p>
+
+<p class="note">この内容は、からだの動きについての一般的な説明です。個別の診断ではありません。強い痛み、しびれ、安静にしていても続く痛みがあるときは、無理をせず、LINEでご相談ください。<br>かたぎはら鍼灸整骨院</p>
+</main>
+
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var P=[
+   {s:"動かないものを、動く状態にする",b:"関節や筋肉が、くっついたように動かない状態では、自分の力で動かすことが、そもそもできません。まず、施術で動く状態をつくります。揉む・ほぐすを、いちばん多く使う時期です。",a:80,m:20,t:85},
+   {s:"自分で筋肉を動かす",b:"動くようになった体を、自分の筋肉で動かしていく時期です。ここで初めて、自分で筋肉にアプローチしていきます。揉む・ほぐすは、リラックスや緊張をゆるめる目的で使います。",a:40,m:60,t:30},
+   {s:"無意識にできるようにする",b:"意識しなくても、正しい動きができる状態をつくる時期です。呼吸・姿勢・歩行が、無意識に整っていることが目的です。揉む・ほぐすは、必要に応じて使います。",a:15,m:85,t:20}
+  ];
+  var tb=document.querySelectorAll("[data-i]");
+  function ph(i){
+    $("ps").textContent=P[i].s;$("pb").textContent=P[i].b;
+    $("f1").style.width=P[i].a+"%";$("f2").style.width=P[i].m+"%";$("f3").style.width=P[i].t+"%";
+    for(var k=0;k<tb.length;k++)tb[k].setAttribute("aria-pressed",k===i?"true":"false");
+  }
+  for(var k=0;k<tb.length;k++)tb[k].onclick=function(){ph(+this.getAttribute("data-i"))};
+  ph(0);
+
+  var S=[
+   {l:35,c:45,t:"<b>ほぐした直後</b>筋肉の緊張がゆるみ、負担が一時的にやわらぎます。体が軽く、動かしやすい状態です。"},
+   {l:75,c:45,t:"<b>日常に戻ると</b>仕事や家事の負担は、ほぐしてもゼロにはなりません。キャパが同じままだと、負担があふれやすくなります。"},
+   {l:75,c:90,t:"<b>キャパが育つと</b>筋肉の教育でキャパが育てば、同じ日常でも余裕が生まれます。これが、当院の目指す状態です。"}
+  ];
+  var sb=document.querySelectorAll("[data-s]"),ld=$("ld"),cp=$("cp");
+  function draw(story){
+    var l=+ld.value,c=+cp.value,over=l>c;
+    var f=$("lf");f.style.width=l+"%";f.style.background=over?"var(--load)":"var(--move)";
+    $("cm").style.left=c+"%";
+    var cl=$("cl");cl.style.left=c+"%";
+    if(typeof story==="number"){$("rd").innerHTML=S[story].t}
+    else if(over){$("rd").innerHTML="<b>負担がキャパを超えています</b>超えた分が、痛みや疲れとして出やすくなります。負担を減らすだけでなく、キャパを育てることが大切です。"}
+    else{$("rd").innerHTML="<b>負担がキャパの範囲に収まっています</b>痛みが出にくく、余裕のある状態です。"}
+    for(var k=0;k<sb.length;k++)sb[k].setAttribute("aria-pressed",story===k?"true":"false");
+  }
+  for(var k=0;k<sb.length;k++)sb[k].onclick=function(){var i=+this.getAttribute("data-s");ld.value=S[i].l;cp.value=S[i].c;draw(i)};
+  ld.oninput=function(){draw()};cp.oninput=function(){draw()};
+  ld.value=S[0].l;cp.value=S[0].c;draw(0);
+})();
+</script>
+</body>
+</html>
